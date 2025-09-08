@@ -1,0 +1,168 @@
+/* header */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .inner {
+    display: flex;
+    max-width: 1620px;
+    padding: 2.1rem 0;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.header-left {
+    display: flex;
+    gap: 1rem;
+}
+
+header h1 {
+    display: flex;
+    gap: 1.7rem;
+    padding: 8px 21px;
+    align-items: center;
+    height: 58px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    backdrop-filter: blur(12px);
+    /* 글래스모피즘 느낌 */
+    -webkit-backdrop-filter: blur(12px);
+    /* 사파리 대응 */
+    box-shadow:
+        -1px 2px 12px rgba(0, 0, 0, 0.2),
+        /* 기본 그림자 */
+        inset 1px 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+header img {
+    width: 1.7rem;
+}
+
+/* header main menu */
+.main-tab {
+    display: flex;
+    flex-direction: column;
+    padding: 1.8rem 3rem;
+    color: var(--text-main2);
+    font-size: 1.6rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    backdrop-filter: blur(12px);
+    /* 글래스모피즘 느낌 */
+    -webkit-backdrop-filter: blur(12px);
+    /* 사파리 대응 */
+    box-shadow:
+        -1px 2px 12px rgba(0, 0, 0, 0.2),
+        /* 기본 그림자 */
+        inset 1px 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.main-tab .main-menu {
+    display: flex;
+    gap: 4.8rem;
+}
+
+.main-tab .tab1 {
+    display: none;
+    gap: 7rem;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+/* 프로모션 제외 탭 다 숨기기 (자바스크립트 필요) */
+.main-tab .tab2 {
+    display: none;
+    gap: 7rem;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+.main-tab .tab3 {
+    display: none;
+    gap: 7rem;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+.main-tab .tab4 {
+    display: none;
+    gap: 7rem;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+.main-tab .tab5 {
+    display: none;
+    gap: 7rem;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+.main-tab>div>ul {
+    width: 150px;
+}
+
+/* header right */
+.header-right {
+    display: flex;
+    gap: 1rem;
+}
+
+.language {
+    display: flex;
+    padding: 1.8rem 3rem;
+    color: var(--text-main2);
+    font-size: 1.6rem;
+    align-items: center;
+    gap: 6px;
+    height: 58px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    backdrop-filter: blur(12px);
+    /* 글래스모피즘 느낌 */
+    -webkit-backdrop-filter: blur(12px);
+    /* 사파리 대응 */
+    box-shadow:
+        -1px 2px 12px rgba(0, 0, 0, 0.2),
+        /* 기본 그림자 */
+        inset 1px 1px 0 rgba(255, 255, 255, 0.6);
+    margin-left: 1rem;
+}
+
+.language img {
+    width: 0.9rem;
+}
+
+/* EN / JP 숨기기 */
+.la-list .hidden {
+    display: none;
+}
+
+.gnb-menu {
+    display: flex;
+    gap: 2rem;
+    padding: 1.8rem 3rem;
+    align-items: center;
+    height: 58px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    backdrop-filter: blur(12px);
+    /* 글래스모피즘 느낌 */
+    -webkit-backdrop-filter: blur(12px);
+    /* 사파리 대응 */
+    box-shadow:
+        -1px 2px 12px rgba(0, 0, 0, 0.2),
+        /* 기본 그림자 */
+        inset 1px 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.gnb-menu .mo-ham,
+.mo-logo {
+    display: none;
+}
+
+.gnb-menu img {
+    width: 24px;
+}

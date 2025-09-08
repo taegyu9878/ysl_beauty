@@ -1,0 +1,180 @@
+/* 1024px이하이면 기본글자크기 / 7px */
+@media screen and (max-width:1400px) {
+    html {
+        font-size: 8px;
+    }
+
+    /* header */
+    header .inner {
+        padding: 2.1rem;
+        justify-content: center;
+    }
+
+    .gnb-menu {
+        width: 95vw;
+        justify-content: space-between;
+    }
+
+    header h1,
+    .main-tab,
+    .language,
+    .gnb-menu .mo-hidden {
+        display: none;
+    }
+
+    .gnb-menu .mo-ham {
+        display: block;
+    }
+
+    .gnb-menu .mo-logo img {
+        width: 22rem;
+
+    }
+
+    .gnb-menu .mo-logo {
+        display: block;
+    }
+
+    .banner-left .text3::after {
+        top: 60rem;
+        left: 0rem;
+        width: 100rem;
+
+    }
+
+    .fra-inner-left-text {
+        padding: 3rem;
+    }
+
+    .rose-banner .rose-text {
+        padding: 3rem;
+    }
+}
+
+/* 767px이하  */
+@media screen and (max-width:767px) {
+
+    /* main */
+    /* category */
+    .accord-list>div {
+    width: 10rem;
+}
+    .accord-list>.active {
+    width: 30rem;
+}
+    /* libre */
+    .libre-wrap .inner {
+        height: 90rem;
+    }
+
+    .libre-wrap .banner-right {
+        height: 24.3rem;
+        top: 520px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .libre-wrap .banner-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* fragrance */
+    .fra-inner {
+        height: 70rem;
+    }
+
+    .fra-inner .inner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .fra-inner-left {
+        order: 2;
+        width: 100vw;
+        height: auto;
+        /* display: flex; */
+    }
+
+    .fra-inner-left-text {
+        order: 4;
+        width: 50rem;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .fra-inner-left .fra-icon{
+        order: 3;
+       position: static;
+       margin-top: 3rem;
+    }
+
+    .fra-inner-right {
+        order: 1;
+        margin-top: 10rem;
+    }
+
+    /* rose banner */
+    .rose-banner .rose-text {
+        padding: 0;
+        margin: 0 auto;
+
+        .main-title {
+            text-align: center;
+        }
+    }
+
+    /* best item */
+    .best-wrap .bg {
+        display: none;
+    }
+
+    .best-wrap .slider{
+        display: none;
+    }
+    
+    .best-wrap .slider-list>.active{
+        display: block;
+    }
+
+    /* exclusive services */
+    .exclusive-wrap {
+        height: auto;
+    }
+
+    .exclusive-wrap .ex-tab1,
+    .ex-tab2,
+    .ex-tab3 {
+        display: block;
+    }
+
+    .exclusive-wrap .text-box {
+        padding: 1rem;
+        margin-top: 1rem;
+
+        .middle-title {
+            margin-top: 4rem;
+        }
+    }
+
+    /* footer */
+    .footer-top {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .footer-right {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .sitemap {
+        gap: 40px;
+    }
+}
