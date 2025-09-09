@@ -47,15 +47,16 @@
 
 
 /* inner-left */
-
-
-.map-inner-left .map-img-box {
+.map-img-box{
     position: relative;
-    /* border: 1px solid black; */
-    border-radius: 12px;
 }
 
-.map-inner-left .img-box-bottom{
+/* .map-inner-left .map-img-box {
+    position: relative;
+    border-radius: 12px;
+} */
+
+/* .map-inner-left .img-box-bottom{
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -64,16 +65,26 @@
     position: absolute;
     bottom: 0.5rem;
     right: 0.5rem;
-}
-.map-img-box .img-box-bottom .location {
+} */
+.map-inner-left .map-img-box .map-location-icon .location {
+    margin: 1rem;
     background: #fff;
     align-items: center;
     border-radius: 4px;
     border: 0.5px solid var(--text-sub2);
+    width: fit-content;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .map-pin{
     display: none;
+}
+
+.map1{
+    filter: grayscale(100%);
+    border-radius: 12px;
 }
 
 
@@ -197,50 +208,50 @@
 
 
 .map-card:first-of-type:after{
-    content: url(../ysl-images/map-card1.png);
+    content: url(../images/map-card1.png);
     /* border: 1px solid black; */
     overflow: hidden;
     border-radius: 12px;
 }
 
 .map-card:nth-child(2):after{
-    content: url(../ysl-images/map-card2.png);
+    content: url(../images/map-card2.png);
     display: none;
     overflow: hidden;
     border-radius: 12px;
 }
 .map-card:nth-child(3):after{
-    content: url(../ysl-images/map-card3.png);
+    content: url(../images/map-card3.png);
     display: none;
     overflow: hidden;
     border-radius: 12px;
 }
 .map-card:nth-child(4):after{
-    content: url(../ysl-images/map-card4.png);
+    content: url(../images/map-card4.png);
     display: none;
     overflow: hidden;
     border-radius: 12px;
 }
 .map-card:nth-child(5):after{
-    content: url(../ysl-images/map-card5.png);
+    content: url(../images/map-card5.png);
     display: none;
     overflow: hidden;
     border-radius: 12px;
 }
 .map-card:nth-child(6):after{
-    content: url(../ysl-images/map-card6.png);
+    content: url(../images/map-card6.png);
     display: none;
     overflow: hidden;
     border-radius: 12px;
 }
 .map-card:nth-child(7):after{
-    content: url(../ysl-images/map-card7.png);
+    content: url(../images/map-card7.png);
     display: none;
     overflow: hidden;
     border-radius: 12px;
 }
 .map-card:nth-child(8):after{
-    content: url(../ysl-images/map-card8.png);
+    content: url(../images/map-card8.png);
     display: none;
     overflow: hidden;
     border-radius: 12px;
