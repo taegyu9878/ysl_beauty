@@ -1,0 +1,247 @@
+:root {
+    --background-color: #f2f2f2;
+    --text-main1: #1d1d1d;
+    --text-main2: #ffffff;
+    --text-sub1: #d9d9d9;
+    --text-sub2: #959595;
+    --text-sub3: #686868;
+    --text-sub4: #4f4f4f;
+}
+
+.map-search-wrap{
+    max-width: 1920px;
+    padding: 135px 150px 100px 150px;
+    margin: 0 auto;
+    background-color: var(--background-color);
+    /* background-color: aqua; */
+}
+
+
+/* inner */
+.inner {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* background-color: rgba(255, 0, 0, 0.2); */
+}
+
+.map-inner-right{
+    height: 835px;
+    overflow: hidden;
+}
+
+.map-search-inner-top .filter{
+    display: flex;
+    gap: 10px;
+    line-height: 24px;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.map-search-inner-bottom{
+    display: flex;
+    gap: 30px;
+}
+
+
+/* inner-left */
+
+
+.map-inner-left .map-img-box {
+    position: relative;
+    /* border: 1px solid black; */
+    border-radius: 12px;
+}
+
+.map-inner-left .img-box-bottom{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+}
+.map-img-box .img-box-bottom .location {
+    background: #fff;
+    align-items: center;
+    border-radius: 4px;
+    border: 0.5px solid var(--text-sub2);
+}
+
+.map-pin{
+    display: none;
+}
+
+
+/* inner-right */
+
+
+.map-inner-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* height: 835px; */
+    overflow: hidden;
+}
+
+/* .select-wrap{
+    display: flex;
+    gap: 20px;
+} */
+
+.map-inner-right-top{
+    display: flex;
+    gap: 20px;
+    /* width: 640px; */
+    /* border: 1px solid black; */
+}
+.select{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    align-items: center;
+    width: 310px;
+}
+.select ul>li{
+    display: none;
+}
+
+.sel-inner-left{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+
+.sel-inner-left .light{
+    font-size: 1.3rem;
+    color: var(--text-sub2);
+    /* border: 1px solid black; */
+}
+
+.sel-inner-left .select-depth{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+
+/* inner-right-bottom */
+.map-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.map-card {
+    background: var(--text-main2);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.map-card-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.map-list-title {
+    color: var(--text-main1);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.map-list-dist {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text-sub2);
+}
+
+.map-card .map-list-exp {
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    color: var(--text-sub2);
+}
+
+.map-card .map-list-exp .open {
+    color: #558934;
+    margin-right: 0.5rem;
+}
+
+.map-card .map-list-exp .close {
+    color: #D73121;
+    margin-right: 0.5rem;
+}
+
+.map-card .map-tag-box {
+    display: flex;
+    gap: 10px;
+}
+
+.map-card .map-tag-box>span {
+    background-color: #F0F0F0;
+    padding: 1.5px 3px;
+    border-radius: 4px;
+    color: var(--text-sub2);
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+
+.map-card:first-of-type:after{
+    content: url(../ysl-images/map-card1.png);
+    /* border: 1px solid black; */
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.map-card:nth-child(2):after{
+    content: url(../ysl-images/map-card2.png);
+    display: none;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.map-card:nth-child(3):after{
+    content: url(../ysl-images/map-card3.png);
+    display: none;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.map-card:nth-child(4):after{
+    content: url(../ysl-images/map-card4.png);
+    display: none;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.map-card:nth-child(5):after{
+    content: url(../ysl-images/map-card5.png);
+    display: none;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.map-card:nth-child(6):after{
+    content: url(../ysl-images/map-card6.png);
+    display: none;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.map-card:nth-child(7):after{
+    content: url(../ysl-images/map-card7.png);
+    display: none;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.map-card:nth-child(8):after{
+    content: url(../ysl-images/map-card8.png);
+    display: none;
+    overflow: hidden;
+    border-radius: 12px;
+}
