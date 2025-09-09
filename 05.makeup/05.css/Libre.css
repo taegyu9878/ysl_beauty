@@ -1,0 +1,219 @@
+.libre-wrap .inner {
+    position: relative;
+    max-width: 1440px;
+    height: 700px;
+    display: flex;
+    position: relative;
+    /* justify-content: space-between; */
+    /* margin-top:0.8rem; */
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+
+.banner-left .flow1 img {
+    /* width:148; */
+    position: absolute;
+    /* background-position:-797px -210px; */
+    top: 21rem;
+    left: 55.7rem;
+    animation-name: infinity_flower1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* border:1px solid green; */
+}
+
+@keyframes infinity_flower1 {
+    0% {
+        top: 21rem;
+        left: 55.7rem;
+    }
+
+    50% {
+        bottom: 1rem;
+    }
+
+    100% {
+        top: 19rem;
+    }
+}
+
+.banner-left .flow2 img {
+    position: absolute;
+    top: 49.5rem;
+    left: 87rem;
+    animation-name: infinity_flower2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes infinity_flower2 {
+    0% {
+        top: 49.5rem;
+        left: 87rem;
+    }
+
+    50% {
+        bottom: 1rem;
+    }
+
+    100% {
+        top: 47.5rem;
+    }
+}
+
+.banner-left .flow3 img {
+    position: absolute;
+    top: 19rem;
+    left: 138.5rem;
+    animation-name: infinity_flower3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes infinity_flower3 {
+    0% {
+        top: 16rem;
+        left: 138.5rem;
+    }
+
+    50% {
+        bottom: 1rem;
+    }
+
+    100% {
+        top: 15rem;
+    }
+}
+.background-letter{
+    border:1px solid black;
+}
+
+
+.banner-left .background-letter .text1 img {
+    position: absolute;
+    top: 2.4rem;
+
+}
+
+.banner-left .background-letter .text2 img {
+    position: absolute;
+    top: 24.8rem;
+    left: 16.5rem;
+}
+
+.banner-left .background-letter .text3 img {
+    position: absolute;
+    top: 45.7rem;
+    left: -9rem;
+}
+
+.banner-left .text3::after {
+    position: absolute;
+    display: block;
+    content:"";
+    top: 60rem;
+    left: -9rem;
+    width: 70rem;
+    height: 10rem;
+    background-color: #fff;
+    z-index: 100;
+    /* border:1px solid black; */
+}
+
+.banner-left .item img {
+    position: absolute;
+    width:40rem;
+    height:63.5rem;
+    top: -1rem;
+    left: 12rem;
+    animation-name: infinity_item;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes infinity_item {
+    0% {
+        top: -1rem;
+        left: 12rem;
+    }
+
+    /* 50%{
+        top: */
+
+
+    100% {
+        top: 3rem;
+    }
+}
+
+
+
+
+.banner-right {
+    position: absolute;
+    z-index: 100;
+    /* border: 1px solid blue; */
+    height: 24.3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+
+/* .banner-right .banner-text {
+    
+    gap: 9px;
+} */
+.banner-right .banner-text h2 {
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: #000;
+
+}
+
+.banner-right .banner-text .fir {
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000;
+
+}
+
+.banner-right>.banner-text>.secon {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #959595;
+    margin-top: 0.9rem;
+
+}
+
+.banner-right .more-btn a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem 3rem;
+    width: 21rem;
+    height: 6rem;
+    border: 1px solid #cbb699;
+    border-radius: 3rem;
+    color: #cbb699;
+    margin-top: 3.5rem;
+    font-size: 2rem;
+    font-weight:600;
+}
+
+.banner-right .more-btn:hover a {
+    background: #cbb699;
+    /* background-repeat:no-repeat; */
+    color: #fff;
+    transition: 0.3s;
+}
+
+.banner-right .more-btn:hover img {
+    content: url(../images/arrow-right-thin.svg);
+}
