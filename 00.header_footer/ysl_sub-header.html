@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/ysl_sub_map.css">
     <link rel="stylesheet" href="./00. css/header2_bk.css">
+    <!-- 밑에 링크 헤더 화이트 버전임 -->
+    <!-- <link rel="stylesheet" href="./00. css/header2_wh.css"> -->
     
 </head>
 <body>
 <header>
       <div class="inner">
             <div class="header-left">
-                <h1><a href="#void"><img src="./images/ysl_logo_long.svg" alt="logo"></a></h1>
+                <h1><a href="#void"><img src="../images/ysl_logo_long.svg" alt="logo"></a></h1>
                 <div class="main-tab">
                     <ul class="main-menu">
                         <li><a href="#void">PROMOTION</a></li>
@@ -110,90 +112,20 @@
                         <li class="hidden"><a href="#void">EN</a></li>
                         <li class="hidden"><a href="#void">JP</a></li>
                     </ul>
-                    <p><img src="./images/Polygon.png" alt="list-icon"></p>
+                    <p><img src="../images/Polygon.png" alt="list-icon"></p>
                 </div>
                 <ul class="gnb-menu">
-                    <li class="mo-ham"><a href="#void"><img src="./images/ham_wh.svg" alt="ham"></a></li>
-                    <li class="mo-logo"><a href="#void"><img src="./images/ysl_logo_long_white.svg" alt="ysl_logo"></a>
+                    <li class="mo-ham"><a href="#void"><img src="../images/ham_wh.svg" alt="ham"></a></li>
+                    <li class="mo-logo"><a href="#void"><img src="../images/ysl_logo_long_white.svg" alt="ysl_logo"></a>
                     </li>
-                    <li class="mo-hidden"><a href="#void"><img src="./images/map-icon.png" alt="map"></a></li>
-                    <li class="mo-hidden"><a href="#void"><img src="./images/User-icon.png" alt="user"></a></li>
-                    <li class="mo-hidden"><a href="#void"><img src="./images/search-icon.png" alt="search"></a></li>
-                    <li><a href="#void"><img src="./images/bag-icon.png" alt="bag"></a></li>
+                    <li class="mo-hidden"><a href="#void"><img src="../images/map-icon.png" alt="map"></a></li>
+                    <li class="mo-hidden"><a href="#void"><img src="../images/User-icon.png" alt="user"></a></li>
+                    <li class="mo-hidden"><a href="#void"><img src="../images/search-icon.png" alt="search"></a></li>
+                    <li><a href="#void"><img src="../images/bag-icon.png" alt="bag"></a></li>
                 </ul>
             </div>
         </div>
 </header>
 
-
-
-<div class="map1" id="map" style="width:950px;height:800px;"></div>
-
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bd55ad2586302fe6236ae413be79dc19"></script>
-<script>
-var mapContainer = document.getElementById('map'), // 지도를 표시할 div  
-    mapOption = { 
-        center: new kakao.maps.LatLng(37.528450,127.040128), // 지도의 중심좌표
-        level: 7 // 지도의 확대 레벨
-    };
-
-var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
- 
-// 마커를 표시할 위치와 title 객체 배열입니다 
-var positions = [
-    {
-        title: '신세계백화점 강남점', 
-        latlng: new kakao.maps.LatLng(37.505278, 127.004320)
-    },
-    {
-        title: '현대백화점 압구정본점', 
-        latlng: new kakao.maps.LatLng(37.527363, 127.027479)
-    },
-    {
-        title: '갤러리아백화점 명품관 WEST', 
-        latlng: new kakao.maps.LatLng(37.528450, 127.040128)
-    },
-    {
-        title: '현대백화점 무역센터점',
-        latlng: new kakao.maps.LatLng(37.508538, 127.059972)
-    },
-    {
-        title: '롯데백화점 잠실점', 
-        latlng: new kakao.maps.LatLng( 37.511916, 127.098522)
-    },
-    {
-        title: '롯데면세점 월드타워점', 
-        latlng: new kakao.maps.LatLng(37.513650, 127.104072)
-    },
-    {
-        title: '신세계백화점 본점', 
-        latlng: new kakao.maps.LatLng(37.560254, 126.980810)
-    },
-    {
-        title: '롯데백화점 본점',
-        latlng: new kakao.maps.LatLng(37.564804, 126.981759)
-    }
-];
-
-// 마커 이미지의 이미지 주소입니다
-var imageSrc = './images/pin.png'; 
-    
-for (var i = 0; i < positions.length; i ++) {
-    
-    // 마커 이미지의 이미지 크기 입니다
-    var imageSize = new kakao.maps.Size(37, 46); 
-    
-    // 마커 이미지를 생성합니다    
-    var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize); 
-    
-    // 마커를 생성합니다
-    var marker = new kakao.maps.Marker({
-        map: map, // 마커를 표시할 지도
-        position: positions[i].latlng, // 마커를 표시할 위치
-        title : positions[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
-        image : markerImage // 마커 이미지 
-    });
-}
-</script>
 </body>
 </html>

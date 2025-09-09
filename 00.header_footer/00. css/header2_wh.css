@@ -27,6 +27,7 @@ header h1 {
 }
 
 header .header-left img {
+    filter: invert(1);
     width: 18rem;
 }
 
@@ -35,7 +36,7 @@ header .header-left img {
     display: flex;
     flex-direction: column;
     padding: 1.8rem 3rem;
-    color: var(--text-main1);
+    color: var(--text-main2);
     font-size: 1.6rem;
 }
 
@@ -92,7 +93,7 @@ header .header-left img {
 
 .language {
     display: flex;
-    color: var(--text-main1);
+    color: var(--text-main2);
     font-size: 1.6rem;
     align-items: center;
     gap: 6px;
@@ -100,7 +101,6 @@ header .header-left img {
 }
 
 .language img {
-    filter: invert(1);
     width: 0.9rem;
 }
 
@@ -113,11 +113,6 @@ header .header-left img {
     display: flex;
     gap: 1rem;
     align-items: center;
-}
-
-.gnb-menu img {
-    /* 아이콘 검은색 반전 */
-    filter: invert(1);
 }
 
 .gnb-menu .mo-ham,
