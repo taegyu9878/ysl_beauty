@@ -1,11 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="./css/ysl-sub-order-form.css">
+    <script defer src="./js/ysl-sub-order-form.js"></script>
 </head>
+
 <body>
-    
+    <header>
+
+    </header>
+
+
+    <main>
+        <section class="cart-order-wrap">
+            <div class="inner">
+                <div class="order-inner-header">
+                    <h2 class="main-title">주문서</h2>
+                </div>
+
+                <div class="order-inner-bottom">
+                    <div class="order-inner-left">
+                        <div class="cart-order-list-wrap">
+                            <div class="cart-address-wrap">
+
+                                <div class="cart-address-header">
+                                    <div class="cart-address-header-left">
+                                        <h3 class="cart-add-name">홍길동</h3>
+                                        <span>기본 배송지</span>
+                                    </div>
+                                    <div class="cart-address-header-right">
+                                        <a href="#"><span>배송지 변경</span></a>
+                                    </div>
+                                </div>
+
+                                <div class="cart-address-info">
+                                    <div class="user-del-address">
+                                        <address>서울시 고양이구 냥냥동 야옹대로 29길 110, 406동 708호</address>
+                                    </div>
+                                    <div class="user-del-tel">
+                                        <p>010-1234-5678</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cart-order-request-wrap">
+                                <div class="cart-order-request-title">
+                                    <p>요청사항</p>
+                                </div>
+                                <div class="cart-order-request">
+                                    <div class="cart-order-request-select">
+                                        <a href="#" class="select-text-box">
+                                            <p>직접 입력하기</p>
+                                        </a>
+                                        <a href="#" class="select-img-box">
+                                            <img src="./images/ysl-cart-down-arrow.svg" alt="배송 요청사항 더보기">
+                                        </a>
+                                    </div>
+                                    <div class="cart-order-request-text-box">
+                                        <a href="#" class="request-text">
+                                            <span>최대 50자까지 입력 가능합니다.</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order-item-list-wrap">
+                                <div class="order-item-list-title">
+                                    <p>주문상품 3개</p>
+                                </div>
+
+                                <div class="order-item-list">
+                                    <div class="order-item-content">
+                                        <div class="order-item-img-box">
+                                            <a href="#"><img src="./images/ysl-cart-item1.png" alt="장바구니 상품 이미지"></a>
+                                        </div>
+                                        <div class="order-item-exp-wrap">
+                                            <div class="order-item-exp">
+                                                <div class="order-item-title">
+                                                    <a href="#">러브샤인 워터샤인
+                                                        립스틱</a>
+                                                </div>
+                                                <div class="order-item-op">
+                                                    <a href="#">202 피치글로우 /
+                                                        1개</a>
+                                                </div>
+                                            </div>
+                                            <div class="order-item-price-wrap">
+                                                <div class="order-item-discount">
+                                                    <p>60,000원</p>
+                                                </div>
+                                                <div class="order-item-price">
+                                                    <p>58,000원</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="order-item-content">
+                                        <div class="order-item-img-box">
+                                            <a href="#"><img src="./images/ysl-cart-item2.png" alt="장바구니 상품 이미지"></a>
+                                        </div>
+                                        <div class="order-item-exp-wrap">
+                                            <div class="order-item-exp">
+                                                <div class="order-item-title">
+                                                    <a href="#">엉크르 드 뽀 쿠션 </a>
+                                                </div>
+                                                <div class="order-item-op">
+                                                    <a href="#">20 /
+                                                        1개</a>
+                                                </div>
+                                            </div>
+                                            <div class="order-item-price-wrap">
+                                                <div class="order-item-discount hide">
+                                                    <p>60,000원</p>
+                                                </div>
+                                                <div class="order-item-price">
+                                                    <p>112,000원</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="order-item-content">
+                                        <div class="order-item-img-box">
+                                            <a href="#"><img src="./images/ysl-cart-item3.png" alt="장바구니 상품 이미지"></a>
+                                        </div>
+                                        <div class="order-item-exp-wrap">
+                                            <div class="order-item-exp">
+                                                <div class="order-item-title">
+                                                    <a href="#">리브르 오 드 파르펭</a>
+                                                </div>
+                                                <div class="order-item-op">
+                                                    <a href="#">50ml /
+                                                        1개</a>
+                                                </div>
+                                            </div>
+                                            <div class="order-item-price-wrap">
+                                                <div class="order-item-discount hide">
+                                                    <p>60,000원</p>
+                                                </div>
+                                                <div class="order-item-price">
+                                                    <p>198,000원</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="reward-wrap">
+                                <div class="reward-title">
+                                    <p>보유 리워드 사용</p>
+                                </div>
+                                <div class="reward-select-list">
+                                    <div class="reward-text-box">
+                                        <a href="#">
+                                            최소 1000포인트 이상 보유 시 사용 가능
+                                        </a>
+                                    </div>
+                                    <div class="reward-select-btn">
+                                        <a href="#">
+                                            사용취소
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="reward-select-exp">
+                                    <span>적용 한도(10%) 36,800포인트 / 보유 2,000포인트</span>
+                                </div>
+                            </div>
+
+                            <div class="cart-coupon-wrap">
+                                <div class="cart-coupon-title">
+                                    <p>쿠폰 적용</p>
+                                </div>
+                                <div class="cart-coupon-btn">
+                                    <a href="#">
+                                        <span>쿠폰 적용</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="payment-method-wrap">
+                                <!-- <fieldset> -->
+                                <div class="payment-method-title">
+                                    <p>결제수단</p>
+                                </div>
+                                <div class="payment-method-list">
+                                    <div class="payment-method">
+                                        <label for="method-creditCard" class="payment-radioInner">
+                                            <div class="payment-methodTypeInfo">
+                                                <input type="radio" name="pay-method" class="creditCard">
+                                                <label for="method-creditCard" class="pay-textBox">
+                                                    <span class="pay-methodText">신용/체크카드</span>
+                                                </label>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="payment-method">
+                                        <label for="method-toss" class="payment-radioInner">
+                                            <div class="payment-methodTypeInfo">
+                                                <input type="radio" name="pay-method" class="tossPay">
+                                                <label for="method-toss" class="pay-textBox">
+                                                    <div class="pay-methodLogo">
+                                                        <img src="./images/ysl-cart-tosspay.png" alt="토스페이아이콘">
+                                                    </div>
+                                                    <span class="pay-methodText">토스페이</span>
+                                                </label>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="payment-method">
+                                        <label for="method-kakao" class="payment-radioInner">
+                                            <div class="payment-methodTypeInfo">
+                                                <input type="radio" name="pay-method" class="kakapPay">
+                                                <label for="method-kakao" class="pay-textBox">
+                                                    <div class="pay-methodLogo">
+                                                        <img src="./images/ysl-cart-kakaopay.png" alt="카카오페이아이콘">
+                                                    </div>
+                                                    <span class="pay-methodText">카카오페이</span>
+                                                </label>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="payment-method">
+                                        <label for="method-naver" class="payment-radioInner">
+                                            <div class="payment-methodTypeInfo">
+                                                <input type="radio" name="pay-method" class="naverPay">
+                                                <label for="method-naver" class="pay-textBox">
+                                                    <div class="pay-methodLogo">
+                                                        <img src="./images/ysl-cart-naverpay.png" alt="네이버페이아이콘">
+                                                    </div>
+                                                    <span class="pay-methodText">네이버페이</span>
+                                                </label>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                </fieldset>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="order-inner-right">
+                        <div class="cart-payment">
+                            <div class="cart-payment-header">
+                                <p class="cart-payment-header-title">구매
+                                    금액</p>
+                            </div>
+                            <div class="cart-payment-list">
+                                <div class="cart-payment-list-top">
+                                    <div class="cart-payment-item">
+                                        <span class="cart-payment-item-label">
+                                            상품 금액
+                                        </span>
+                                        <span class="cart-payment-item-price">
+                                            368,000원
+                                        </span>
+                                    </div>
+                                    <div class="cart-payment-item">
+                                        <span class="cart-payment-item-label">
+                                            할인 금액
+                                        </span>
+                                        <span class="cart-payment-item-sale">
+                                            2,000원
+                                        </span>
+                                    </div>
+                                    <div class="cart-payment-item">
+                                        <span class="cart-payment-item-label">
+                                            배송비
+                                        </span>
+                                        <span class="cart-payment-item-delivery">
+                                            무료배송
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="cart-payment-list-bottom">
+                                    <div class="cart-payment-item">
+                                        <span class="cart-payment-item-total">
+                                            총 구매 금액
+                                        </span>
+                                        <span class="cart-payment-item-total-price">
+                                            368,000원
+                                        </span>
+                                    </div>
+                                    <div class="cart-payment-item">
+                                        <span class="cart-payment-item-label">
+                                            적립 예정 리워드
+                                        </span>
+                                        <span class="cart-payment-item-member">
+                                            3,680포인트
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-pay-btn">
+                            <a href="#">
+                                <p>구매하기</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="dim-is-active">
+            <div class="coupon-popup-is-active">
+                <div class="coupon-popup-contents">
+                    <h2 class="hide">쿠폰팝업</h2>
+                    <div class="coupon-popup-header">
+                        <p class="coupon-popup-header-title">쿠폰 사용</p>
+                        <a href="#"><img class="popup-close-btn" src="./images/ysl-icon-cart-close.svg" alt="닫기버튼"></a>
+                    </div>
+
+                    <div class="coupon-list">
+                        <div class="coupon-item">
+                            <div class="coupon-item-top">
+                                <div class="coupon-item-title">
+                                    <input type="radio" name="item-select">
+                                    <div class="coupon-text-box">
+                                        <a href="#"><p class="coupon-title-text">3,000원 할인</p></a>
+                                        <a href="#"><span>취소</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coupon-item-bottom">
+                                <p class="coupon-item-des">
+                                    입생로랑 뷰티 클럽 정기 회원 전용 쿠폰 [REGULAR]
+                                </p>
+                                <span class="coupon-item-expired-date">
+                                    2025년 8월 31일까지
+                                </span>
+                            </div>
+                        </div>
+                        <div class="coupon-item">
+                            <div class="coupon-item-top">
+                                <div class="coupon-item-title">
+                                    <input type="radio" name="item-select">
+                                    <div class="coupon-text-box">
+                                        <a href="#"><p class="coupon-title-text">5,000원 할인</p></a>
+                                        <a href="#"><span>취소</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coupon-item-bottom">
+                                <p class="coupon-item-des">
+                                    입생로랑 뷰티 클럽 정기 회원 전용 쿠폰 [LOVE]
+                                </p>
+                                <span class="coupon-item-expired-date">
+                                    2025년 8월 31일까지
+                                </span>
+                            </div>
+                        </div>
+                        <div class="coupon-item">
+                            <div class="coupon-item-top">
+                                <div class="coupon-item-title">
+                                    <input type="radio" name="item-select">
+                                    <div class="coupon-text-box">
+                                        <a href="#"><p class="coupon-title-text">10,000원 할인</p></a>
+                                        <a href="#"><span>취소</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coupon-item-bottom">
+                                <p class="coupon-item-des">
+                                    입생로랑 뷰티 클럽 정기 회원 전용 쿠폰 [GOLD]
+                                </p>
+                                <span class="coupon-item-expired-date">
+                                    2025년 8월 31일까지
+                                </span>
+                            </div>
+                        </div>
+                        <div class="coupon-item">
+                            <div class="coupon-item-top">
+                                <div class="coupon-item-title">
+                                    <input type="radio" name="item-select">
+                                    <div class="coupon-text-box">
+                                        <a href="#"><p class="coupon-title-text">17,000원 할인</p></a>
+                                        <a href="#"><span>취소</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coupon-item-bottom">
+                                <p class="coupon-item-des">
+                                    입생로랑 뷰티 클럽 정기 회원 전용 쿠폰 [BLACK]
+                                </p>
+                                <span class="coupon-item-expired-date">
+                                    2025년 8월 31일까지
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coupon-popup-btn">
+                        <p class="coupon-apply-btn"><a href="#">쿠폰 적용</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+
+    </footer>
 </body>
+
 </html>
