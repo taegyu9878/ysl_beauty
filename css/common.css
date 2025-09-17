@@ -23,6 +23,7 @@ em,i,address{font-style: normal;}
 html{
     font-family: Pretendard,"돋움",sans-serif;
     font-size: 10px;
+    font-weight: 300;
 
 }
 /* 변수 선언 */

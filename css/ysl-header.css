@@ -63,45 +63,23 @@ header img {
     display: flex;
     gap: 4.8rem;
 }
-
-.main-tab .tab1 {
-    display: none;
-    gap: 7rem;
-    padding: 20px 0;
-    margin-top: 30px;
-}
-
 /* 프로모션 제외 탭 다 숨기기 (자바스크립트 필요) */
-.main-tab .tab2 {
+.main-tab .tab-content{
     display: none;
     gap: 7rem;
     padding: 20px 0;
     margin-top: 30px;
 }
 
-.main-tab .tab3 {
-    display: none;
-    gap: 7rem;
-    padding: 20px 0;
-    margin-top: 30px;
-}
-
-.main-tab .tab4 {
-    display: none;
-    gap: 7rem;
-    padding: 20px 0;
-    margin-top: 30px;
-}
-
-.main-tab .tab5 {
-    display: none;
-    gap: 7rem;
-    padding: 20px 0;
-    margin-top: 30px;
+.main-tab .tab-content.active {
+    display: flex;
 }
 
 .main-tab>div>ul {
     width: 150px;
+}
+.main-tab>div>ul>li{
+    line-height: 35px;
 }
 
 /* header right */

@@ -16,7 +16,9 @@
     <link rel="stylesheet" href="./css/lookbook.css">
     <link rel="stylesheet" href="./css/ysl_footer.css">
     <link rel="stylesheet" href="./css/respond.css">
+    <link rel="stylesheet" href="./css/search.css">
     <link rel="icon" type="image/png" href="./images/ysl_favicon.png">
+    <script defer src="./js/nav.js"></script>
 
 </head>
 
@@ -27,13 +29,13 @@
                 <h1><a href="#void"><img src="./images/ysl_logo_wh.png" alt="logo"></a></h1>
                 <div class="main-tab">
                     <ul class="main-menu">
-                        <li><a href="#void">PROMOTION</a></li>
-                        <li><a href="#void">FRAGRANCE</a></li>
-                        <li><a href="void">MAKE UP</a></li>
-                        <li><a href="#void">BEAUTY CLUB</a></li>
-                        <li><a href="#void">SKINCARE</a></li>
+                        <li data-tab="tab1"><a href="#void">PROMOTION</a></li>
+                        <li data-tab="tab2"><a href="#void">FRAGRANCE</a></li>
+                        <li data-tab="tab3"><a href="#void">MAKE UP</a></li>
+                        <li data-tab="tab4"><a href="#void">BEAUTY CLUB</a></li>
+                        <li data-tab="tab5"><a href="#void">SKINCARE</a></li>
                     </ul>
-                    <div class="tab1">
+                    <div class="tab-content tab1">
                         <ul class="depth1">
                             <li><a href="#void"><strong>선물세트</strong></a></li>
                             <li><a href="#void">메이크업 세트</a></li>
@@ -50,22 +52,22 @@
                             <li><a href="#void">전자 상품권</a></li>
                         </ul>
                     </div>
-                    <div class="tab2">
+                    <div class="tab-content tab2">
                         <ul class="depth2">
                             <li><a href="#void"><strong>여성향수</strong></a></li>
                             <li><a href="#void">리브르</a></li>
                             <li><a href="#void">몽 파리</a></li>
                         </ul>
                         <ul class="depth2">
-                            <li><a href="#void">남성향수</a></li>
+                            <li><a href="#void"><strong>남성향수</strong></a></li>
                             <li><a href="#void">와이</a></li>
                             <li><a href="#void">라 뉘 드 롬므</a></li>
                             <li><a href="#void">마이셀프</a></li>
                         </ul>
                     </div>
-                    <div class="tab3">
+                    <div class=" tab-content tab3">
                         <ul class="depth3">
-                            <li><a href="#void">페이스</a></li>
+                            <li><a href="#void"><strong>페이스</strong></a></li>
                             <li><a href="#void">쿠션</a></li>
                             <li><a href="#void">파운데이션</a></li>
                             <li><a href="#void">컨실러</a></li>
@@ -73,26 +75,26 @@
                             <li><a href="#void">블러쉬/브론저</a></li>
                         </ul>
                         <ul class="depth3">
-                            <li><a href="#void">립</a></li>
+                            <li><a href="#void"><strong></strong>립</a></li>
                             <li><a href="#void">립스틱</a></li>
                             <li><a href="#void">립틴트</a></li>
                             <li><a href="#void">립글로스</a></li>
                             <li><a href="#void">스마트 틴트 디바이스</a></li>
                         </ul>
                         <ul class="depth3">
-                            <li><a href="#void">아이</a></li>
+                            <li><a href="#void"><strong>아이</strong></a></li>
                             <li><a href="#void">마스카라</a></li>
                             <li><a href="#void">아이 팔레트</a></li>
                             <li><a href="#void">아이라이너</a></li>
                         </ul>
                         <ul class="depth3">
-                            <li><a href="#void">악세서리</a></li>
+                            <li><a href="#void"><strong>악세서리</strong></a></li>
                             <li><a href="#void">브러쉬/어플리케이터</a></li>
                         </ul>
                     </div>
-                    <div class="tab4">
+                    <div class="tab-content tab4">
                         <ul class="depth4">
-                            <li><a href="#void">제품 유형별</a></li>
+                            <li><a href="#void"><strong>제품 유형별</strong></a></li>
                             <li><a href="#void">클렌저/토너</a></li>
                             <li><a href="#void">세럼</a></li>
                             <li><a href="#void">에멀전/크림</a></li>
@@ -100,15 +102,15 @@
                             <li><a href="#void">메이크업 세팅 스프레이</a></li>
                         </ul>
                         <ul class="depth4">
-                            <li><a href="#void">제품 라인별</a></li>
+                            <li><a href="#void"><strong>제품 라인별</strong></a></li>
                             <li><a href="#void">퓨어샷</a></li>
                             <li><a href="#void">탑 시크릿</a></li>
                             <li><a href="#void">오 후즈</a></li>
                         </ul>
                     </div>
-                    <div class="tab5">
+                    <div class="tab-content tab5">
                         <ul class="depth5">
-                            <li><a href="#void">입생로랑 뷰티클럽</a></li>
+                            <li><a href="#void"><strong>입생로랑 뷰티클럽</strong></a></li>
                             <li><a href="#void">등급별 혜택</a></li>
                         </ul>
                     </div>
@@ -129,13 +131,36 @@
                     </li>
                     <li class="mo-hidden"><a href="#void"><img src="./images/map-icon.png" alt="map"></a></li>
                     <li class="mo-hidden"><a href="#void"><img src="./images/User-icon.png" alt="user"></a></li>
-                    <li class="mo-hidden"><a href="#void"><img src="./images/search-icon.png" alt="search"></a></li>
+                    <li class="mo-hidden"><a href="#void" id="search-icon"><img src="./images/search-icon.png" alt="search"></a></li>
                     <li><a href="#void"><img src="./images/bag-icon.png" alt="bag"></a></li>
                 </ul>
             </div>
         </div>
     </header>
-
+    <div class="search-wrap" id="search-wrap">
+        <div class="search-inner">
+            <h2>Find Your Beauty</h2>
+            <p class="close-btn" id="close-btn"><a href="#"><img src="./images/close-icon.png" alt="close button"></a></p>
+            <div class="search">
+                <div class="search-box">
+                    <p><a href="#">검색어를 입력해주세요</a></p>
+                    <p><a href="#"><img src="./images/search-icon_grey.png" alt="search-icon"></a></p>
+                </div>
+                <div class="search-word">
+                    <div class="word-box">
+                        <p>최근 검색어</p>
+                        <p><a href="#">전체삭제</a></p>
+                    </div>
+                    <div class="word-history">
+                        <p><a href="#">남자향수</a></p>
+                        <p><a href="#">리브르</a></p>
+                        <p><a href="#">립스틱</a></p>
+                        <p><a href="#">핑크 쿠션</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <main>
         <section class="video-wrap">
             <h2>video</h2>

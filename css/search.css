@@ -1,0 +1,100 @@
+.search-wrap {
+    display: none;
+    /* 자바로 연결할것*/
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    z-index: 2000;
+}
+
+.search-wrap.active {
+    display: block;
+}
+
+.search-inner {
+    width: 80rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    color: var(--text-main2);
+    position: relative;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.search-wrap h2 {
+    text-align: center;
+    color: var(--text-main2);
+    font-size: 3.6rem;
+    font-weight: 600;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    padding: 2rem 3.5rem;
+    border-radius: 5rem;
+    border: 1.5px solid rgba(255, 255, 255, 0.9);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.60) 0%, rgba(255, 255, 255, 0.48) 100%);
+    box-shadow: 0 1rem 3rem 0.5rem rgba(0, 0, 0, 0.1);
+
+    p {
+        color: var(--text-sub4);
+        font-size: 2rem;
+    }
+
+    img {
+        width: 24px;
+    }
+}
+
+.search-word {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.search-word .word-history {
+    display: flex;
+    gap: 1rem;
+}
+
+.word-history>p {
+    padding: 0.8rem 1.5rem;
+    border-radius: 3rem;
+    border: 1px solid #eee;
+}
+
+.word-box {
+    display: flex;
+    justify-content: space-between;
+    width: 75rem;
+}
+
+.word-box>p:last-child {
+    opacity: 0.9;
+}
+
+.search-inner .close-btn {
+    position: absolute;
+    right: -9rem;
+    top: -7rem;
+
+    img {
+        width: 2.4rem;
+    }
+}

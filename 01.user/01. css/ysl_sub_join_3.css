@@ -1,0 +1,152 @@
+.join-us-end {
+    background: url(../01.images/background.png) no-repeat center center;
+    background-size: cover;
+    width: 100vw;
+    height: 1000px;
+}
+
+.join-us-end .inner {
+    width: 1000px;
+    height: 700px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 12px;
+    position: relative;
+    top: 170px;
+    overflow: hidden;
+}
+
+.join-us-end .left {
+    width: 500px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding: 17rem 0 0 0;
+    position: absolute;
+    animation: leftAni 1s forwards;
+}
+
+@keyframes leftAni {
+    from {
+        left: -500px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+.join-us-end h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--text-main1);
+    text-align: center;
+}
+
+.join-us-end .letter-icon {
+    display: inline-block;
+    width: 161px;
+    height: 153px;
+    position: relative;
+}
+
+.join-us-end .icon1 img {
+    width: 170px;
+    position: absolute;
+    display: flex;
+    bottom: 0;
+}
+
+.join-us-end .icon2 {
+    width: 150px;
+    height: 130px;
+    /* background: pink; */
+    position: relative;
+    overflow: hidden;
+}
+
+.join-us-end .icon2 img {
+    width: 127px;
+    display: flex;
+    opacity: 0.95;
+    position: absolute;
+    left: 18px;
+    animation: letterAni 2s forwards;
+}
+
+@keyframes letterAni {
+    from {
+        bottom: -70px;
+    }
+
+    to {
+        bottom: -10px;
+    }
+}
+
+.join-us-end .icon3 img {
+    width: 157px;
+    position: absolute;
+    display: flex;
+    bottom: 12px;
+    left: 3px;
+}
+
+.join-us-end .letter {
+
+    text-align: center;
+
+    .middle-title {
+        font-size: 1.6rem;
+        margin-top: 2.5rem;
+    }
+
+    .sub-title {
+        font-size: 1.3rem;
+        color: #383838;
+        margin-top: 1rem;
+    }
+}
+
+.join-us-end .left>p {
+    width: 33rem;
+    height: 4.4rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-main2);
+    background: var(--text-sub3);
+    border-radius: 0.8rem;
+}
+
+.join-us-end .right {
+    width: 500px;
+    height: 700px;
+    background: #000000;
+    border-radius: 12px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    animation: logobgAni 1s forwards;
+
+}
+
+@keyframes logobgAni {
+    from {
+        right: -500px;
+    }
+
+    to {
+        right: 0px;
+    }
+}
+
+.join-us-end .right img {
+    width: 48px;
+    height: 100px;
+    margin: auto auto;
+}
