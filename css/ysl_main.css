@@ -57,8 +57,8 @@ section .white2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
+    width: 8rem;
+    height: 8rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 40px;
     backdrop-filter: blur(12px);
@@ -77,7 +77,7 @@ section .white2 {
 }
 
 .video-btn img {
-    width: 30px;
+    width: 3rem;
 }
 
 .video-wrap .radius {

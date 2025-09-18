@@ -1,24 +1,95 @@
 //header
+//hamger 연결하기
+const hamburger = document.querySelector(".mo-ham");
+const mainTab = document.querySelector(".main-tab");
+const overlay = document.querySelector(".header-left");
+
+hamburger.addEventListener("click", () => {
+  const isOpen = mainTab.classList.toggle("open");
+  
+  if (isOpen) {
+    overlay.style.display = "block";
+  } else {
+    overlay.style.display = "none";
+  }
+});
+
+// 오버레이 클릭하면 닫히게 하기
+overlay.addEventListener("click", (e) => {
+  // overlay 자신(검은 배경)을 클릭했을 때만 닫기
+  if (e.target === overlay) {
+    closeMenu();
+  }
+});
+
+
 //main-tab 각 버튼으로 열기
 const menus = document.querySelectorAll(".main-menu li");
-const tabs = document.querySelectorAll(".main-tab div");
+const tabs = document.querySelectorAll(".tab-content");
 
-menus.forEach(menu => {
-    menu.addEventListener("mouseenter", () => {
-        // 모든 탭 숨김
-        tabs.forEach(tab => tab.classList.remove("active"));
+function hideAllTabs() {
+  tabs.forEach(tab => tab.classList.remove("active"));
+}
 
-        // 현재 메뉴의 data-tab 읽어서 해당 탭만 보이기
+function moveTab(menu, tab) {
+  menu.insertAdjacentElement("afterend", tab);
+}
+
+function resetTabs() {
+  tabs.forEach(tab => {
+    mainTab.appendChild(tab); // 원래 자리로 복귀
+    tab.classList.remove("active");
+  });
+}
+
+function applyEvents() {
+  // 이벤트 초기화
+  menus.forEach(menu => {
+    menu.onclick = null;
+    menu.onmouseenter = null;
+  });
+
+  if (window.matchMedia("(max-width: 1400px)").matches) {
+    // 📱 태블릿: 클릭 토글
+    menus.forEach(menu => {
+      menu.onclick = (e) => {
+        e.preventDefault();
         let targetClass = menu.getAttribute("data-tab");
-        document.querySelector(`.tab-content.${targetClass}`).classList.add("active");
+        let tab = document.querySelector(`.tab-content.${targetClass}`);
+        if (!tab) return;
+
+        if (tab.classList.contains("active")) {
+          tab.classList.remove("active");
+        } else {
+          hideAllTabs();
+          tab.classList.add("active");
+          moveTab(menu, tab);
+        }
+      };
     });
-    //탭에서 벗어나면 원래 상태로 돌리기
-    tabs.forEach(tab => {
-        tab.addEventListener("mouseleave", () => {
-            tab.classList.remove("active");
-        });
+  } else {
+    // PC: hover
+    resetTabs(); // 탭 원래 위치로 되돌림
+    menus.forEach(menu => {
+      menu.onmouseenter = () => {
+        hideAllTabs();
+        let targetClass = menu.getAttribute("data-tab");
+        let tab = document.querySelector(`.tab-content.${targetClass}`);
+        if (tab) tab.classList.add("active");
+      };
     });
-});
+    // PC에서 탭과 메뉴 둘 다 벗어나면 닫힘
+    mainTab.onmouseleave = () => {
+      hideAllTabs();
+    };
+  }
+}
+
+// 초기 실행
+applyEvents();
+
+// 창 크기 변경 시 실행
+window.addEventListener("resize", applyEvents);
 
 
 //검색창 열고 닫기
