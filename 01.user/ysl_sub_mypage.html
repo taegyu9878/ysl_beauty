@@ -1,11 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="EN">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MY PAGE</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="./css/ysl_sub_mypage.css">
 </head>
+
 <body>
-    
+  <section class="mypage-wrap">
+    <div class="inner">
+      <div class="mp-grid">
+        <!-- 왼쪽 -->
+        <aside class="mp-aside">
+          <h2 class="main-title">MY PAGE</h2>
+          <nav aria-label="마이페이지 메뉴">
+            <ul class="mp-menu">
+              <li><a href="#">YSL BEAUTY CLUB</a></li>
+              <li><a href="#">자주 묻는 질문</a></li>
+
+              <li class="mp-sec">주문내역 조회</li>
+              <li><a href="#">주문/배송 조회</a></li>
+              <li><a href="#">취소/교환/반품 조회</a></li>
+              <li><a href="#">재주문하기</a></li>
+              <li><a href="#">구매후기</a></li>
+
+              <li class="mp-sec">회원정보</li>
+              <li><a href="#">회원정보 수정</a></li>
+              <li><a href="#">SNS 계정관리</a></li>
+            </ul>
+          </nav>
+        </aside>
+
+        <!-- 메인 -->
+        <main class="mp-main">
+          <div class="sub-title-right">
+            <p>홍길동님, 안녕하세요!</p>
+          </div>
+
+          <!-- 상단 프로필 -->
+          <section class="mp-card mp-profile">
+            <div class="logo-wrap"><img class="mp-logo" src="./images/logo.svg" alt="브랜드 로고"></div>
+            <div class="mp-rank">
+              <p><span class="label">현재 등급 :</span> <span class="grade">REGULAR</span></p>
+              <p>보유 포인트 : <b>2,000</b></p>
+              <p>다음 등급까지 <b>1,000</b> 포인트 남았습니다.</p>
+            </div>
+            <div class="mp-metric">
+              <div class="name">위시리스트</div>
+              <div class="val">4</div>
+            </div>
+            <div class="mp-metric">
+              <div class="name">쿠폰</div>
+              <div class="val">2</div>
+            </div>
+          </section>
+
+          <!-- 주문/배송 & 반품/교환/취소 1:1 -->
+          <div class="mp-row">
+            <h3 class="mp-heading">주문 / 배송 조회</h3>
+            <h3 class="mp-heading">반품/교환/취소</h3>
+
+            <!-- 좌측: 주문/배송 -->
+            <section class="mp-card">
+              <div class="mp-flow">
+                <div class="mp-step">
+                  <div class="num">1</div>
+                  <div class="name">주문접수</div>
+                </div>
+                <div class="mp-chevron">></div>
+                <div class="mp-step">
+                  <div class="num">0</div>
+                  <div class="name">결제완료</div>
+                </div>
+                <div class="mp-chevron">></div>
+                <div class="mp-step">
+                  <div class="num">0</div>
+                  <div class="name">배송준비중</div>
+                </div>
+                <div class="mp-chevron">></div>
+                <div class="mp-step">
+                  <div class="num">0</div>
+                  <div class="name">배송중</div>
+                </div>
+                <div class="mp-chevron">></div>
+                <div class="mp-step">
+                  <div class="num">3</div>
+                  <div class="name">배송완료</div>
+                </div>
+              </div>
+            </section>
+
+            <!-- 우측: 반품/교환/취소 -->
+            <section class="mp-card">
+              <div class="mp-flow" style="grid-template-columns: 1fr auto 1fr;">
+                <div class="mp-step">
+                  <div class="num">0</div>
+                  <div class="name">취소/반품</div>
+                </div>
+                <div class="mp-chevron"></div>
+                <div class="mp-step">
+                  <div class="num">0</div>
+                  <div class="name">교환</div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- 이미지 영역 -->
+          <section class="mp-media">
+            <img src="./images/mypage-beauty-club.png" alt="ysl-beauty-club">
+          </section>
+        </main>
+      </div>
+    </div>
+  </section>
 </body>
+
 </html>
