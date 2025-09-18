@@ -1,0 +1,53 @@
+html{
+    min-width: 500px;
+}
+
+ body, button, input, select, textarea { font: inherit; } 
+:root{
+  /* weights */
+    --w-regular: 400;
+    --w-medium:  500;
+    --w-semibold:600;
+
+  /* sizes (rem: 1rem = 10px) */
+    --fs-13: 1.3rem;  /* 13px */
+    --fs-16: 1.6rem;  /* 16px */
+    --fs-20: 2.0rem;  /* 20px */
+    --fs-24: 2.4rem;  /* 24px */
+    --fs-32: 3.2rem;  /* 32px */
+    --fs-36: 3.6rem;  /* 36px */
+
+  /* line-height / letter-spacing */
+    --lh-140: 1.4;        /* 140% */
+    --track--025: -0.025em; /* -2.5% */
+}
+
+/* === 13pt === */
+.Regular_13pt  { font-weight:var(--w-regular);  font-size:var(--fs-13); line-height:var(--lh-140); letter-spacing:var(--track--025); }
+.Medium_13pt   { font-weight:var(--w-medium);   font-size:var(--fs-13); line-height:var(--lh-140); letter-spacing:var(--track--025); }
+.Semibold_13pt { font-weight:var(--w-semibold); font-size:var(--fs-13); line-height:var(--lh-140); letter-spacing:var(--track--025); }
+
+/* === 16pt === */
+.Regular_16pt  { font-weight:var(--w-regular);  font-size:var(--fs-16); line-height:var(--lh-140); letter-spacing:var(--track--025); }
+.Medium_16pt   { font-weight:var(--w-medium);   font-size:var(--fs-16); line-height:var(--lh-140); letter-spacing:var(--track--025); }
+.Semibold_16pt { font-weight:var(--w-semibold); font-size:var(--fs-16); line-height:var(--lh-140); letter-spacing:var(--track--025); }
+
+/* === 20pt === */
+.Regular_20pt  { font-weight:var(--w-regular);  font-size:var(--fs-20); line-height:var(--lh-140); letter-spacing:var(--track--025); }
+.Medium_20pt   { font-weight:var(--w-medium);   font-size:var(--fs-20); line-height:var(--lh-140); letter-spacing:var(--track--025); }
+.Semibold_20pt { font-weight:var(--w-semibold); font-size:var(--fs-20); line-height:var(--lh-140); letter-spacing:var(--track--025); }
+
+/* === 24pt === */
+.Regular_24pt  { font-weight:var(--w-regular);  font-size:var(--fs-24); line-height:var(--lh-140); letter-spacing:var(--track--025); }
+.Medium_24pt   { font-weight:var(--w-medium);   font-size:var(--fs-24); line-height:var(--lh-140); letter-spacing:var(--track--025); }
+.Semibold_24pt { font-weight:var(--w-semibold); font-size:var(--fs-24); line-height:var(--lh-140); letter-spacing:var(--track--025); }
+
+/* === 32pt === */
+.Regular_32pt  { font-weight:var(--w-regular);  font-size:var(--fs-32); line-height:var(--lh-140); letter-spacing:var(--track--025); }
+.Medium_32pt   { font-weight:var(--w-medium);   font-size:var(--fs-32); line-height:var(--lh-140); letter-spacing:var(--track--025); }
+.Semibold_32pt { font-weight:var(--w-semibold); font-size:var(--fs-32); line-height:var(--lh-140); letter-spacing:var(--track--025); }
+
+/* === 36pt === */
+.Regular_36pt  { font-weight:var(--w-regular);  font-size:var(--fs-36); line-height:var(--lh-140); letter-spacing:var(--track--025); }
+.Medium_36pt   { font-weight:var(--w-medium);   font-size:var(--fs-36); line-height:var(--lh-140); letter-spacing:var(--track--025); }
+.Semibold_36pt { font-weight:var(--w-semibold); font-size:var(--fs-36); line-height:var(--lh-140); letter-spacing:var(--track--025); }
