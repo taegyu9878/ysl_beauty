@@ -3,27 +3,30 @@ header {
     position: fixed;
     width: 100%;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(15px);
 }
 
 header .inner {
     display: flex;
     max-width: 1620px;
-    height: 58px;
+    height: auto;
     justify-content: space-between;
     margin: 0 auto;
+    align-items: flex-start;
     /* background: rgba(0, 0, 0, 0.2); */
 }
 
 .header-left {
     display: flex;
     gap: 1rem;
+    min-height: 58px;
 }
 
 header h1 {
     display: flex;
-    align-items: center;
+    padding-top: 15px;
+    /* align-items: center; */
 }
 
 header .header-left img {
@@ -38,6 +41,7 @@ header .header-left img {
     padding: 1.8rem 3rem;
     color: var(--text-main2);
     font-size: 1.6rem;
+    margin-top: 2px;
 }
 
 .main-tab .main-menu {
@@ -45,50 +49,33 @@ header .header-left img {
     gap: 4.8rem;
 }
 
-.main-tab .tab1 {
+.main-tab .tab {
     display: none;
     gap: 7rem;
-    padding: 20px 0;
-    margin-top: 30px;
+    padding: 20px 0 10px 0;
+    margin-top: 21px;
+    width: 100%;
 }
 
-/* 프로모션 제외 탭 다 숨기기 (자바스크립트 필요) */
-.main-tab .tab2 {
-    display: none;
-    gap: 7rem;
-    padding: 20px 0;
-    margin-top: 30px;
-}
-
-.main-tab .tab3 {
-    display: none;
-    gap: 7rem;
-    padding: 20px 0;
-    margin-top: 30px;
-}
-
-.main-tab .tab4 {
-    display: none;
-    gap: 7rem;
-    padding: 20px 0;
-    margin-top: 30px;
-}
-
-.main-tab .tab5 {
-    display: none;
-    gap: 7rem;
-    padding: 20px 0;
-    margin-top: 30px;
+.main-tab .tab.active {
+    display: flex;
 }
 
 .main-tab>div>ul {
     width: 150px;
 }
 
+.main-tab .tab a {
+    line-height: 2;
+    /* background: palegreen; */
+}
+
 /* header right */
 .header-right {
     display: flex;
     gap: 3rem;
+    /* background: pink; */
+    padding-top: 18px;
 }
 
 .language {
@@ -123,6 +110,7 @@ header .header-left img {
 .gnb-menu img {
     width: 24px;
 }
+
 /* 반응형 헤더 */
 @media screen and (max-width:1400px) {
     html {

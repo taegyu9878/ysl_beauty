@@ -1,4 +1,3 @@
-//header
 //hamger 연결하기
 const hamburger = document.querySelector(".mo-ham");
 const mainTab = document.querySelector(".main-tab");
@@ -16,12 +15,11 @@ hamburger.addEventListener("click", () => {
 
 // 오버레이 클릭하면 닫히게 하기
 overlay.addEventListener("click", (e) => {
-  // overlay 자신(검은 배경)을 클릭했을 때만 닫기
   if (e.target === overlay) {
-    closeMenu();
+    mainTab.classList.remove("open");
+    overlay.style.display = "none";
   }
 });
-
 
 //main-tab 각 버튼으로 열기
 const menus = document.querySelectorAll(".main-menu li");
@@ -107,4 +105,9 @@ searchIcon.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
     searchBox.classList.remove("active");
 });
+
+
+
+
+
 
