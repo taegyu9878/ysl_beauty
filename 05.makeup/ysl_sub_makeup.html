@@ -6,20 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./05.css/common.css">
-    <link rel="stylesheet" href="./05.css/main_page-banner.css">
+    <link rel="stylesheet" href="./05.css/sub_makeup-banner.css">
     <link rel="stylesheet" href="./05.css/makeup-tap.css">
     <link rel="stylesheet" href="./05.css/item.css">
     <link rel="stylesheet" href="./05.css/ysl-item-list.css">
+    <script defer src="./05.Javascript/sub_makerup_banner.js"></script>
 </head>
 
 <body>
-    <section class="banner">
-        <div class="banner-imgs">
-            <a class="banner1" href="#"><img src="./05.images/banner1.png" alt="banner1"></a>
-            <a class="banner2" href="#"><img src="./05.images/banner2.png" alt="banner2"></a>
-            <a class="banner3" href="#"><img src="./05.images/banner3.png" alt="banner3"></a>
+    <div class="page-wrapper">
+        <div class="slider-container">
+            <div class="slides">
+                <div class="slide" style="background:url(./05.images/banner1.png)"><h2></h2></div>
+                <div class="slide" style="background:url(./05.images/banner2.png)"><h2></h2></div>
+                <div class="slide" style="background:url(./05.images/banner3.png)"><h2></h2></div>
+            </div>
+
+            <div class="slider-nav">
+                <span class="slide-counter-current">1</span>
+                <div class="slider-bar-container">
+                    <div class="slider-bar"></div>
+                </div>
+                <span class="slide-counter-total">3</span>
+            </div>
         </div>
-    </section>
+    </div>
     <section class="makeup-tap">
         <div class="inner">
             <h2>Makeup</h2>
@@ -721,7 +732,7 @@
                             <a href="#void">
                                 <p class="img "><img src="./05.images/뚜쉬_에끌라_글로우-팩트_쿠션.png" alt="item"></p>
                             </a>
-                            <P class="limited">LIMITED</P>
+                            <!-- <P class="limited">LIMITED</P> -->
                             <div class="color1"></div>
                             <div class="color2"></div>
                             <div class="color3"></div>
