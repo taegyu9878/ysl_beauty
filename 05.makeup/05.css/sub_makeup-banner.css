@@ -1,0 +1,66 @@
+:root {
+    --peek-width: 220px;
+    --gap: 30px;
+}
+
+.page-wrapper {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.slider-container {
+    width: 100%;
+    margin: 50px 0;
+    overflow: hidden;
+    position: relative;
+}
+.slides {
+    display: flex;
+    position: relative;
+    gap: var(--gap);
+    padding: 0 calc(var(--peek-width) + var(--gap));
+}
+.slide {
+    height: 400px; /* <<< 여기 높이를 250px에서 400px로 수정했습니다. */
+    width: calc(100vw - (var(--peek-width) * 2) - (var(--gap) * 2));
+    flex-shrink: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.slider-nav {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+.slide-counter-current,
+.slide-counter-total {
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+}
+.slider-bar-container {
+    width: 60px;
+    margin: 0 4px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+.slider-bar {
+    width: 0;
+    height: 100%;
+    background-color: white;
+    transition: width 0.3s ease;
+}
