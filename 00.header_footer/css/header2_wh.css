@@ -20,12 +20,12 @@ header .inner {
 .header-left {
     display: flex;
     gap: 1rem;
-    min-height: 58px;
+    min-height: 70px;
 }
 
 header h1 {
     display: flex;
-    padding-top: 15px;
+    padding-top: 18px;
     /* align-items: center; */
 }
 
@@ -41,7 +41,7 @@ header .header-left img {
     padding: 1.8rem 3rem;
     color: var(--text-main2);
     font-size: 1.6rem;
-    margin-top: 2px;
+    margin-top: 6px;
 }
 
 .main-tab .main-menu {
@@ -74,28 +74,41 @@ header .header-left img {
 .header-right {
     display: flex;
     gap: 3rem;
-    /* background: pink; */
-    padding-top: 18px;
+    /* background: pink;  */
+    padding-top: 23px;
+    align-items: flex-start;
 }
 
 .language {
     display: flex;
     color: var(--text-main2);
     font-size: 1.6rem;
-    align-items: center;
+    align-items: flex-start;
     gap: 6px;
-    margin-left: 1rem;
+    width: 36px;
+    justify-content: space-between;
 }
 
 .language img {
     width: 0.9rem;
 }
 
-/* EN / JP 숨기기 */
-.la-list .hidden {
+.la-list li {
     display: none;
 }
 
+.la-list>li>a {
+    padding: 2px 0 15px 0 ;
+    display: block;
+}
+
+.la-list li.active {
+    display: block;
+}
+
+.language.open .la-list li {
+  display: block;
+}
 .gnb-menu {
     display: flex;
     gap: 1rem;

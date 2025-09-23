@@ -20,4 +20,55 @@ fetch("../00.header_footer/sub-header.html")
             searchBox.classList.remove("active");
         });
 
+
+        // 메인메뉴 탭
+        let tabTitles = document.querySelectorAll(".main-menu>li");
+        let tabContents = document.querySelectorAll(".tab");
+        let menuWrapper = document.querySelector(".main-tab");
+
+        tabTitles.forEach((tab, id) => {
+            console.log(tabTitles);
+            tab.addEventListener("mouseenter", () => {
+                tabTitles.forEach((t, i) => {
+                    t.classList.remove("active");
+                    tabContents[i].classList.remove("active");
+                })
+                tab.classList.add("active");
+                tabContents[id].classList.add("active");
+            })
+        })
+        menuWrapper.addEventListener("mouseleave", () => {
+            tabTitles.forEach((t, i) => {
+                t.classList.remove("active");
+                tabContents[i].classList.remove("active");
+            });
+        });
+
+        //언어선택 탭
+        const language = document.querySelector(".language");
+        const langList = document.querySelector(".la-list");
+        const langItems = document.querySelectorAll(".la-list li");
+
+        // hover 열기 / 닫기
+        language.addEventListener("mouseenter", () => {
+            language.classList.add("open");
+        });
+        language.addEventListener("mouseleave", () => {
+            language.classList.remove("open");
+        });
+
+        // 언어 선택
+        langItems.forEach(li => {
+            li.addEventListener("click", () => {
+                // active 초기화
+                langItems.forEach(item => item.classList.remove("active"));
+                li.classList.add("active");
+
+                // 클릭된 언어를 맨 위로 이동
+                langList.prepend(li);
+
+                // 즉시 닫기
+                language.classList.remove("open");
+            });
+        });
     })

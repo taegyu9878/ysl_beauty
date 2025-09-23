@@ -20,7 +20,16 @@
     <link rel="icon" type="image/png" href="./images/ysl_favicon.png">
     <script defer src="./js/nav.js"></script>
     <script defer src="./js/main.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    window.onload = function () {
+        let swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      freeMode: true,
+    });
+    }
 
+</script>
 </head>
 
 <body>
@@ -120,9 +129,9 @@
             <div class="header-right">
                 <div class="language">
                     <ul class="la-list">
-                        <li><a href="#void">KR</a></li>
-                        <li class="hidden"><a href="#void">EN</a></li>
-                        <li class="hidden"><a href="#void">JP</a></li>
+                        <li class="active"><a href="#void">KR</a></li>
+                        <li><a href="#void">EN</a></li>
+                        <li><a href="#void">JP</a></li>
                     </ul>
                     <p><img src="./images/Polygon.png" alt="list-icon"></p>
                 </div>
@@ -492,13 +501,13 @@
             </div>
         </section>
         <section class="lookbook-wrap">
-            <div class="inner">
+            <div class="inner swiper mySwiper">
                 <div class="banner-text">
                     <h2 class="main-title">LOOK BOOK</h2>
                     <p class="sub-title">YSL이 담아낸 순간과 스타일, 당신의 영감이 되는 페이지</p>
                 </div>
-                <div class="item-imgs">
-                    <div class="item1">
+                <div class="item-imgs swiper-wrapper">
+                    <div class="item1 swiper-slide">
                         <a href="#"><img src="./images/1.png" alt=""></a>
                         <div class="text-buble1">
                             <p class="hashtag1">#꾸뛰르 미니 클러치 #200</p>
@@ -506,7 +515,7 @@
                             <p class="hashtag3">#엉크르 드 뽀 쿠션</p>
                         </div>
                     </div>
-                    <div class="item2">
+                    <div class="item2 swiper-slide">
                         <a href="#"><img src="./images/2.png" alt=""></a>
                         <div class="text-buble2">
                             <p class="hashtag1">#꾸뛰르 미니 클러치 #500</p>
@@ -514,31 +523,31 @@
                             <p class="hashtag3">#루쥬 쀠르 꾸뛰르 #P3</p>
                         </div>
                     </div>
-                    <div class="item3">
+                    <div class="item3 swiper-slide">
                         <a href="#"><img src="./images/3.png" alt=""></a>
                         <div class="text-buble3">
                             <p class="hashtag1">#뚜쉬 에끌라 글로우</p>
                         </div>
                     </div>
-                    <div class="item4">
+                    <div class="item4 swiper-slide">
                         <a href="#"><img src="./images/4.png" alt=""></a>
                         <div class="text-buble4">
                             <p class="hashtag1">#리브르 오 드 뚜왈렛</p>
                         </div>
                     </div>
-                    <div class="item5">
+                    <div class="item5 swiper-slide">
                         <a href="#"><img src="./images/5.png" alt=""></a>
                         <div class="text-buble5">
                             <p class="hashtag1">#와이 르 퍼퓸</p>
                         </div>
                     </div>
-                    <div class="item6">
+                    <div class="item6 swiper-slide">
                         <a href="#"><img src="./images/6.png" alt=""></a>
                         <div class="text-buble6">
                             <p class="hashtag1">#더 볼드 립스틱 #10</p>
                         </div>
                     </div>
-                    <div class="item7">
+                    <div class="item7 swiper-slide">
                         <a href="#"><img src="./images/7.png" alt=""></a>
                         <div class="text-buble7">
                             <p class="hashtag1">#꾸뛰르 팔레트 #2</p>
@@ -546,7 +555,7 @@
                             <p class="hashtag3">#잉크 쿠션</p>
                         </div>
                     </div>
-                    <div class="item8">
+                    <div class="item8 swiper-slide">
                         <a href="#"><img src="./images/8.png" alt=""></a>
                         <div class="text-buble8">
                             <p class="hashtag1">#꾸뛰르 팔레트 #14</p>
@@ -558,8 +567,8 @@
         </section>
     </main>
 
-    <footer> 
-         <div class="inner">
+    <footer>
+        <div class="inner">
             <div class="footer-top">
                 <div class="footer-left">
                     <ul class="sitemap">
@@ -596,9 +605,12 @@
                 <div class="footer-right">
                     <p><img src="./images/ysl_logo_long_white.svg" alt="logo_long"></p>
                     <ul class="sns-list">
-                        <li><a href=".https://www.instagram.com/yslbeauty" target="_blank" ><img src="./images/instagram-icon.png" alt="insta"></a></li>
-                        <li><a href="https://www.youtube.com/user/yslparfums" target="_blank" ><img src="./images/twitter-icon.png" alt="twitter"></a></li>
-                        <li><a href="https://x.com/yslbeauty" target="_blank" ><img src="./images/youtube-icon.png" alt="youtube"></a></li>
+                        <li><a href=".https://www.instagram.com/yslbeauty" target="_blank"><img
+                                    src="./images/instagram-icon.png" alt="insta"></a></li>
+                        <li><a href="https://www.youtube.com/user/yslparfums" target="_blank"><img
+                                    src="./images/twitter-icon.png" alt="twitter"></a></li>
+                        <li><a href="https://x.com/yslbeauty" target="_blank"><img src="./images/youtube-icon.png"
+                                    alt="youtube"></a></li>
                     </ul>
                 </div>
             </div>
