@@ -53,6 +53,7 @@ footer .depth1>li {
 .footer-right .sns-list {
     display: flex;
     gap: 3rem;
+    align-items: center;
 }
 
 /* footer-bottom */

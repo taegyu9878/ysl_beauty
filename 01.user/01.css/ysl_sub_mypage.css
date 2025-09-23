@@ -1,4 +1,5 @@
  :root {
+     /* --stage-max: 1920px; */
      --content-max: 1620px;
      --aside-w: 240px;
      --gap-x: 40px;
@@ -10,21 +11,23 @@
      --card-bg: #fff;
  }
 
- body {
-     background: var(--background-color);
- }
-
+ /* 스테이지: 1920 이내 고정 */
  .mypage-wrap {
+     /* width: min(100%, var(--stage-max)); */
+     margin: 0 auto;
      background: var(--background-color);
-     margin-top: 88px;
+     /* min-height: 100dvh; */
+     padding-bottom: 100px;
  }
 
-
+ /* 내부: 1620 고정 */
  .inner {
      width: min(100%, var(--content-max));
      margin: 40px auto 0;
+
  }
 
+ /* 240 + 40 + 1340 */
  .mp-grid {
      display: grid;
      grid-template-columns: var(--aside-w) var(--main-w);
@@ -32,7 +35,7 @@
      align-items: start;
  }
 
- /* 사이드 */
+ /* ===== 사이드 ===== */
  .mp-aside {
      position: sticky;
      top: 24px;
@@ -71,17 +74,11 @@
      text-decoration: underline;
  }
 
- /* 메인 */
+ /* ===== 메인 ===== */
  .mp-main {
      display: flex;
      flex-direction: column;
      row-gap: 20px;
- }
-
- .my-Infor {
-     display: flex;
-     flex-direction: column;
-     gap: 20px;
  }
 
  .sub-title-right {
@@ -91,19 +88,29 @@
      font-weight: 500;
      line-height: 140%;
      letter-spacing: -0.5px;
-     padding: 0 12px;
  }
 
+ /* .text-main1 {
+     color: var(--text-main1);
+ } */
 
- /* 상단 프로필 */
+ .mp-card {
+     /* background: var(--card-bg);
+     border: 1px solid var(--card-stroke);
+     border-radius: var(--radius); */
+     padding: 24px;
+     border-radius: 12px;
+     border: 1px solid var(--Text-Sub1, #D9D9D9);
+     background: var(--Text-Main2, #FFF);
+ }
+
+ /* 상단 프로필 카드 */
  .mp-profile {
      display: grid;
      grid-template-columns: auto 1fr 1fr 1fr;
+     /* 로고 / 설명 / 메트릭 / 메트릭 */
      align-items: center;
-     padding: 58px 0;
-     border: 1px solid var(--Text-Sub1, #D9D9D9);
-     background: var(--Text-Main2, #FFF);
-     border-radius: 12px;
+     gap: 15px;
  }
 
  .logo-wrap {
@@ -117,42 +124,30 @@
  .mp-logo {
      width: 45px;
      height: 94px;
- }
-
- .mp-rank {
-     display: flex;
-     width: 360px;
-     height: 120px;
-     flex-direction: column;
-     justify-content: center;
-     gap: 10px;
+     flex-shrink: 0;
  }
 
  .mp-rank p {
-     color: var(--text-main1);
-     font-size: 2rem;
-     font-weight: 400;
-     line-height: 140%;
-     letter-spacing: -0.5px;
+     color: var(--text-sub4);
+ }
+
+ .mp-rank .label {
+     color: var(--text-sub3);
  }
 
  .mp-rank .grade {
      color: #B08F6C;
+     font-weight: 800;
  }
 
  .mp-metric {
-     border-left: 1px solid var(--text-sub1);
-     display: flex;
-     width: 360px;
-     height: 120px;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     gap: 15px;
-     color: var(--text-main1);
+     text-align: center;
+     padding: 10px 8px;
+     border-left: 1px solid var(--divider);
  }
 
  .mp-metric .name {
+     color: var(--text-sub3);
      font-weight: 400;
      font-size: 2rem;
  }
@@ -160,55 +155,32 @@
  .mp-metric .val {
      font-weight: 400;
      font-size: 3.6rem;
+     line-height: 1;
  }
 
+ /* 32pt 느낌 */
 
-
- /* 주문/배송 & 반품/교환/취소 */
+ /* 섹션 타이틀(카드 밖) + 1:1 레이아웃 */
  .mp-row {
      display: grid;
      grid-template-columns: 1fr 1fr;
-     column-gap: 20px;
-     row-gap: 10px;
+     column-gap: 40px;
+     row-gap: 12px;
  }
 
  .mp-heading {
-     color: var(--text-main1);
-     font-size: 2rem;
-     font-weight: 500;
+     color: var(--text-sub4);
+     padding-bottom: 12px;
+     border-bottom: 1px solid var(--divider);
  }
 
-
- .mp-card-l {
-     width: 940px;
-     height: 180px;
-     border-radius: 12px;
-     border: 1px solid var(--Text-Sub1, #D9D9D9);
-     background: var(--Text-Main2, #FFF);
-     display: flex;
-     padding: 49px 108px;
-     flex-direction: column;
- }
-
-
- .mp-card-r {
-     width: 380px;
-     height: 180px;
-     padding: 24px;
-     border-radius: 12px;
-     border: 1px solid var(--Text-Sub1, #D9D9D9);
-     background: var(--Text-Main2, #FFF);
-     display: flex;
-     padding: 49px 80px;
-     flex-direction: column;
- }
-
+ /* 주문/배송 단계 + '>' 구분자 */
  .mp-flow {
      display: grid;
      grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr auto 1fr;
+     /* step > step > ... */
      align-items: center;
-     column-gap: 10px;
-     gap: 30px;
+     column-gap: 12px;
  }
 
  .mp-step {
@@ -219,19 +191,13 @@
      flex-direction: column;
      align-items: center;
      justify-content: center;
-     column-gap: 10px;
  }
 
  .mp-step .num {
+     font-weight: 400;
+     font-size: 3.6rem;
+     line-height: 1;
      color: var(--text-main1);
-     font-weight: 400;
-     font-size: 3.6rem;
- }
-
- .mp-step .g-num {
-     color: var(--text-sub2);
-     font-weight: 400;
-     font-size: 3.6rem;
  }
 
  .mp-step .name {
@@ -240,21 +206,19 @@
      font-weight: 400;
  }
 
- .mp-step .g-name {
-     color: var(--text-sub2);
-     margin-top: 1.6rem;
-     font-weight: 400;
- }
-
  .mp-chevron {
      color: var(--text-sub1);
+     user-select: none;
  }
 
- /* 이미지 */
+ /* 큰 이미지 자리 */
  .mp-media img {
+     border-radius: var(--radius);
+     border: 1px solid #CFCFCF;
      border-radius: 12px;
      max-width: 100%;
-     margin-bottom: 100px;
+     max-height: 100%;
+     object-fit: contain;
  }
 
 
@@ -262,185 +226,20 @@
 
 
 
- 
-
-
- /* 1280px 이하 */
- @media screen and (max-width:1280px) {
-     .mp-grid {
-         grid-template-columns: 200px 1fr;
-         column-gap: 24px;
+ /* ===== 1620 미만 반응형 ===== */
+ @media (max-width: 1620px) {
+     .inner {
+         padding: 0 20px;
      }
 
-     .mp-card-l {
-         width: 100%;
-         padding: 40px 60px;
-     }
-
-     .mp-card-r {
-         width: 100%;
-         padding: 40px 40px;
-     }
-
-     .logo-wrap {
-         flex: 0 0 140px;
-     }
-
-     .mp-rank {
-         flex: 1 1 220px;
-     }
-
-     .mp-metric {
-         flex: 0 0 160px;
-         height: 90px;
-     }
-
- }
-
-
-
- /* 1128px 이하 */
- @media screen and (max-width:1128px) {
      .mp-grid {
          grid-template-columns: 1fr;
-         row-gap: 40px;
+         column-gap: 0;
      }
 
      .mp-aside {
-         position: relative;
-         top: 0;
-         padding-left: 12px;
-     }
-
-     .mp-main {
-         width: 100%;
-     }
-
-     .mp-profile {
-         display: flex;
-         align-items: center;
-         justify-content: space-between;
-         gap: 20px;
-         padding-inline: 24px;
-         box-sizing: border-box;
-         width: 100%;
-     }
-
-     .logo-wrap {
-         flex: 0 0 120px;
-         width: 120px;
-         height: auto;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-     }
-
-     .mp-rank {
-         flex: 1 1 260px;
-         min-width: 0;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         gap: 6px;
-     }
-
-     .mp-metric {
-         flex: 0 0 140px;
-         min-width: 100px;
-         height: 90px;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         border-left: 1px solid var(--text-sub1);
-     }
-
-     .mp-rank p {
-         white-space: nowrap;
-         overflow: hidden;
-         text-overflow: ellipsis;
-     }
- }
-
-
-
-
-
- /* 920px 이하 */
- @media screen and (max-width:920px) {
-     .mp-profile {
-         grid-template-columns: 1fr 1fr;
-         grid-template-rows: auto auto;
-         gap: 20px;
-     }
-
-     .logo-wrap {
-         flex: 0 0 100px;
-     }
-
-     .mp-rank {
-         flex: 1 1 160px;
-         font-size: 1.6rem;
-     }
-
-     .mp-metric {
-         flex: 0 0 120px;
-         height: 70px;
-     }
-
-     .mp-metric .val {
-         font-size: 2.4rem;
-     }
-
-     .mp-profile {
-         grid-template-columns: repeat(2, 1fr);
-     }
-
-     .mp-flow {
-         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-         row-gap: 20px;
-     }
-
-     .mp-card-l,
-     .mp-card-r {
-         height: auto;
-         padding: 20px;
-     }
- }
-
- /* 768px 이하 */
- @media screen and (max-width:768px) {
-     .inner {
-         margin: 20px auto;
-         padding: 0 16px;
-     }
-
-     .main-title {
-         font-size: 2rem;
+         position: static;
          margin-bottom: 20px;
-     }
-
-     .sub-title-right {
-         font-size: 1.6rem;
-         text-align: center;
-     }
-
-     .mp-heading {
-         font-size: 1.8rem;
-         text-align: center;
-     }
-
-     .mp-menu {
-         flex-direction: row;
-         flex-wrap: wrap;
-         gap: 12px;
-         font-size: 1.4rem;
-     }
-
-     .mp-sec {
-         width: 100%;
-         margin-top: 20px;
-         font-size: 1.4rem;
      }
 
      .mp-row {
@@ -448,77 +247,16 @@
      }
 
      .mp-profile {
-         gap: 10px;
-         padding: 20px;
-     }
-
-     .logo-wrap {
-         flex: 0 0 80px;
-     }
-
-     .mp-rank {
-         flex: 1 1 140px;
-         font-size: 1.4rem;
-     }
-
-     .mp-metric {
-         flex: 0 0 100px;
-         height: 60px;
-     }
-
-     .mp-metric .val {
-         font-size: 2rem;
-     }
-
- }
-
-
-
-
-
-
-
-
- /* 640px 이하 */
- @media screen and (max-width:640px) {
-     .mp-profile {
-         gap: 8px;
-         padding: 16px;
-     }
-
-     .logo-wrap {
-         flex: 0 0 60px;
-     }
-
-     .mp-rank {
-         flex: 1 1 120px;
-         font-size: 1.2rem;
-     }
-
-     .mp-metric {
-         flex: 0 0 80px;
-         height: 50px;
-     }
-
-     .mp-metric .val {
-         font-size: 1.8rem;
+         grid-template-columns: auto 1fr auto auto;
+         row-gap: 12px;
      }
 
      .mp-flow {
-         grid-template-columns: repeat(2, 1fr);
-         gap: 10px;
+         grid-template-columns: 1fr auto 1fr;
+         row-gap: 12px;
      }
 
-     .mp-step {
-         height: 60px;
-     }
-
-     .mp-step .num,
-     .mp-step .g-num {
-         font-size: 2.4rem;
-     }
-
-     .mp-media img {
-         margin-bottom: 40px;
-     }
+     /* .mp-media {
+         height: 420px;
+     } */
  }

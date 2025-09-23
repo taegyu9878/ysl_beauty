@@ -15,11 +15,21 @@
     <link rel="stylesheet" href="./css/fragrance.css">
     <link rel="stylesheet" href="./css/lookbook.css">
     <link rel="stylesheet" href="./css/ysl_footer.css">
-    <link rel="stylesheet" href="./css/respond.css">
     <link rel="stylesheet" href="./css/search.css">
+    <link rel="stylesheet" href="./css/respond.css">
     <link rel="icon" type="image/png" href="./images/ysl_favicon.png">
     <script defer src="./js/nav.js"></script>
+    <script defer src="./js/main.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    window.onload = function () {
+        let swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      freeMode: true,
+    });
+    }
 
+</script>
 </head>
 
 <body>
@@ -119,9 +129,9 @@
             <div class="header-right">
                 <div class="language">
                     <ul class="la-list">
-                        <li><a href="#void">KR</a></li>
-                        <li class="hidden"><a href="#void">EN</a></li>
-                        <li class="hidden"><a href="#void">JP</a></li>
+                        <li class="active"><a href="#void">KR</a></li>
+                        <li><a href="#void">EN</a></li>
+                        <li><a href="#void">JP</a></li>
                     </ul>
                     <p><img src="./images/Polygon.png" alt="list-icon"></p>
                 </div>
@@ -131,7 +141,8 @@
                     </li>
                     <li class="mo-hidden"><a href="#void"><img src="./images/map-icon.png" alt="map"></a></li>
                     <li class="mo-hidden"><a href="#void"><img src="./images/User-icon.png" alt="user"></a></li>
-                    <li class="mo-hidden"><a href="#void" id="search-icon"><img src="./images/search-icon.png" alt="search"></a></li>
+                    <li class="mo-hidden"><a href="#void" id="search-icon"><img src="./images/search-icon.png"
+                                alt="search"></a></li>
                     <li><a href="#void"><img src="./images/bag-icon.png" alt="bag"></a></li>
                 </ul>
             </div>
@@ -140,7 +151,8 @@
     <div class="search-wrap" id="search-wrap">
         <div class="search-inner">
             <h2>Find Your Beauty</h2>
-            <p class="close-btn" id="close-btn"><a href="#"><img src="./images/close-icon.png" alt="close button"></a></p>
+            <p class="close-btn" id="close-btn"><a href="#"><img src="./images/close-icon.png" alt="close button"></a>
+            </p>
             <div class="search">
                 <div class="search-box">
                     <p><a href="#">검색어를 입력해주세요</a></p>
@@ -254,123 +266,125 @@
                         <a href="#" class="arrow-right"><img src="./images/arrow-right.svg" alt="탭 화살표"></a>
                     </div>
                 </div>
-                <div class="fra-inner-right">
-                    <div class="fragrance active">
-                        <h2 class="blind">1</h2>
-                        <div class="fra-sec-left">
-                            <div class="fra-img-box">
-                                <img src="./images/ysl-fragrance1.png" alt="향수1">
+                <div class="fra-carousel">
+                    <div class="fra-inner-right">
+                        <div class="fragrance active">
+                            <h2 class="blind">1</h2>
+                            <div class="fra-sec-left">
+                                <div class="fra-img-box">
+                                    <img src="./images/ysl-fragrance1.png" alt="향수1">
+                                </div>
                             </div>
-                        </div>
-                        <div class="fra-sec-right">
-                            <div class="fra-text-box">
-                                <p class="fra-title">LIBRE<br>FLOWERS & FLAMES</p>
-                                <p class="fra-explication">리브르 플라워 & 플레임</p>
-                            </div>
-                            <div class="int-box">
-                                <p class="int-text">Intensity</p>
-                                <div class="int-img">
-                                    <img src="./images/ysl-intensity-bar2.svg" alt="강도2">
+                            <div class="fra-sec-right">
+                                <div class="fra-text-box">
+                                    <p class="fra-title">LIBRE<br>FLOWERS & FLAMES</p>
+                                    <p class="fra-explication">리브르 플라워 & 플레임</p>
+                                </div>
+                                <div class="int-box">
+                                    <p class="int-text">Intensity</p>
+                                    <div class="int-img">
+                                        <img src="./images/ysl-intensity-bar2.svg" alt="강도2">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="fragrance">
-                        <h2 class="blind">2</h2>
-                        <div class="fra-sec-left">
-                            <div class="fra-img-box">
-                                <img src="./images/ysl-fragrance2.png" alt="향수2">
+                        <div class="fragrance">
+                            <h2 class="blind">2</h2>
+                            <div class="fra-sec-left">
+                                <div class="fra-img-box">
+                                    <img src="./images/ysl-fragrance2.png" alt="향수2">
+                                </div>
                             </div>
-                        </div>
-                        <div class="fra-sec-right">
-                            <div class="fra-text-box">
-                                <p class="fra-title">LIBRE<br>EAU DE PARFUM</p>
-                                <p class="fra-explication">리브르 오 드 빠르펭</p>
-                            </div>
-                            <div class="int-box">
-                                <p class="int-text">Intensity</p>
-                                <div class="int-img">
-                                    <img src="./images/ysl-intensity-bar2.svg" alt="강도2">
+                            <div class="fra-sec-right">
+                                <div class="fra-text-box">
+                                    <p class="fra-title">LIBRE<br>EAU DE PARFUM</p>
+                                    <p class="fra-explication">리브르 오 드 빠르펭</p>
+                                </div>
+                                <div class="int-box">
+                                    <p class="int-text">Intensity</p>
+                                    <div class="int-img">
+                                        <img src="./images/ysl-intensity-bar2.svg" alt="강도2">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="fragrance">
-                        <h2 class="blind">3</h2>
-                        <div class="fra-sec-left">
-                            <div class="fra-img-box">
-                                <img src="./images/ysl-fragrance3.png" alt="향수3">
+                        <div class="fragrance">
+                            <h2 class="blind">3</h2>
+                            <div class="fra-sec-left">
+                                <div class="fra-img-box">
+                                    <img src="./images/ysl-fragrance3.png" alt="향수3">
+                                </div>
                             </div>
-                        </div>
-                        <div class="fra-sec-right">
-                            <div class="fra-text-box">
-                                <p class="fra-title">LIBRE<br>EAU DE INTENSE</p>
-                                <p class="fra-explication">리브르 오 드 인텐스</p>
-                            </div>
-                            <div class="int-box">
-                                <p class="int-text">Intensity</p>
-                                <div class="int-img">
-                                    <img src="./images/ysl-intensity-bar3.svg" alt="강도3">
+                            <div class="fra-sec-right">
+                                <div class="fra-text-box">
+                                    <p class="fra-title">LIBRE<br>EAU DE INTENSE</p>
+                                    <p class="fra-explication">리브르 오 드 인텐스</p>
+                                </div>
+                                <div class="int-box">
+                                    <p class="int-text">Intensity</p>
+                                    <div class="int-img">
+                                        <img src="./images/ysl-intensity-bar3.svg" alt="강도3">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="fragrance">
-                        <h2 class="blind">4</h2>
-                        <div class="fra-sec-left">
-                            <div class="fra-img-box">
-                                <img src="./images/ysl-fragrance4.png" alt="향수4">
+                        <div class="fragrance">
+                            <h2 class="blind">4</h2>
+                            <div class="fra-sec-left">
+                                <div class="fra-img-box">
+                                    <img src="./images/ysl-fragrance4.png" alt="향수4">
+                                </div>
                             </div>
-                        </div>
-                        <div class="fra-sec-right">
-                            <div class="fra-text-box">
-                                <p class="fra-title">LIBRE<br>LE PARFUM</p>
-                                <p class="fra-fra-explication">리브르 르 퍼퓸</p>
-                            </div>
-                            <div class="int-box">
-                                <p class="int-text">Intensity</p>
-                                <div class="int-img">
-                                    <img src="./images/ysl-intensity-bar4.svg" alt="강도4">
+                            <div class="fra-sec-right">
+                                <div class="fra-text-box">
+                                    <p class="fra-title">LIBRE<br>LE PARFUM</p>
+                                    <p class="fra-fra-explication">리브르 르 퍼퓸</p>
+                                </div>
+                                <div class="int-box">
+                                    <p class="int-text">Intensity</p>
+                                    <div class="int-img">
+                                        <img src="./images/ysl-intensity-bar4.svg" alt="강도4">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="fragrance">
-                        <h2 class="blind">5</h2>
-                        <div class="fra-sec-left">
-                            <div class="fra-img-box">
-                                <img src="./images/ysl-fragrance5.png" alt="향수5">
+                        <div class="fragrance">
+                            <h2 class="blind">5</h2>
+                            <div class="fra-sec-left">
+                                <div class="fra-img-box">
+                                    <img src="./images/ysl-fragrance5.png" alt="향수5">
+                                </div>
                             </div>
-                        </div>
-                        <div class="fra-sec-right">
-                            <div class="fra-text-box">
-                                <p class="fra-title">LIBRE<br>ABSOLU PLATINE</p>
-                                <p class="fra-explication">리브르 앱솔루트 플라틴</p>
-                            </div>
-                            <div class="int-box">
-                                <p class="int-text">Intensity</p>
-                                <div class="int-img">
-                                    <img src="./images/ysl-intensity-bar5.svg" alt="강도5">
+                            <div class="fra-sec-right">
+                                <div class="fra-text-box">
+                                    <p class="fra-title">LIBRE<br>ABSOLU PLATINE</p>
+                                    <p class="fra-explication">리브르 앱솔루트 플라틴</p>
+                                </div>
+                                <div class="int-box">
+                                    <p class="int-text">Intensity</p>
+                                    <div class="int-img">
+                                        <img src="./images/ysl-intensity-bar5.svg" alt="강도5">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="fragrance">
-                        <h2 class="blind">6</h2>
-                        <div class="fra-sec-left">
-                            <div class="fra-img-box">
-                                <img src="./images/ysl-fragrance6.png" alt="향수6">
+                        <div class="fragrance">
+                            <h2 class="blind">6</h2>
+                            <div class="fra-sec-left">
+                                <div class="fra-img-box">
+                                    <img src="./images/ysl-fragrance6.png" alt="향수6">
+                                </div>
                             </div>
-                        </div>
-                        <div class="fra-sec-right">
-                            <div class="fra-text-box">
-                                <p class="fra-title">LIBRE<br>L'EAU NUE</p>
-                                <p class="fra-explication">리브르 로 뉘</p>
-                            </div>
-                            <div class="int-box">
-                                <p class="int-text">Intensity</p>
-                                <div class="int-img">
-                                    <img src="./images/ysl-intensity-bar1.svg" alt="강도1">
+                            <div class="fra-sec-right">
+                                <div class="fra-text-box">
+                                    <p class="fra-title">LIBRE<br>L'EAU NUE</p>
+                                    <p class="fra-explication">리브르 로 뉘</p>
+                                </div>
+                                <div class="int-box">
+                                    <p class="int-text">Intensity</p>
+                                    <div class="int-img">
+                                        <img src="./images/ysl-intensity-bar1.svg" alt="강도1">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -469,10 +483,8 @@
                         <div class="text-box">
                             <p class="main-title left">THE ART OF GIFTING</p>
                             <p class="middle-title left">무료 선물포장 서비스</p>
-                            <p class="sub-title left">당신의 소중한 선택을 YSL만의 우아하고 세련된 패키지에 담습니다. 시그니처 감각과 디테일이 깃든 무료 포장 서비스로,
-                                그 순간을
-                                더욱 특별하고 잊을 수 없는 추억으로
-                                완성하세요.</p>
+                            <p class="sub-title left">당신의 선택을 YSL만의 우아하고 세련된 패키지에 담습니다. 시그니처 감각이 깃든 무료 포장 서비스로,
+                                그 순간을더욱 특별하고 잊을 수 없는 추억으로 완성하세요.</p>
                         </div>
                     </div>
                     <div class="ex-tab3">
@@ -489,13 +501,13 @@
             </div>
         </section>
         <section class="lookbook-wrap">
-            <div class="inner">
+            <div class="inner swiper mySwiper">
                 <div class="banner-text">
                     <h2 class="main-title">LOOK BOOK</h2>
                     <p class="sub-title">YSL이 담아낸 순간과 스타일, 당신의 영감이 되는 페이지</p>
                 </div>
-                <div class="item-imgs">
-                    <div class="item1">
+                <div class="item-imgs swiper-wrapper">
+                    <div class="item1 swiper-slide">
                         <a href="#"><img src="./images/1.png" alt=""></a>
                         <div class="text-buble1">
                             <p class="hashtag1">#꾸뛰르 미니 클러치 #200</p>
@@ -503,7 +515,7 @@
                             <p class="hashtag3">#엉크르 드 뽀 쿠션</p>
                         </div>
                     </div>
-                    <div class="item2">
+                    <div class="item2 swiper-slide">
                         <a href="#"><img src="./images/2.png" alt=""></a>
                         <div class="text-buble2">
                             <p class="hashtag1">#꾸뛰르 미니 클러치 #500</p>
@@ -511,31 +523,31 @@
                             <p class="hashtag3">#루쥬 쀠르 꾸뛰르 #P3</p>
                         </div>
                     </div>
-                    <div class="item3">
+                    <div class="item3 swiper-slide">
                         <a href="#"><img src="./images/3.png" alt=""></a>
                         <div class="text-buble3">
                             <p class="hashtag1">#뚜쉬 에끌라 글로우</p>
                         </div>
                     </div>
-                    <div class="item4">
+                    <div class="item4 swiper-slide">
                         <a href="#"><img src="./images/4.png" alt=""></a>
                         <div class="text-buble4">
                             <p class="hashtag1">#리브르 오 드 뚜왈렛</p>
                         </div>
                     </div>
-                    <div class="item5">
+                    <div class="item5 swiper-slide">
                         <a href="#"><img src="./images/5.png" alt=""></a>
                         <div class="text-buble5">
                             <p class="hashtag1">#와이 르 퍼퓸</p>
                         </div>
                     </div>
-                    <div class="item6">
+                    <div class="item6 swiper-slide">
                         <a href="#"><img src="./images/6.png" alt=""></a>
                         <div class="text-buble6">
                             <p class="hashtag1">#더 볼드 립스틱 #10</p>
                         </div>
                     </div>
-                    <div class="item7">
+                    <div class="item7 swiper-slide">
                         <a href="#"><img src="./images/7.png" alt=""></a>
                         <div class="text-buble7">
                             <p class="hashtag1">#꾸뛰르 팔레트 #2</p>
@@ -543,7 +555,7 @@
                             <p class="hashtag3">#잉크 쿠션</p>
                         </div>
                     </div>
-                    <div class="item8">
+                    <div class="item8 swiper-slide">
                         <a href="#"><img src="./images/8.png" alt=""></a>
                         <div class="text-buble8">
                             <p class="hashtag1">#꾸뛰르 팔레트 #14</p>
@@ -593,9 +605,12 @@
                 <div class="footer-right">
                     <p><img src="./images/ysl_logo_long_white.svg" alt="logo_long"></p>
                     <ul class="sns-list">
-                        <li><a href="#void"><img src="./images/instagram-icon.png" alt="insta"></a></li>
-                        <li><a href="#void"><img src="./images/twitter-icon.png" alt="twitter"></a></li>
-                        <li><a href="#void"><img src="./images/youtube-icon.png" alt="youtube"></a></li>
+                        <li><a href=".https://www.instagram.com/yslbeauty" target="_blank"><img
+                                    src="./images/instagram-icon.png" alt="insta"></a></li>
+                        <li><a href="https://www.youtube.com/user/yslparfums" target="_blank"><img
+                                    src="./images/twitter-icon.png" alt="twitter"></a></li>
+                        <li><a href="https://x.com/yslbeauty" target="_blank"><img src="./images/youtube-icon.png"
+                                    alt="youtube"></a></li>
                     </ul>
                 </div>
             </div>
