@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./font/pretendard.css">
     <link rel="stylesheet" href="./css/common-ysl.css">
     <link rel="stylesheet" href="./css/ysl-sub-map-page.css">
-    <link rel="stylesheet" href="./font/pretendard.css">
-    <link rel="stylesheet" href="./css/map-respond.css">
+    <link rel="stylesheet" href="./css/ysl-sub-map-filter-popup.css">
+    <link rel="stylesheet" href="./css/sub-map-respond.css">
+    <link rel="stylesheet" href="../images/ysl_favicon.png">
+    <link rel="stylesheet" href="../00.header_footer/css/header2_bk.css">
+    <link rel="stylesheet" href="../css/ysl_footer.css">
+    <link rel="stylesheet" href="../css/search.css">
     <script defer src="./js/ysl-sub-map-select-wrap.js"></script>
+    <script async src="../00.header_footer/js/sub-header.js"></script>
+    <script defer src="../00.header_footer/js/sub-footer.js"></script>
 </head>
 
 <body>
-    <header>
+    <header id="header">
 
     </header>
 
@@ -101,38 +108,6 @@
                                     });
                                 }
                             </script>
-                            <!-- <div class="map-img-box">
-                            <img class="map-img" src="./ysl-images/ysl-map (2).png" alt="지도">
-                            <div class="map-pin">
-                                <p class="map-pin1"><a href="#"><img src="./ysl-images/ysl-map-pin.svg"
-                                            alt="map-pin"></a>
-                                </p>
-                                <p class="map-pin2"><a href="#"><img src="./ysl-images/ysl-map-pin.svg"
-                                            alt="map-pin"></a>
-                                </p>
-                                <p class="map-pin3"><a href="#"><img src="./ysl-images/ysl-map-pin.svg"
-                                            alt="map-pin"></a>
-                                </p>
-                                <p class="map-pin4"><a href="#"><img src="./ysl-images/ysl-map-pin.svg"
-                                            alt="map-pin"></a>
-                                </p>
-                                <p class="map-pin5"><a href="#"><img src="./ysl-images/ysl-map-pin.svg"
-                                            alt="map-pin"></a>
-                                </p>
-                                <p class="map-pin6"><a href="#"><img src="./ysl-images/ysl-map-pin.svg"
-                                            alt="map-pin"></a>
-                                </p>
-                                <p class="map-pin7"><a href="#"><img src="./ysl-images/ysl-map-pin.svg"
-                                            alt="map-pin"></a>
-                                </p>
-                            </div>
-                            <div class="img-box-bottom">
-                                <p>1Km</p>
-                                <p><img src="./ysl-images/ysl-map-Vector.svg" alt=""></p>
-                                <p class="location"><img src="./ysl-images/ysl-map-location.svg" alt="현위치"></p>
-                            </div>
-                        </div> -->
-
                             <div class="map-location-icon">
                                 <p class="location"><a href="#"><img src="./images/ysl-map-location.svg" alt="현위치"></a>
                                 </p>
@@ -186,6 +161,10 @@
                                     <li><a href="#">광주</a></li>
                                 </ul>
                             </div>
+                        </div>
+                        <div class="mobile-map-tab">
+                            <button class="tab-map-list"><a href="#">목록</a></button>
+                            <button class="tab-map-img"><a href="#">지도</a></button>
                         </div>
                         <div class="map-inner-right-bottom">
                             <div class="map-list">
@@ -306,9 +285,58 @@
                 </div>
             </div>
         </section>
+
+
+        <div class="map-filter-popup-wrap">
+            <div class="map-filter-popup">
+                <div class="map-filter-popup-content">
+                    <h2 class="hide">매장필터팝업</h2>
+                    <div class="map-filter-popup-header">
+                        <p class="map-filter-popup-header-title">Filter</p>
+                        <div class="map-filter-popup-closeBtn">
+                            <a href="#"><img src="./images/ysl-icon-cart-close.svg" alt="팝업닫기버튼"></a>
+                        </div>
+                    </div>
+                    <div class="map-filter-popup-bottom">
+                        <div class="map-filter-content-list">
+                            <div class="map-filter-service content">
+                                <p class="map-filter-service title">스토어 제공 서비스</p>
+                                <ul class="map-filter-service list">
+                                    <li><a href="#">메이크업 서비스</a></li>
+                                    <li><a href="#">피부진단 및 피팅</a></li>
+                                    <li><a href="#">스페셜 기프트</a></li>
+                                    <li><a href="#">팝업 스토어</a></li>
+                                    <li><a href="#">예약 및 픽업 서비스</a></li>
+                                    <li><a href="#">맞춤형 컨설팅</a></li>
+                                </ul>
+                            </div>
+                            <div class="map-filter-open-store content">
+                                <p class="map-filter-open-store title">현 운영매장</p>
+                                <ul class="map-filter-open-store list">
+                                    <li><a href="#">운영중인 매장만 보기</a></li>
+                                </ul>
+                            </div>
+                            <div class="map-filter-store content">
+                                <p class="map-filter-store title">가까운 매장 안내</p>
+                                <ul class="map-filter-store list">
+                                    <li><a href="#">현 위치에서 1Km 이내</a></li>
+                                    <li><a href="#">현 위치에서 5Km 이내</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="map-filter-btn">
+                            <button class="map-apply-btn"><a href="#">쿠폰적용</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </main>
 
-    <footer>
+    <footer id="footer">
 
     </footer>
 </body>

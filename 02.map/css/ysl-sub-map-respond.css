@@ -1,0 +1,82 @@
+/* 반응형웹 */
+@media screen and (max-width:1920px){
+    .map-search-wrap{
+    max-width: 1920px;
+    padding: 13.5rem 15rem 10rem 15rem;
+    margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:1500px){
+    .map-search-wrap{
+        max-width: 1500px;
+        padding: 10rem 6rem 10rem 6rem;
+        margin: 0 auto;
+    }
+    .map-inner-left{
+        width: 50%;
+        height: 60%;
+    }
+}
+
+@media screen and (max-width:1280px){
+    .map-search-wrap{
+        padding: 70px 50px;
+    }
+    .map-search-inner-bottom{
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    .map-inner-left{
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width:920px){
+    .map-search-wrap{
+        padding: 50px 30px;
+    }
+    .map-search-inner-top{
+        display: flex;
+        justify-content: center;
+    }
+    .map-search-inner-top .filter{
+        /* border: 1px solid black; */
+        width: 635px;
+        
+    }
+    .map-inner-left{
+        display: none;
+    }
+    .map-inner-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        /* border: 1px solid black; */
+    }
+    .map-inner-right-top{
+        /* display: none; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .map-inner-right-bottom{
+        max-width: 635px;
+        position: relative;
+        /* display: none; */
+    }
+    .mobile-map-tab{
+        display: block;
+        max-width: 635px;
+        display: flex;
+        justify-content: space-between;
+        background-color: pink;
+        z-index: 100;
+        transform: translateY(250%);
+        
+    }
+
+}
