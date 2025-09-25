@@ -98,7 +98,7 @@ header .header-left img {
 }
 
 .la-list>li>a {
-    padding: 2px 0 15px 0 ;
+    padding: 2px 0 15px 0;
     display: block;
 }
 
@@ -107,8 +107,9 @@ header .header-left img {
 }
 
 .language.open .la-list li {
-  display: block;
+    display: block;
 }
+
 .gnb-menu {
     display: flex;
     gap: 1rem;
