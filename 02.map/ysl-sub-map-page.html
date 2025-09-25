@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="./css/ysl-map-search.css"> -->
     <link rel="stylesheet" href="./css/common-ysl.css">
     <link rel="stylesheet" href="./css/ysl-sub-map-page.css">
     <link rel="stylesheet" href="./font/pretendard.css">
+    <link rel="stylesheet" href="./css/map-respond.css">
+    <script defer src="./js/ysl-sub-map-select-wrap.js"></script>
 </head>
 
 <body>
@@ -141,39 +142,50 @@
 
                     <div class="map-inner-right">
                         <div class="map-inner-right-top">
-                            <!-- <div class="select-wrap"> -->
                             <div class="select">
-                                <div class="sel-inner-left">
-                                    <p class="light">국가 / 지역</p>
-                                    <ul class="select-depth"><a href="#">대한민국</a>
-                                        <li><a href="#">중국</a></li>
-                                        <li><a href="#">일본</a></li>
-                                        <li><a href="#">홍콩</a></li>
-                                        <li><a href="#">호주</a></li>
-                                        <li><a href="#">미국</a></li>
-                                    </ul>
-                                </div>
-                                <div class="sel-inner-right">
-                                    <a href="#"><img src="./images/ysl-map-Arrow.svg" alt=""></a>
-                                </div>
+                                <button class="map-dropdown">
+                                    <div class="sel-inner-left">
+                                        <span class="country-sel">국가/지역</span>
+                                        <p class="country">대한민국</p>
+                                    </div>
+                                    <div class="sel-inner-right">
+                                        <a href="#"> </a>
+                                    </div>
+                                </button>
+                                <ul class="select-depth">
+                                    <li><a href="#">중국</a></li>
+                                    <hr>
+                                    <li><a href="#">일본</a></li>
+                                    <hr>
+                                    <li><a href="#">홍콩</a></li>
+                                    <hr>
+                                    <li><a href="#">호주</a></li>
+                                    <hr>
+                                    <li><a href="#">미국</a></li>
+                                </ul>
                             </div>
-                            <div class="select">
-                                <div class="sel-inner-left">
-                                    <p class="light">시 / 군 / 구</p>
-                                    <ul class="select-depth">
-                                        <a href="#">서울</a>
-                                        <li><a href="#">경기</a></li>
-                                        <li><a href="#">대구</a></li>
-                                        <li><a href="#">대전</a></li>
-                                        <li><a href="#">부산</a></li>
-                                        <li><a href="#">광주</a></li>
-                                    </ul>
-                                </div>
-                                <div class="sel-inner-right">
-                                    <a href="#"><img src="./images/ysl-map-Arrow.svg" alt=""></a>
-                                </div>
+                            <div class="select1">
+                                <button class="map-dropdown1">
+                                    <div class="sel-inner-left1">
+                                        <span class="country-sel1">시/군/구</span>
+                                        <p class="country1">서울</p>
+                                    </div>
+                                    <div class="sel-inner-right1">
+                                        <a href="#"> </a>
+                                    </div>
+                                </button>
+                                <ul class="select-depth1">
+                                    <li><a href="#">경기</a></li>
+                                    <hr>
+                                    <li><a href="#">대구</a></li>
+                                    <hr>
+                                    <li><a href="#">대전</a></li>
+                                    <hr>
+                                    <li><a href="#">부산</a></li>
+                                    <hr>
+                                    <li><a href="#">광주</a></li>
+                                </ul>
                             </div>
-                            <!-- </div> -->
                         </div>
                         <div class="map-inner-right-bottom">
                             <div class="map-list">
