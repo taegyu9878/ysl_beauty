@@ -89,6 +89,7 @@ header .header-left img {
 .language img {
     filter: invert(1);
     width: 0.9rem;
+    margin-top: 8px;
 }
 
 .la-list li {

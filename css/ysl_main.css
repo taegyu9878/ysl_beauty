@@ -98,7 +98,9 @@ section .white2 {
     margin: 0 auto;
     justify-content: center;
 }
-
+.category-wrap a{
+    background-color: #cfa0b1;
+}
 .accord-list {
     display: flex;
     gap: 3rem;

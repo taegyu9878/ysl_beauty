@@ -24,13 +24,47 @@
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         window.onload = function () {
-            const swiper1 = new Swiper(".best-Swiper", {
-                slidesPerView: 3,
-                spaceBetween: 120,
+            const swiper1 = new Swiper(".fra-carousel", {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                   breakpoints: {
+                    767: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                    1400: {
+                        slidesPerView: 2.5,
+                        spaceBetween: 30,
+                    }
+                },
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                },
+                navigation: {
+                    nextEl: ".arrow-right",
+                    prevEl: ".arrow-left",
+                },
+
+            });
+
+            const swiper2 = new Swiper(".best-Swiper", {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                breakpoints: {
+                    767: {
+                        slidesPerView: 3,
+                        spaceBetween: 60,
+                    },
+                    1400: {
+                        slidesPerView: 3,
+                        spaceBetween: 120,
+                    }
+                },
                 centeredSlides: true,
                 loop: true,
                 autoplay: {
-                    delay: 3000,
+                    delay: 2500,
                 },
                 pagination: {
                     el: ".best-Swiper .swiper-pagination",
@@ -38,7 +72,7 @@
                 },
             });
 
-            let swiper = new Swiper(".lookbook-Swiper", {
+            const swiper3 = new Swiper(".lookbook-Swiper", {
                 pagination: {
                     el: ".lookbook-Swiper .swiper-pagination",
                     clickable: true,
@@ -46,11 +80,11 @@
                 slidesPerView: 1,
                 spaceBetween: 0,
                 breakpoints: {
-                    500: {
+                    393: {
                         slidesPerView: 2,
                         spaceBetween: 20,
                     },
-                    900: {
+                    767: {
                         slidesPerView: 3,
                         spaceBetween: 20,
                     },
@@ -62,7 +96,7 @@
                 freeMode: true,
                 loop: true,
                 autoplay: {
-                    delay: 3000
+                    delay: 2500
                 },
 
             });
@@ -75,14 +109,14 @@
     <header>
         <div class="inner">
             <div class="header-left">
-                <h1><a href="#void"><img src="./images/ysl_logo_wh.png" alt="logo"></a></h1>
+                <h1><a href="./index.html"><img src="./images/ysl_logo_wh.png" alt="logo"></a></h1>
                 <div class="main-tab">
                     <ul class="main-menu">
                         <li data-tab="tab1"><a href="#void">PROMOTION</a></li>
                         <li data-tab="tab2"><a href="#void">FRAGRANCE</a></li>
-                        <li data-tab="tab3"><a href="#void">MAKE UP</a></li>
-                        <li data-tab="tab4"><a href="#void">BEAUTY CLUB</a></li>
-                        <li data-tab="tab5"><a href="#void">SKINCARE</a></li>
+                        <li data-tab="tab3"><a href="./05.makeup/ysl_sub_makeup.html">MAKE UP</a></li>
+                        <li data-tab="tab4"><a href="#void">SKINCARE</a></li>
+                        <li data-tab="tab5"><a href="./01.user/ysl_sub_mypage.html">BEAUTY CLUB</a></li>
                     </ul>
                     <div class="tab-content tab1">
                         <ul class="depth1">
@@ -116,7 +150,7 @@
                     </div>
                     <div class=" tab-content tab3">
                         <ul class="depth3">
-                            <li><a href="#void"><strong>페이스</strong></a></li>
+                            <li><a href="./05.makeup/ysl_sub_face_makeup.html"><strong>페이스</strong></a></li>
                             <li><a href="#void">쿠션</a></li>
                             <li><a href="#void">파운데이션</a></li>
                             <li><a href="#void">컨실러</a></li>
@@ -124,14 +158,14 @@
                             <li><a href="#void">블러쉬/브론저</a></li>
                         </ul>
                         <ul class="depth3">
-                            <li><a href="#void"><strong></strong>립</a></li>
+                            <li><a href="./05.makeup/ysl_sub_lip_makeup.html"><strong>립</strong></a></li>
                             <li><a href="#void">립스틱</a></li>
                             <li><a href="#void">립틴트</a></li>
                             <li><a href="#void">립글로스</a></li>
                             <li><a href="#void">스마트 틴트 디바이스</a></li>
                         </ul>
                         <ul class="depth3">
-                            <li><a href="#void"><strong>아이</strong></a></li>
+                            <li><a href="./05.makeup/ysl_sub_eye_makeup.html"><strong>아이</strong></a></li>
                             <li><a href="#void">마스카라</a></li>
                             <li><a href="#void">아이 팔레트</a></li>
                             <li><a href="#void">아이라이너</a></li>
@@ -159,7 +193,7 @@
                     </div>
                     <div class="tab-content tab5">
                         <ul class="depth5">
-                            <li><a href="#void"><strong>입생로랑 뷰티클럽</strong></a></li>
+                            <li><a href="./01.user/ysl_sub_mypage.html"><strong>입생로랑 뷰티클럽</strong></a></li>
                             <li><a href="#void">등급별 혜택</a></li>
                         </ul>
                     </div>
@@ -176,13 +210,15 @@
                 </div>
                 <ul class="gnb-menu">
                     <li class="mo-ham"><a href="#void"><img src="./images/ham_wh.svg" alt="ham"></a></li>
-                    <li class="mo-logo"><a href="#void"><img src="./images/ysl_logo_long_white.svg" alt="ysl_logo"></a>
+                    <li class="mo-logo"><a href="./index.html"><img src="./images/ysl_logo_long_white.svg"
+                                alt="ysl_logo"></a>
                     </li>
-                    <li class="mo-hidden"><a href="#void"><img src="./images/map-icon.png" alt="map"></a></li>
+                    <li class="mo-hidden"><a href="./02.map/ysl-sub-map-page.html"><img src="./images/map-icon.png"
+                                alt="map"></a></li>
                     <li class="mo-hidden"><a href="./signup.html"><img src="./images/User-icon.png" alt="user"></a></li>
                     <li class="mo-hidden"><a href="#void" id="search-icon"><img src="./images/search-icon.png"
                                 alt="search"></a></li>
-                    <li><a href="#void"><img src="./images/bag-icon.png" alt="bag"></a></li>
+                    <li><a href="./04.cart/ysl_sub_shopping.html"><img src="./images/bag-icon.png" alt="bag"></a></li>
                 </ul>
             </div>
         </div>
@@ -225,16 +261,22 @@
                 <p class="sub-title">대담한 색, 잊지 못할 향, 그리고 깊이 있는 케어로 매 순간 당신의 아름다움을 완성하세요</p>
                 <div class="accord-list">
                     <div class="accord active">
-                        <p class="text-box">MAKEUP</p>
+                        <a href="./05.makeup/ysl_sub_makeup.html">
+                            <p class="text-box">MAKEUP</p>
+                        </a>
                         <a href="#void"><img src="./images/category-1.png" alt="makeup-img"></a>
                     </div>
                     <div class="accord">
-                        <p class="text-box">FRAGRANCE</p>
-                        <a href="$void"><img src="./images/category-2.png" alt="fragrance-img"></a>
+                        <a href="#void">
+                            <p class="text-box">FRAGRANCE</p>
+                        </a>
+                        <a href="#void"><img src="./images/category-2.png" alt="fragrance-img"></a>
                     </div>
                     <div class="accord">
-                        <p class="text-box">SKINCARE</p>
-                        <a href="$void"><img src="./images/category-3.png" alt="skincare-img"></a>
+                        <a href="#void">
+                            <p class="text-box">SKINCARE</p>
+                        </a>
+                        <a href="#void"><img src="./images/category-3.png" alt="skincare-img"></a>
                     </div>
                 </div>
             </div>
@@ -300,14 +342,14 @@
                             자신감 넘치게 표현하는 여성을 위한 향수입니다.
                         </p>
                     </div>
-                    <div class="fra-icon">
+                    <!-- <div class="fra-icon">
                         <a href="#" class="arrow-left"><img src="./images/arrow-left.png" alt="탭 화살표"></a>
                         <a href="#" class="arrow-right"><img src="./images/arrow-right.svg" alt="탭 화살표"></a>
-                    </div>
+                    </div> -->
                 </div>
-                <div class="fra-carousel">
-                    <div class="fra-inner-right">
-                        <div class="fragrance active">
+                <div class="fra-carousel swiper">
+                    <div class="fra-inner-right swiper-wrapper">
+                        <div class="fragrance swiper-slide">
                             <h2 class="blind">1</h2>
                             <div class="fra-sec-left">
                                 <div class="fra-img-box">
@@ -327,7 +369,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="fragrance">
+                        <div class="fragrance swiper-slide">
                             <h2 class="blind">2</h2>
                             <div class="fra-sec-left">
                                 <div class="fra-img-box">
@@ -347,7 +389,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="fragrance">
+                        <div class="fragrance swiper-slide">
                             <h2 class="blind">3</h2>
                             <div class="fra-sec-left">
                                 <div class="fra-img-box">
@@ -367,7 +409,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="fragrance">
+                        <div class="fragrance swiper-slide">
                             <h2 class="blind">4</h2>
                             <div class="fra-sec-left">
                                 <div class="fra-img-box">
@@ -387,7 +429,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="fragrance">
+                        <div class="fragrance swiper-slide">
                             <h2 class="blind">5</h2>
                             <div class="fra-sec-left">
                                 <div class="fra-img-box">
@@ -402,12 +444,12 @@
                                 <div class="int-box">
                                     <p class="int-text">Intensity</p>
                                     <div class="int-img">
-                                        <img src="./images/ysl-intensity-bar5.svg" alt="강도5">
+                                        <img src="./images/ysl-intensity-bar4.svg" alt="강도5">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="fragrance">
+                        <div class="fragrance swiper-slide">
                             <h2 class="blind">6</h2>
                             <div class="fra-sec-left">
                                 <div class="fra-img-box">
@@ -428,6 +470,8 @@
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-button-next"><a href="#" class="arrow-right"><img src="./images/arrow-right.svg" alt="탭 화살표"></a></div>
+                    <div class="swiper-button-prev"><a href="#" class="arrow-left"><img src="./images/arrow-left.png" alt="탭 화살표"></a></div>
                 </div>
             </div>
         </section>
@@ -493,12 +537,12 @@
                     <li><a href="#">4</a></li>
                     <li><a href="#">5</a></li>
                 </ul> -->
-               
+
             </div>
-             <div class="bg">
-                    <div class="bg-left">left</div>
-                    <div class="bg-right">right</div>
-                </div>
+            <div class="bg">
+                <div class="bg-left">left</div>
+                <div class="bg-right">right</div>
+            </div>
         </section>
         <section class="exclusive-wrap">
             <div class="inner">
@@ -617,29 +661,29 @@
                         <li>
                             <a href="#void">카테고리</a>
                             <ul class="depth1">
-                                <li><a href="#void">베이스 메이크업</a></li>
-                                <li><a href="#void">립 메이크업</a></li>
-                                <li><a href="#void">아이 메이크업</a></li>
+                                <li><a href="./05.makeup/ysl_sub_face_makeup.html">베이스 메이크업</a></li>
+                                <li><a href="./05.makeup/ysl_sub_lip_makeup.html">립 메이크업</a></li>
+                                <li><a href="./05.makeup/ysl_sub_eye_makeup.html">아이 메이크업</a></li>
                                 <li><a href="#void">여성향수</a></li>
                                 <li><a href="#void">남성향수</a></li>
                                 <li><a href="#void">스킨케어</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#void">내 계정</a>
+                            <a href="./01.user/ysl_sub_mypage.html">내 계정</a>
                             <ul class="depth1">
-                                <li><a href="#void">회원가입</a></li>
-                                <li><a href="#void">주문 목록</a></li>
-                                <li><a href="#void">주소록</a></li>
-                                <li><a href="#void">리뷰</a></li>
-                                <li><a href="#void">나의 등급</a></li>
+                                <li><a href="./signup.html">회원가입</a></li>
+                                <li><a href="#">주문 목록</a></li>
+                                <li><a href="./01.user/ysl_sub_mypage.html">주소록</a></li>
+                                <li><a href="./01.user/ysl_sub_mypage.html">리뷰</a></li>
+                                <li><a href="./01.user/ysl_sub_mypage.html">나의 등급</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#void">고객문의</a>
                             <ul class="depth1">
                                 <li><a href="#void">고객케어센터</a></li>
-                                <li><a href="#void">배송/반품/교환</a></li>
+                                <li><a href="./01.user/ysl_sub_mypage.html">배송/반품/교환</a></li>
                             </ul>
                         </li>
                     </ul>

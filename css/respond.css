@@ -115,8 +115,22 @@
 
     }
 
+    .fra-inner {
+        height: 60rem;
+    }
+
     .fra-inner-left-text {
         padding: 3rem;
+    }
+
+    .fra-carousel .swiper-button-prev,
+    .fra-carousel .swiper-button-next {
+        top: 430px;
+    }
+
+    .fra-carousel {
+        padding: 15rem 0 12rem 0;
+
     }
 
     .rose-banner .rose-text {
@@ -173,9 +187,10 @@
 
     /* fragrance */
     .fra-inner {
-        height: 70rem;
+        height: 90rem;
+        /* background-color: lightpink; */
     }
-
+     
     .fra-inner .inner {
         display: flex;
         flex-direction: column;
@@ -187,7 +202,6 @@
         order: 2;
         width: 100vw;
         height: auto;
-        /* display: flex; */
     }
 
     .fra-inner-left-text {
@@ -197,17 +211,23 @@
         align-items: center;
     }
 
-    .fra-inner-left .fra-icon {
-        order: 3;
-        position: static;
-        margin-top: 3rem;
+    .fra-carousel {
+        padding: 15rem 0 7rem 0;
+        width: 450px;
+        /* background-color: aqua; */
     }
 
-    .fra-inner-right {
-        order: 1;
-        margin-top: 10rem;
-        margin-left: 2rem;
+    .fra-carousel .swiper-button-prev{
+        left: 50%;
+        transform: translateX(-120%);
+        top: 460px;
     }
+    .fra-carousel .swiper-button-next {
+        left: 50%;
+        transform: translateX(20%);
+        top: 460px;
+    }
+
 
     /* rose banner */
     .rose-banner .rose-text {
@@ -331,6 +351,15 @@
     .accord-list>.active {
         width: 28rem;
     }
+    /* fra */
+    
+     .fra-carousel {
+        padding: 15rem 0 0 0;
+        width: 340px;
+    }
+    .fra-inner-left-text {
+        margin-bottom: 20px;
+    }
 
     /* libre */
     .libre-wrap .inner {
@@ -429,15 +458,15 @@
     }
 
     .best-wrap .slider-list {
-        margin-top: 0;
+        margin-top: 5rem;
     }
 
     .best-wrap .slider-list .slider {
         margin-top: 3rem;
     }
 
-    .best-wrap .slider-pager {
-        bottom: 8rem;
+    .best-wrap .swiper-pagination {
+        bottom: 4rem;
     }
 
     /* exclusive */
@@ -446,9 +475,7 @@
     }
 
     /* lookbook */
-    .lookbook-wrap .item-imgs {
-        margin: 0 0 0 2rem;
-    }
+
 
     /* footer */
     footer .inner {
@@ -462,8 +489,8 @@
     .footer-top {
         margin: 0 auto;
     }
- x
-    .footer-right {
+
+    x .footer-right {
         width: 150px;
         justify-content: center;
         /* background: pink; */
