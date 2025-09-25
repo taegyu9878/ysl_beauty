@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YSL Beauty</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./font/pretendard.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
@@ -21,15 +22,53 @@
     <script defer src="./js/nav.js"></script>
     <script defer src="./js/main.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-    window.onload = function () {
-        let swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      freeMode: true,
-    });
-    }
+    <script>
+        window.onload = function () {
+            const swiper1 = new Swiper(".best-Swiper", {
+                slidesPerView: 3,
+                spaceBetween: 120,
+                centeredSlides: true,
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                },
+                pagination: {
+                    el: ".best-Swiper .swiper-pagination",
+                    clickable: true,
+                },
+            });
 
-</script>
+            let swiper = new Swiper(".lookbook-Swiper", {
+                pagination: {
+                    el: ".lookbook-Swiper .swiper-pagination",
+                    clickable: true,
+                },
+                slidesPerView: 1,
+                spaceBetween: 0,
+                breakpoints: {
+                    500: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    900: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                    1400: {
+                        slidesPerView: 3.5,
+                        spaceBetween: 30,
+                    }
+                },
+                freeMode: true,
+                loop: true,
+                autoplay: {
+                    delay: 3000
+                },
+
+            });
+        }
+
+    </script>
 </head>
 
 <body>
@@ -404,41 +443,41 @@
             </div>
         </section>
         <section class="best-wrap">
-            <div class="inner">
+            <div class="inner swiper best-Swiper">
                 <div class="text-box">
                     <h2 class="main-title">Best Item</h2>
                     <p class="sub-title">시간이 증명한 품격, 가장 많은 사랑을 받은 아이콘을 만나보세요</p>
                 </div>
-                <div class="slider-list">
-                    <div class="slider">
+                <div class="slider-list swiper-wrapper">
+                    <div class="slider swiper-slide">
                         <div class="img-box"><img src="./images/best-item-1.png" alt="엉크르쿠션"></div>
                         <div class="slider-text">
                             <p class="name">엉크르 드 뽀 쿠션</p>
                             <p class="price">115,000원</p>
                         </div>
                     </div>
-                    <div class="slider">
+                    <div class="slider swiper-slide">
                         <div class="img-box"><img src="./images/best-item-2.png" alt="리브르향수"></div>
                         <div class="slider-text">
                             <p class="name">리브르 오드 빠르펭</p>
                             <p class="price">210,000원</p>
                         </div>
                     </div>
-                    <div class="slider active">
+                    <div class="slider swiper-slide">
                         <div class="img-box"><img src="./images/best-item-3.png" alt="퓨어샷부스트"></div>
                         <div class="slider-text">
                             <p class="name">퓨어샷 나이트 부스트 세럼</p>
                             <p class="price">175,000원</p>
                         </div>
                     </div>
-                    <div class="slider">
+                    <div class="slider swiper-slide">
                         <div class="img-box"><img src="./images/best-item-4.png" alt="틴트"></div>
                         <div class="slider-text">
                             <p class="name">잉크 블러 틴트</p>
                             <p class="price">55,000원</p>
                         </div>
                     </div>
-                    <div class="slider">
+                    <div class="slider swiper-slide">
                         <div class="img-box"><img src="./images/best-item-5.png" alt="립스틱"></div>
                         <div class="slider-text">
                             <p class="name">러브샤인 캔디 글레이즈</p>
@@ -446,18 +485,20 @@
                         </div>
                     </div>
                 </div>
-                <ul class="slider-pager">
+                <div class="swiper-pagination"></div>
+                <!-- <ul class="slider-pager">
                     <li class="active"><a href="#">1</a></li>
                     <li><a href="#">2</a></li>
                     <li><a href="#">3</a></li>
                     <li><a href="#">4</a></li>
                     <li><a href="#">5</a></li>
-                </ul>
-                <div class="bg">
+                </ul> -->
+               
+            </div>
+             <div class="bg">
                     <div class="bg-left">left</div>
                     <div class="bg-right">right</div>
                 </div>
-            </div>
         </section>
         <section class="exclusive-wrap">
             <div class="inner">
@@ -501,7 +542,7 @@
             </div>
         </section>
         <section class="lookbook-wrap">
-            <div class="inner swiper mySwiper">
+            <div class="inner swiper lookbook-Swiper">
                 <div class="banner-text">
                     <h2 class="main-title">LOOK BOOK</h2>
                     <p class="sub-title">YSL이 담아낸 순간과 스타일, 당신의 영감이 되는 페이지</p>
@@ -563,6 +604,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
     </main>

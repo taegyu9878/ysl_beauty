@@ -1,3 +1,16 @@
+//best-wrap
+
+
+// 3초마다 실행
+setInterval(moveSlide, 3000);
+
+// 초기 상태
+setActive();
+
+// 0.3s마다 자동 이동
+setInterval(moveSlide, 3000); // ← 0.3s면 너무 빨라서 3s로 권장
+
+
 //fre section 클릭할때마다 카드 슬라이드
 const track = document.querySelector(".fra-inner-right");
 const slides = document.querySelectorAll(".fragrance");
@@ -6,7 +19,7 @@ const nextBtn = document.querySelector(".arrow-right");
 
 const totalSlides = slides.length; // 원본 6개
 const visibleSlides = 3;
-const gap = 30; 
+const gap = 30;
 const slideWidth = slides[0].offsetWidth + gap;
 
 // 앞뒤 클론 생성
@@ -60,14 +73,14 @@ let serviceList = document.querySelectorAll(".service-list>li");
 let exTab = document.querySelectorAll(".ex-tab-wrap>div")
 
 serviceList.forEach((tab, id) => {
-    tab.addEventListener("click", () => {
-        
-        serviceList.forEach((t, i) => {
-            t.classList.remove("active");
-            exTab[i].classList.remove("active");
-        })
-        //이벤트가 발생된 버튼과 버튼과 같은 순서인 클래스 추가
-        tab.classList.add("active");
-        exTab[id].classList.add("active");
+  tab.addEventListener("click", () => {
+
+    serviceList.forEach((t, i) => {
+      t.classList.remove("active");
+      exTab[i].classList.remove("active");
     })
+    //이벤트가 발생된 버튼과 버튼과 같은 순서인 클래스 추가
+    tab.classList.add("active");
+    exTab[id].classList.add("active");
+  })
 })

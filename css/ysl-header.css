@@ -15,6 +15,7 @@ header .inner {
 
 .header-left {
     display: flex;
+  align-items: flex-start;
     gap: 1rem;
 }
 
@@ -57,6 +58,7 @@ header img {
         -1px 2px 12px rgba(0, 0, 0, 0.2),
         /* 기본 그림자 */
         inset 1px 1px 0 rgba(255, 255, 255, 0.6);
+    
 }
 
 .main-tab .main-menu {
@@ -64,7 +66,7 @@ header img {
     gap: 4.8rem;
 }
 
-/* 프로모션 제외 탭 다 숨기기 (자바스크립트 필요) */
+/* 프로모션 제외 탭 다 숨기기 */
 .main-tab .tab-content {
     display: none;
     gap: 7rem;
@@ -87,6 +89,7 @@ header img {
 /* header right */
 .header-right {
     display: flex;
+  align-items: flex-start;
     gap: 1rem;
 }
 

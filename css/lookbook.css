@@ -1,6 +1,7 @@
 .lookbook-wrap .inner {
-    overflow: hidden;
-    margin-bottom: 10rem;
+    margin: 0 auto;
+    padding-bottom: 13rem;
+    /* background-color: aqua; */
 }
 
 .lookbook-wrap .banner-text {
@@ -8,16 +9,22 @@
     margin: 9.5rem 0 6.1rem;
 }
 
-.lookbook-wrap .item-imgs {
-    margin: 0 0 0 30px;
+.lookbook-wrap .swiper-wrapper .item-imgs {
     display: flex;
-    gap: 30px;
     align-items: center;
 }
 
-.lookbook-wrap .item-imgs img {
-    width: 52.3rem;
-    height: 67rem;
+.lookbook-wrap .item-imgs .swiper-slide {
+    width: 100%;
+    aspect-ratio: 4.2 / 5.2;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.lookbook-wrap .item-imgs .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .lookbook-wrap .item-imgs .text-buble1,
@@ -30,6 +37,27 @@
 .text-buble8 {
     display: none;
 }
+
+/* pager */
+.lookbook-wrap .swiper-pagination {
+    position: absolute;
+    bottom: 7rem;
+}
+
+.lookbook-wrap .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background: #d9d9d9;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+.lookbook-wrap .swiper-pagination-bullet-active {
+    width: 50px;
+    opacity: 1;
+}
+
 
 /* 1번사진 */
 .lookbook-wrap .item-imgs .item1 {
@@ -122,13 +150,13 @@
 .text-buble1 .hashtag3::after {
     content: '';
     position: absolute;
-    left: 17px;
-    top: -16px;
+    left: 1.7rem;
+    top: -1.6rem;
     width: 0;
     height: 0;
-    border: 8px solid transparent;
+    border: 0.8rem solid transparent;
     border-bottom-color: rgba(217, 217, 217, 0.50);
-    margin-left: -8px;
+    margin-left: -0.8rem;
 
 }
 
@@ -147,52 +175,52 @@
 
 .text-buble2 .hashtag1 {
     position: absolute;
-    width: 215px;
-    height: 40px;
+    width: 21.5rem;
+    height: 4rem;
     background: rgba(217, 217, 217, 0.50);
     backdrop-filter: blur(2px);
     /* border: 1px solid #ccc; */
-    padding: 8px 16px;
-    font-size: 16px;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: 0.4px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    bottom: 280px;
-    right: 200px;
+    bottom: 28rem;
+    right: 20rem;
     color: #fff;
 }
 
 .text-buble2 .hashtag1::after {
     content: '';
     position: absolute;
-    left: 18px;
-    top: -16px;
+    left: 1.8rem;
+    top: -1.6rem;
     width: 0;
     height: 0;
-    border: 8px solid transparent;
+    border: 0.8rem solid transparent;
     border-bottom-color: rgba(217, 217, 217, 0.50);
-    margin-left: -8px;
+    margin-left: -0.8rem;
 
 }
 
 .text-buble2 .hashtag2 {
     position: absolute;
-    width: 140px;
-    height: 40px;
+    width: 14rem;
+    height: 4rem;
     background: rgba(217, 217, 217, 0.50);
     backdrop-filter: blur(2px);
     /* border: 1px solid #ccc; */
-    padding: 8px 16px;
-    font-size: 16px;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: 0.4px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    bottom: 230px;
-    right: 60px;
+    bottom: 23rem;
+    right: 6rem;
     color: #fff;
 }
 
@@ -200,24 +228,24 @@
     content: '';
     position: absolute;
     left: 17px;
-    top: -16px;
+    top: -1.6rem;
     width: 0;
     height: 0;
-    border: 8px solid transparent;
+    border: 0.8rem solid transparent;
     border-bottom-color: rgba(217, 217, 217, 0.50);
-    margin-left: -8px;
+    margin-left: -0.8rem;
 
 }
 
 .text-buble2 .hashtag3 {
     position: absolute;
-    width: 190px;
-    height: 40px;
+    width: 19rem;
+    height: 4rem;
     background: rgba(217, 217, 217, 0.50);
     backdrop-filter: blur(2px);
     /* border: 1px solid #ccc; */
-    padding: 8px 16px;
-    font-size: 16px;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: 0.4px;
     display: flex;
@@ -231,13 +259,13 @@
 .text-buble2 .hashtag3::after {
     content: '';
     position: absolute;
-    left: 17px;
-    top: -16px;
+    left: 1.7rem;
+    top: -1.6rem;
     width: 0;
     height: 0;
-    border: 8px solid transparent;
+    border: 0.8rem solid transparent;
     border-bottom-color: rgba(217, 217, 217, 0.50);
-    margin-left: -8px;
+    margin-left: -0.8rem;
 
 }
 
@@ -253,33 +281,33 @@
 
 .text-buble3 .hashtag1 {
     position: absolute;
-    width: 175px;
-    height: 40px;
+    width: 17.5rem;
+    height: 4rem;
     background: rgba(217, 217, 217, 0.50);
     backdrop-filter: blur(2px);
     /* border: 1px solid #ccc; */
-    padding: 8px 16px;
-    font-size: 16px;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: 0.4px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    top: 120px;
-    right: 136px;
+    top: 12rem;
+    right: 13.6rem;
     color: #fff;
 }
 
 .text-buble3 .hashtag1::after {
     content: '';
     position: absolute;
-    left: 18px;
-    top: -16px;
+    left: 1.8rem;
+    top: -1.6rem;
     width: 0;
     height: 0;
-    border: 8px solid transparent;
+    border: 0.8rem solid transparent;
     border-bottom-color: rgba(217, 217, 217, 0.50);
-    margin-left: -8px;
+    margin-left: -0.8rem;
 
 }
 
@@ -295,33 +323,33 @@
 
 .text-buble4 .hashtag1 {
     position: absolute;
-    width: 175px;
-    height: 40px;
+    width: 17.5rem;
+    height: 4rem;
     background: rgba(217, 217, 217, 0.50);
     backdrop-filter: blur(2px);
     /* border: 1px solid #ccc; */
-    padding: 8px 16px;
-    font-size: 16px;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: 0.4px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    bottom: 90px;
-    right: 200px;
+    bottom: 9rem;
+    right: 20rem;
     color: #fff;
 }
 
 .text-buble4 .hashtag1::after {
     content: '';
     position: absolute;
-    left: 18px;
-    top: -16px;
+    left: 1.8rem;
+    top: -1.6rem;
     width: 0;
     height: 0;
-    border: 8px solid transparent;
+    border: 0.8rem solid transparent;
     border-bottom-color: rgba(217, 217, 217, 0.50);
-    margin-left: -8px;
+    margin-left: -0.8rem;
 
 }
 
@@ -337,33 +365,33 @@
 
 .text-buble5 .hashtag1 {
     position: absolute;
-    width: 125px;
-    height: 40px;
+    width: 12.5rem;
+    height: 4rem;
     background: rgba(217, 217, 217, 0.50);
     backdrop-filter: blur(2px);
     /* border: 1px solid #ccc; */
-    padding: 8px 16px;
-    font-size: 16px;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: 0.4px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    bottom: 190px;
-    right: 230px;
+    bottom: 19rem;
+    right: 23rem;
     color: #fff;
 }
 
 .text-buble5 .hashtag1::after {
     content: '';
     position: absolute;
-    left: 18px;
-    top: -16px;
+    left: 1.8rem;
+    top: -1.6rem;
     width: 0;
     height: 0;
-    border: 8px solid transparent;
+    border: 0.8rem solid transparent;
     border-bottom-color: rgba(217, 217, 217, 0.50);
-    margin-left: -8px;
+    margin-left: -0.8rem;
 
 }
 
@@ -379,33 +407,33 @@
 
 .text-buble6 .hashtag1 {
     position: absolute;
-    width: 175px;
-    height: 40px;
+    width: 17.5rem;
+    height: 4rem;
     background: rgba(217, 217, 217, 0.50);
     backdrop-filter: blur(2px);
     /* border: 1px solid #ccc; */
-    padding: 8px 16px;
-    font-size: 16px;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: 0.4px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    bottom: 360px;
-    right: 120px;
+    bottom: 36rem;
+    right: 12rem;
     color: #fff;
 }
 
 .text-buble6 .hashtag1::after {
     content: '';
     position: absolute;
-    left: 160px;
-    top: -16px;
+    left: 16rem;
+    top: -1.6rem;
     width: 0;
     height: 0;
-    border: 8px solid transparent;
+    border: 0.8rem solid transparent;
     border-bottom-color: rgba(217, 217, 217, 0.50);
-    margin-left: -8px;
+    margin-left: -0.8rem;
 
 }
 
@@ -421,84 +449,84 @@
 
 .text-buble7 .hashtag1 {
     position: absolute;
-    width: 160px;
-    height: 40px;
+    width: 16rem;
+    height: 4rem;
     background: rgba(217, 217, 217, 0.50);
     backdrop-filter: blur(2px);
     /* border: 1px solid #ccc; */
-    padding: 8px 16px;
-    font-size: 16px;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: 0.4px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    bottom: 370px;
-    left: 250px;
+    bottom: 37rem;
+    left: 25rem;
     color: #fff;
 }
 
 .text-buble7 .hashtag1::after {
     content: '';
     position: absolute;
-    left: 14px;
-    top: -16px;
+    left: 1.4rem;
+    top: -1.6rem;
     width: 0;
     height: 0;
-    border: 8px solid transparent;
+    border: 0.8rem solid transparent;
     border-bottom-color: rgba(217, 217, 217, 0.50);
-    margin-left: -8px;
+    margin-left: -0.8rem;
 
 }
 
 .text-buble7 .hashtag2 {
     position: absolute;
-    width: 278px;
-    height: 40px;
+    width: 27.8rem;
+    height: 4rem;
     background: rgba(217, 217, 217, 0.50);
     backdrop-filter: blur(2px);
     /* border: 1px solid #ccc; */
-    padding: 8px 16px;
-    font-size: 16px;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: 0.4px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    bottom: 320px;
-    right: 120px;
+    bottom: 32rem;
+    right: 12rem;
     color: #fff;
 }
 
 .text-buble7 .hashtag2::after {
     content: '';
     position: absolute;
-    left: 17px;
-    top: -16px;
+    left: 1.7rem;
+    top: -1.6rem;
     width: 0;
     height: 0;
-    border: 8px solid transparent;
+    border: 0.8rem solid transparent;
     border-bottom-color: rgba(217, 217, 217, 0.50);
-    margin-left: -8px;
+    margin-left: -0.8rem;
 
 }
 
 .text-buble7 .hashtag3 {
     position: absolute;
-    width: 110px;
-    height: 40px;
+    width: 11rem;
+    height: 4rem;
     background: rgba(217, 217, 217, 0.50);
     backdrop-filter: blur(2px);
     /* border: 1px solid #ccc; */
-    padding: 8px 16px;
-    font-size: 16px;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: 0.4px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    bottom: 270px;
-    right: 120px;
+    bottom: 27rem;
+    right: 12rem;
     color: #fff;
 }
 
@@ -506,12 +534,12 @@
     content: '';
     position: absolute;
     left: 17px;
-    top: -16px;
+    top: -1.6rem;
     width: 0;
     height: 0;
-    border: 8px solid transparent;
+    border: 0.8rem solid transparent;
     border-bottom-color: rgba(217, 217, 217, 0.50);
-    margin-left: -8px;
+    margin-left: -0.8rem;
 
 }
 
@@ -527,65 +555,65 @@
 
 .text-buble8 .hashtag1 {
     position: absolute;
-    width: 170px;
-    height: 40px;
+    width: 17rem;
+    height: 4rem;
     background: rgba(217, 217, 217, 0.50);
     backdrop-filter: blur(2px);
     /* border: 1px solid #ccc; */
-    padding: 8px 16px;
-    font-size: 16px;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: 0.4px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    top: 100px;
-    right: 80px;
+    top: 10rem;
+    right: 8rem;
     color: #fff;
 }
 
 .text-buble8 .hashtag1::after {
     content: '';
     position: absolute;
-    left: 18px;
-    top: -16px;
+    left: 10.8rem;
+    top: -1.6rem;
     width: 0;
     height: 0;
-    border: 8px solid transparent;
+    border: 0.8rem solid transparent;
     border-bottom-color: rgba(217, 217, 217, 0.50);
-    margin-left: -8px;
+    margin-left: -0.8rem;
 
 }
 
 .text-buble8 .hashtag2 {
     position: absolute;
-    width: 280px;
-    height: 40px;
+    width: 28rem;
+    height: 4rem;
     background: rgba(217, 217, 217, 0.50);
     backdrop-filter: blur(2px);
     /* border: 1px solid #ccc; */
-    padding: 8px 16px;
-    font-size: 16px;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: 0.4px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    top: 160px;
-    right: 10px;
+    top: 16rem;
+    right: 1rem;
     color: #fff;
 }
 
 .text-buble8 .hashtag2::after {
     content: '';
     position: absolute;
-    left: 17px;
-    top: -16px;
+    left: 1.7rem;
+    top: -1.6rem;
     width: 0;
     height: 0;
-    border: 8px solid transparent;
+    border: 0.8rem solid transparent;
     border-bottom-color: rgba(217, 217, 217, 0.50);
-    margin-left: -8px;
+    margin-left: -0.8rem;
 
 }
 
