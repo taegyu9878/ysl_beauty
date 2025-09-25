@@ -7,27 +7,30 @@
     --text-sub3: #686868;
     --text-sub4: #4f4f4f;
 }
+.hide{
+    display: none;
+}
 
 .map-search-wrap{
     max-width: 1920px;
-    padding: 135px 150px 100px 150px;
+    padding: 13.5rem 15rem 10rem 15rem;
     margin: 0 auto;
     background-color: var(--background-color);
-    /* background-color: aqua; */
 }
 
 
 /* inner */
-.inner {
+.map-search-wrap>.inner {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    max-height: 835px;
+    overflow: hidden;
     /* background-color: rgba(255, 0, 0, 0.2); */
 }
 
 .map-inner-right{
-    /* height: 835px; */
-    overflow: hidden;
+    
 }
 
 .map-search-inner-top .filter{
@@ -44,9 +47,16 @@
     display: flex;
     gap: 30px;
 }
+.mobile-map-tab{
+    display: none;
+}
 
 
 /* inner-left */
+.map-inner-left{
+    background-color: rgba(255, 0, 0, 0.4);
+}
+
 .map-img-box{
     position: relative;
 }
@@ -101,6 +111,9 @@
     transform: translateY(6%);
     width: 100%;
 }
+/* .mobile-map-tab{
+    display: none;
+} */
 
 
 
@@ -123,6 +136,7 @@ button{
     align-items: center;
     text-align: left;
     background-color: var(--text-main2);
+    
 }
 button.active{
     border: 1px solid var(--text-main1);
@@ -156,6 +170,7 @@ button.active{
     font-size: 1.6rem;
     font-weight: 400;
     border: 1px solid var(--text-sub2);
+    
 }
 .select-depth.active,
 .select-depth1.active{

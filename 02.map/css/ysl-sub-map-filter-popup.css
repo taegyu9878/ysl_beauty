@@ -1,0 +1,89 @@
+.map-filter-popup-wrap{
+    display: none;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.map-filter-popup{
+    position: absolute;
+    background: var(--text-main2);
+    width: 640px;
+    height: 800px;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid var(--text-sub2);
+    padding: 20px;
+    right: 145px;
+    top: 80px;
+}
+
+.map-filter-popup-header{
+    display: flex;
+    justify-content: space-between;
+}
+.map-filter-popup-header-title{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--text-main1);
+}
+
+.map-filter-content-list{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 30px;
+    align-items: flex-start;
+}
+.map-filter-content-list>.content{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--text-main1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.map-filter-content-list>.content>.list{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-weight: 400;
+    cursor: pointer;
+}
+.map-filter-content-list>.content>.list>li{
+    background: #F6F6F6;
+    border: 1px solid var(--text-sub1);
+    border-radius: 25px;
+    padding: 15px 25px;
+    align-items: center;
+}
+
+.map-filter-popup-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 235px;
+}
+
+.map-filter-btn{
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.map-filter-btn:hover>button{
+    background: var(--text-main1);
+}
+.map-filter-btn>button{
+    background: var(--text-sub3);
+    border-radius: 8px;
+    justify-content: center;
+    padding: 15px 200px;
+    color: var(--text-main2);
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.map-filter-btn>button.active{
+    background: var(--text-main1);
+}
