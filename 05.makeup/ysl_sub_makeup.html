@@ -4,23 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MAKEUP-YSL Beauty</title>
     <link rel="stylesheet" href="./05.css/common.css">
     <link rel="stylesheet" href="./05.css/sub_makeup-banner.css">
     <link rel="stylesheet" href="./05.css/makeup-tap.css">
     <link rel="stylesheet" href="./05.css/item.css">
     <link rel="stylesheet" href="/05.css/ysl-makeup_item_colors.css">
     <link rel="stylesheet" href="./05.css/ysl-item-list.css">
+    <link rel="stylesheet" href="./05.css/popup.css">
+    <link rel="stylesheet" href="../css/ysl_footer.css">
+    <link rel="stylesheet" href="../00.header_footer/css/header2_bk.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="icon" type="image/png" href="../images/ysl_favicon.png">
+    <script defer src="../00.header_footer/js/sub-header.js"></script>
     <script defer src="./05.Javascript/sub_makerup_banner.js"></script>
+    <script defer src="./05.js/filter-popup.js"></script>
+    <script defer src="../00.header_footer/js/sub-footer.js"></script>
+    
 </head>
 
 <body>
+    <header id="header"></header>
     <div class="page-wrapper">
         <div class="slider-container">
             <div class="slides">
-                <div class="slide" style="background:url(./05.images/banner1.png)"><h2></h2></div>
-                <div class="slide" style="background:url(./05.images/banner2.png)"><h2></h2></div>
-                <div class="slide" style="background:url(./05.images/banner3.png)"><h2></h2></div>
+                <div class="slide" style="background:url(./05.images/banner1.png)">
+                    <h2></h2>
+                </div>
+                <div class="slide" style="background:url(./05.images/banner2.png)">
+                    <h2></h2>
+                </div>
+                <div class="slide" style="background:url(./05.images/banner3.png)">
+                    <h2></h2>
+                </div>
             </div>
 
             <div class="slider-nav">
@@ -87,7 +103,7 @@
                     <P>35제품</P>
                 </div>
                 <div class="right">
-                    <p>필터<a href="#void"><img src="./05.images/Arrow-down.svg" alt="down-arrow"></a></p>
+                    <p>필터<a href="#void" class="filter"><img src="./05.images/Arrow-down.svg" alt="down-arrow"></a></p>
                     <p>정렬<a href="#void"><img src="./05.images/Arrow-down.svg" alt="down-arrow"></a></p>
                 </div>
             </div>
@@ -162,7 +178,7 @@
                     <div class="item">
                         <div class="img-box">
                             <a href="#void">
-                                <p class="img "><img src="./05.images/엉크르_드_뽀_쿠션-바운스_레더_에디션(2).png" alt="item"></p>
+                                <p class="img "><img src="./05.images/엉크르_드_뽀_쿠션-바운스_레더_에디션_핑크.png" alt="item"></p>
                             </a>
                             <P class="limited">LIMITED</P>
                             <!-- <div class="color1"></div> -->
@@ -1265,6 +1281,59 @@
             </div>
         </div>
     </section>
+    <section class="filter-popup-wrap">
+        <div class="filter-popup">
+            <div class="title">
+                <h2>Filter</h2>
+                <div class="close"><a href="#"></a></div>
+            </div>
+            <div class="filter-menu">
+                <div class="filter-title">종류</div>
+                <div class="filter-select">
+                    <a href="#">
+                        <p>쿠션</p>
+                    </a>
+                    <p>파운데이션</p>
+                    <p>컨실러</p>
+                    <p>컴팩트/파우더</p>
+                    <p>블러쉬/블론저</p>
+                </div>
+
+            </div>
+            <div class="filter-menu">
+                <div class="filter-title">텍스쳐</div>
+                <div class="filter-select">
+                    <p>매트</p>
+                    <p>새틴</p>
+                    <p>쉬머</p>
+                    <p>내추럴 매트</p>
+                </div>
+            </div>
+            <div class="filter-menu">
+                <div class="filter-title">컬렉션</div>
+                <div class="filter-select">
+                    <p>엉크르 드 뽀</p>
+                    <p>탑 시크릿</p>
+                    <p>메이크 미 블러쉬</p>
+                    <p>바운스 레더 에디션</p>
+                    <p>로즈 마블 컬렉션</p>
+
+                </div>
+            </div>
+            <div class="filter-menu">
+                <div class="filter-title">가격대</div>
+                <div class="filter-select">
+                    <p>전체</p>
+                    <p>5만원 이하</p>
+                    <p>5만원~10만원</p>
+                    <p>10만원 이상</p>
+
+                </div>
+            </div>
+            <div class="import"><a href="#">적용하기</a></div>
+        </div>
+    </section>
+    <footer id="footer"></footer>
 </body>
 
 </html>
