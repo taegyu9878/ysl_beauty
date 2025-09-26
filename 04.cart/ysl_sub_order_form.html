@@ -7,6 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="./css/ysl-sub-order-form.css">
+    <link rel="stylesheet" href="./css/ysl-sub-cart-order-coupon-popup.css">
+    <link rel="stylesheet" href="./css/ysl-sub-order-result-popup.css">
+    <link rel="stylesheet" href="../images/ysl_favicon.png">
+    <link rel="stylesheet" href="../00.header_footer/css/header2_bk.css">
+    <link rel="stylesheet" href="../css/ysl_footer.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <script async src="../00.header_footer/js/sub-header.js"></script>
+    <script defer src="../00.header_footer/js/sub-footer.js"></script>
     <script defer src="./js/ysl-sub-order-coupon-popup.js"></script>
 </head>
 
@@ -326,7 +334,9 @@
                                 <div class="coupon-item-title">
                                     <input type="radio" name="item-select">
                                     <div class="coupon-text-box">
-                                        <a href="#"><p class="coupon-title-text">3,000원 할인</p></a>
+                                        <a href="#">
+                                            <p class="coupon-title-text">3,000원 할인</p>
+                                        </a>
                                         <a href="#"><span>취소</span></a>
                                     </div>
                                 </div>
@@ -345,7 +355,9 @@
                                 <div class="coupon-item-title">
                                     <input type="radio" name="item-select">
                                     <div class="coupon-text-box">
-                                        <a href="#"><p class="coupon-title-text">5,000원 할인</p></a>
+                                        <a href="#">
+                                            <p class="coupon-title-text">5,000원 할인</p>
+                                        </a>
                                         <a href="#"><span>취소</span></a>
                                     </div>
                                 </div>
@@ -364,7 +376,9 @@
                                 <div class="coupon-item-title">
                                     <input type="radio" name="item-select">
                                     <div class="coupon-text-box">
-                                        <a href="#"><p class="coupon-title-text">10,000원 할인</p></a>
+                                        <a href="#">
+                                            <p class="coupon-title-text">10,000원 할인</p>
+                                        </a>
                                         <a href="#"><span>취소</span></a>
                                     </div>
                                 </div>
@@ -383,7 +397,9 @@
                                 <div class="coupon-item-title">
                                     <input type="radio" name="item-select">
                                     <div class="coupon-text-box">
-                                        <a href="#"><p class="coupon-title-text">17,000원 할인</p></a>
+                                        <a href="#">
+                                            <p class="coupon-title-text">17,000원 할인</p>
+                                        </a>
                                         <a href="#"><span>취소</span></a>
                                     </div>
                                 </div>
@@ -401,6 +417,82 @@
 
                     <div class="coupon-popup-btn">
                         <p class="coupon-apply-btn"><a href="#">쿠폰 적용</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="order-result-popup-wrap">
+            <div class="order-result-popup">
+                <h2 class="hide">결제완료</h2>
+                <div class="order-result-popup-header">
+                    <div class="order-result-popup-header-closeBtn">
+                        <a href="#"><img src="./images/ysl-icon-cart-close.svg" alt="결제창닫기"></a>
+                    </div>
+                </div>
+                <div class="order-result-popup-content">
+                    <div class="order-result-bottom">
+                        <div class="order-result-bottom-img-box">
+                            <div class="order-result-bottom-img-box image">
+                                <img src="./images/ysl-order-result.svg" alt="편지지이미지">
+                            </div>
+                            <div class="order-result-bottom-img-box text">
+                                <span class="kor">주문이 완료되었습니다.</span>
+                                <span class="en">Thank you for purchasing our
+                                    product.</span>
+                            </div>
+                        </div>
+                        <div class="order-result-bottom-text-box">
+                            <div class="order-result-bottom-text-box-top">
+                                <div class="order-num top">
+                                    <div class="order-num left">
+                                        <span>주문번호</span>
+                                    </div>
+                                    <div class="order-num right">
+                                        <span>0123456789-123456789</span>
+                                    </div>
+                                </div>
+                                <div class="order-date top">
+                                    <div class="order-date left">
+                                        <span>결제일자</span>
+                                    </div>
+                                    <div class="order-date right">
+                                        <span>2025.08.20</span>
+                                    </div>
+                                </div>
+                                <div class="order-item top">
+                                    <div class="order-item left">
+                                        <span>주문상품</span>
+                                    </div>
+                                    <div class="order-item right">
+                                        <span>러브샤인 워터샤인 립스틱 202/피치글로우 외
+                                            2건</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-result-bottom-text-box-bottom">
+                                <div class="order-total-amount bottom bold">
+                                    <div class="order-total-amount left">
+                                        <span>총 구매 금액</span>
+                                    </div>
+                                    <div class="order-total-amount right">
+                                        <span>368,000원</span>
+                                    </div>
+                                </div>
+                                <div class="order-reward bottom light">
+                                    <div class="order-reward left">
+                                        <span>리워드</span>
+                                    </div>
+                                    <div class="order-reward right">
+                                        <span>3,680포인트 적립</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-result-bottom-btn">
+                        <button class="order-result-bottom-btn-left"><a href="#">주문 상세 내역 보기</a></button>
+                        <button class="order-result-bottom-btn-right"><a href="#">메인 화면 가기</a></button>
                     </div>
                 </div>
             </div>
