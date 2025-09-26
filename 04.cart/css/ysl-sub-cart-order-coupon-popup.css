@@ -70,13 +70,13 @@
     /* border: 1px solid black; */
     width: 100%;
 }
-.coupon-item-title .coupon-text-box p{
+.coupon-item-title .coupon-text-box .coupon-title-text-box{
     font-size: 1.6rem;
     font-weight: 500;
     color: var(--text-main1);
 }
-.coupon-item-title .coupon-text-box .coupon-del-btn{
-    display: none;
+.coupon-item-title .coupon-text-box .coupon-popup-del-btn{
+    /* display: none; */
     border: 1px solid var(--text-sub1);
     background: var(--text-main2);
     padding: 1px 6px;

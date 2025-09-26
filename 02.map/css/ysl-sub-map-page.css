@@ -108,12 +108,9 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    transform: translateY(6%);
+    transform: translateY(7%);
     width: 100%;
 }
-/* .mobile-map-tab{
-    display: none;
-} */
 
 
 

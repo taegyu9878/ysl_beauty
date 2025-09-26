@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../00.header_footer/css/header2_bk.css">
     <link rel="stylesheet" href="../css/ysl_footer.css">
     <link rel="stylesheet" href="../css/search.css">
+    <script defer src="./js/ysl-sub-order-order-result-popup.js"></script>
     <script async src="../00.header_footer/js/sub-header.js"></script>
     <script defer src="../00.header_footer/js/sub-footer.js"></script>
     <script defer src="./js/ysl-sub-order-coupon-popup.js"></script>
@@ -334,10 +335,14 @@
                                 <div class="coupon-item-title">
                                     <input type="radio" name="item-select">
                                     <div class="coupon-text-box">
-                                        <a href="#">
-                                            <p class="coupon-title-text">3,000원 할인</p>
-                                        </a>
-                                        <a href="#"><span>취소</span></a>
+                                        <div class="coupon-title-text-box">
+                                            <a href="#" class="coupon-title-text">
+                                                3,000원 할인
+                                            </a>
+                                        </div>
+                                        <div class="coupon-popup-del-btn">
+                                            <a href="#">취소</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -355,10 +360,14 @@
                                 <div class="coupon-item-title">
                                     <input type="radio" name="item-select">
                                     <div class="coupon-text-box">
-                                        <a href="#">
-                                            <p class="coupon-title-text">5,000원 할인</p>
-                                        </a>
-                                        <a href="#"><span>취소</span></a>
+                                        <div class="coupon-title-text-box">
+                                            <a href="#" class="coupon-title-text">
+                                                5,000원 할인
+                                            </a>
+                                        </div>
+                                        <div class="coupon-popup-del-btn">
+                                            <a href="#">취소</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -376,10 +385,14 @@
                                 <div class="coupon-item-title">
                                     <input type="radio" name="item-select">
                                     <div class="coupon-text-box">
-                                        <a href="#">
-                                            <p class="coupon-title-text">10,000원 할인</p>
-                                        </a>
-                                        <a href="#"><span>취소</span></a>
+                                        <div class="coupon-title-text-box">
+                                            <a href="#" class="coupon-title-text">
+                                                10,000원 할인
+                                            </a>
+                                        </div>
+                                        <div class="coupon-popup-del-btn">
+                                            <a href="#">취소</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -397,10 +410,14 @@
                                 <div class="coupon-item-title">
                                     <input type="radio" name="item-select">
                                     <div class="coupon-text-box">
-                                        <a href="#">
-                                            <p class="coupon-title-text">17,000원 할인</p>
-                                        </a>
-                                        <a href="#"><span>취소</span></a>
+                                        <div class="coupon-title-text-box">
+                                            <a href="#" class="coupon-title-text">
+                                                17,000원 할인
+                                            </a>
+                                        </div>
+                                        <div class="coupon-popup-del-btn">
+                                            <a href="#">취소</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -491,8 +508,8 @@
                         </div>
                     </div>
                     <div class="order-result-bottom-btn">
-                        <button class="order-result-bottom-btn-left"><a href="#">주문 상세 내역 보기</a></button>
-                        <button class="order-result-bottom-btn-right"><a href="#">메인 화면 가기</a></button>
+                        <button class="order-result-bottom-btn-left" id="popupBtn"><a href="#">주문 상세 내역 보기</a></button>
+                        <button class="order-result-bottom-btn-right" id="popupBtn"><a href="#">메인 화면 가기</a></button>
                     </div>
                 </div>
             </div>

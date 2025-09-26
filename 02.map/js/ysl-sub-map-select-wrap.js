@@ -18,6 +18,9 @@ selectBtn1.addEventListener("click",()=>{
     selWrap1.classList.toggle("active");
 })
 
+
+
+
 // map filter popup active
 let mapFilterBtn = document.querySelector(".filter a");
 let mapDim = document.querySelector(".map-filter-popup-wrap");
@@ -34,8 +37,9 @@ mapFilterApply.addEventListener("click", function(){
     mapDim.classList.remove("active");
 })
 
+
+
+
 // map card img active
-// let mapCard = document.querySelectorAll(".map-card");
-// let mapCardImg = document.querySelectorAll(".map-card:all-child:after");
-// console.log(mapCard);
-// console.log(mapCardImg);
+let mapCard = document.querySelectorAll(".map-card");
+let mapCardImg = document.querySelectorAll(".map-card:all-child:after");

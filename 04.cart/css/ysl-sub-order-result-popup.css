@@ -129,17 +129,18 @@
     width: 430px;
 }
 .order-result-bottom-btn>button{
-    padding: 20px 47px;
     border: none;
     border-radius: 8px;
     font-size: 1.6rem;
     font-weight: 400;
 }
 .order-result-bottom-btn>.order-result-bottom-btn-left{
+    padding: 20px 40px;
     background: var(--text-sub2);
     color: var(--text-main2);
 }
 .order-result-bottom-btn>.order-result-bottom-btn-right{
+    padding: 20px 56px;
     background: var(--text-main1);
     color: var(--text-main2);
 }
