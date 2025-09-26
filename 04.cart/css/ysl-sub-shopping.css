@@ -14,7 +14,7 @@
 
 .cart-wrap{
     max-width: 1920px;
-    padding: 135px 350px 350px 300px;
+    padding: 135px 300px 300px 300px;
     margin: 0 auto;
     background-color: var(--background-color);
 }
@@ -28,11 +28,11 @@
 }
 
 /* inner */
-.inner{
+.cart-wrap>.inner{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    background-color: rgba(255, 0, 0, 0.2);
+    /* background-color: rgba(255, 0, 0, 0.2); */
     max-width: 1220px;
     gap: 10px;
 }

@@ -1,3 +1,14 @@
+:root {
+    --background-color: #f2f2f2;
+    --text-main1: #1d1d1d;
+    --text-main2: #ffffff;
+    --text-sub1: #d9d9d9;
+    --text-sub2: #959595;
+    --text-sub3: #686868;
+    --text-sub4: #4f4f4f;
+}
+
+
 .map-filter-popup-wrap{
     display: none;
     position: fixed;
@@ -6,6 +17,9 @@
     height: 100vh;
     top: 0;
     left: 0;
+}
+.map-filter-popup-wrap.active{
+    display: block;
 }
 
 .map-filter-popup{
@@ -59,6 +73,10 @@
     border-radius: 25px;
     padding: 15px 25px;
     align-items: center;
+}
+.map-filter-content-list>.content>.list>li.active{
+    background: var(--text-main1);
+    color: var(--text-main2);
 }
 
 .map-filter-popup-bottom{

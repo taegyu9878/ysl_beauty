@@ -24,6 +24,6 @@ console.log(couponSelBtn);
 
 let couponDelBtn = document.querySelectorAll(".coupon-del-btn");
 
-couponSelBtn.addEventListener("click",()=>{
-    coupon.classList.add("coupon-del-btn");
-})
+// couponSelBtn.addEventListener("click",()=>{
+//     coupon.classList.add("coupon-del-btn");
+// })
