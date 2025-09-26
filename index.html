@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YSL Beauty</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./font/pretendard.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
@@ -19,15 +19,15 @@
     <link rel="stylesheet" href="./css/search.css">
     <link rel="stylesheet" href="./css/respond.css">
     <link rel="icon" type="image/png" href="./images/ysl_favicon.png">
-     <script defer src="./js/main.js"></script>
+    <script defer src="./js/main.js"></script>
     <script defer src="./js/nav.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>
         window.onload = function () {
             const swiper1 = new Swiper(".fra-carousel", {
                 slidesPerView: 1,
                 spaceBetween: 0,
-                   breakpoints: {
+                breakpoints: {
                     767: {
                         slidesPerView: 3,
                         spaceBetween: 30,
@@ -215,7 +215,8 @@
                     </li>
                     <li class="mo-hidden"><a href="./02.map/ysl-sub-map-page.html"><img src="./images/map-icon.png"
                                 alt="map"></a></li>
-                    <li class="mo-hidden"><a href="./01.user/ysl_sub_signup.html"><img src="./images/User-icon.png" alt="user"></a></li>
+                    <li class="mo-hidden"><a href="./01.user/ysl_sub_signup.html"><img src="./images/User-icon.png"
+                                alt="user"></a></li>
                     <li class="mo-hidden"><a href="#void" id="search-icon"><img src="./images/search-icon.png"
                                 alt="search"></a></li>
                     <li><a href="./04.cart/ysl_sub_shopping.html"><img src="./images/bag-icon.png" alt="bag"></a></li>
@@ -346,6 +347,12 @@
                         <a href="#" class="arrow-left"><img src="./images/arrow-left.png" alt="탭 화살표"></a>
                         <a href="#" class="arrow-right"><img src="./images/arrow-right.svg" alt="탭 화살표"></a>
                     </div> -->
+                    <div class="btn">
+                        <div class="swiper-button-next"><a href="#" class="arrow-right"><img
+                                    src="./images/arrow-right.svg" alt="탭 화살표"></a></div>
+                        <div class="swiper-button-prev"><a href="#" class="arrow-left"><img
+                                    src="./images/arrow-left.png" alt="탭 화살표"></a></div>
+                    </div>
                 </div>
                 <div class="fra-carousel swiper">
                     <div class="fra-inner-right swiper-wrapper">
@@ -470,8 +477,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next"><a href="#" class="arrow-right"><img src="./images/arrow-right.svg" alt="탭 화살표"></a></div>
-                    <div class="swiper-button-prev"><a href="#" class="arrow-left"><img src="./images/arrow-left.png" alt="탭 화살표"></a></div>
+
                 </div>
             </div>
         </section>
