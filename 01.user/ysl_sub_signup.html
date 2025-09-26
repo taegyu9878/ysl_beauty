@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIGNUP-YSL Beauty</title>
+  <link rel="stylesheet" href="../font/pretendard.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/ysl_footer.css">
+  <link rel="stylesheet" href="../css/search.css">
+  <link rel="stylesheet" href="../00.header_footer/css/header2_wh.css">
+  <link rel="icon" type="image/png" href="../images/ysl_favicon.png">
+  <link rel="stylesheet" href="./01.css/ysl_sub_signup.css" />
+  <script async src="../00.header_footer/js/sub-footer.js"></script>
+  <script defer src="../00.header_footer/js/sub-header.js"></script>
+  <script defer src="./01.js/ysl_sub_signup.js"></script>
+
+</head>
+
+<body>
+<header id="header"></header>
+
+
+  <main>
+    <div class="max-frame">
+      <div class="auth-root mode-login" id="auth">
+        <div class="auth-wrap">
+
+          <!-- 좌: 블랙 -->
+          <section class="split left" aria-label="브랜드">
+            <div class="logo-stack">
+              <a class="logo-link" href="../index.html" aria-label="홈">
+                <img class="logo-img" src="./01.images/signup_logo.svg" alt="Brand 로고">
+              </a>
+            </div>
+          </section>
+
+          <!-- 우: 로그인 -->
+          <section class="split right" aria-label="로그인">
+            <form class="login-stage" id="loginForm" autocomplete="on">
+              <h3 class="login-title">LOGIN</h3>
+
+              <div class="login-fields">
+                <div class="input-row">
+                  <label for="loginId" class="blind">이름</label>
+                  <span class="icon user" aria-hidden="true"></span>
+                  <span class="vdiv" aria-hidden="true"></span>
+                  <input type="text" id="loginId" name="username" placeholder="Name" autocomplete="username" required />
+                </div>
+                <div class="input-row">
+                  <label for="loginPw" class="blind">비밀번호</label>
+                  <span class="icon cart" aria-hidden="true"></span>
+                  <span class="vdiv" aria-hidden="true"></span>
+                  <input type="password" id="loginPw" name="password" placeholder="Password" autocomplete="current-password" required />
+                </div>
+                <button type="submit" class="btn-login" id="btnLogin">로그인</button>
+
+                <nav class="helper-links" aria-label="도움 링크">
+                  <a href="#">아이디 찾기</a>
+                  <span class="sep">|</span>
+                  <a href="#">비밀번호 찾기</a>
+                  <span class="sep">|</span>
+                  <a href="#" id="goSignup">회원가입</a>
+                </nav>
+              </div>
+
+              <div class="sns-wrap">
+                <div class="sns-head">
+                  <span class="line" aria-hidden="true"></span>
+                  <span class="linetxt">SNS 로그인</span>
+                  <span class="line" aria-hidden="true"></span>
+                </div>
+                <div class="sns-icons" aria-label="SNS 로그인 아이콘">
+                  <a href="#" aria-label="네이버 로그인"><img src="./01.images/naver.svg" alt=""></a>
+                  <a href="#" aria-label="카카오 로그인"><img src="./01.images/kakaotalk.svg" alt=""></a>
+                  <a href="#" aria-label="구글 로그인"><img src="./01.images/google.svg" alt=""></a>
+                  <a href="#" aria-label="페이스북 로그인"><img src="./01.images/Facebook.svg" alt=""></a>
+                  <a href="#" aria-label="애플 로그인"><img src="./01.images/apple.svg" alt=""></a>
+                </div>
+              </div>
+            </form>
+          </section>
+
+          <!-- 왼쪽 커튼 -->
+          <div class="curtain" id="curtain">
+            <div class="logo-stack">
+              <a class="logo-link" href="/" aria-label="홈">
+                <img class="logo-img" src="./01.images/signup_logo.svg" alt="Brand 로고">
+              </a>
+            </div>
+          </div>
+
+          <!-- 오른쪽 커튼 -->
+          <div class="curtainR" id="curtainR">
+            <div class="logo-stack">
+              <a class="logo-link" href="/" aria-label="홈">
+                <img class="logo-img" src="./01.images/signup_logo.svg" alt="Brand 로고">
+              </a>
+            </div>
+          </div>
+
+          <!-- SIGN UP -->
+          <section class="signup-flow" id="signup">
+
+            <div class="sg-progress3" id="prog3">
+              <div class="seg"></div>
+              <div class="seg"></div>
+              <div class="seg"></div>
+            </div>
+
+            <div class="sg-header">
+              <button class="sg-back" type="button" id="btnBack" aria-label="뒤로가기">&lsaquo;</button>
+              <div class="sg-title">SIGN UP</div>
+            </div>
+
+            <!-- Step1 -->
+            <div class="sg-step1" id="step1">
+              <div class="sg-grid" id="grid">
+                <div class="sg-list">
+                  <div class="term-row required" data-id="t1"><div class="check">✓</div><div class="label">(필수) 서비스 이용약관 동의</div><button class="chev">&rsaquo;</button></div>
+                  <div class="term-row required" data-id="t2"><div class="check">✓</div><div class="label">(필수) 개인정보의 수집 및 이용 동의</div><button class="chev">&rsaquo;</button></div>
+                  <div class="term-row required" data-id="t3"><div class="check">✓</div><div class="label">(필수) 개인정보의 국외이전 동의</div><button class="chev">&rsaquo;</button></div>
+                  <div class="term-row" data-id="t4"><div class="check">✓</div><div class="label">(선택) 마케팅 목적의 개인정보 수집/이용 동의</div><button class="chev">&rsaquo;</button></div>
+                  <div class="term-row" data-id="t5"><div class="check">✓</div><div class="label">(선택) 광고성 정보 수신 동의</div><button class="chev">&rsaquo;</button></div>
+                  <div class="sg-all" id="agreeAll"><div class="check">✓</div><div class="label">전체 동의하기</div></div>
+                  <div class="sg-actions"><button class="btn-next" id="btnNext" disabled>다음</button></div>
+                </div>
+                <aside class="sg-detail" id="detailBox" aria-live="polite">
+                  <div class="sg-detail-header"><div class="sg-detail-title" id="detailTitle">약관 상세</div><button class="sg-detail-close" id="detailClose" aria-label="닫기">x</button></div>
+                  <div class="body" id="detailBody">오른쪽 &rsaquo; 버튼을 눌러 약관을 확인하세요.</div>
+                </aside>
+              </div>
+            </div>
+
+            <!-- Step2 -->
+            <div class="sg-step2" id="step2" aria-hidden="true">
+              <div class="form">
+                <div class="field">
+                  <label for="uid">아이디</label>
+                  <div class="row">
+                    <input id="uid" type="text" name="username" placeholder="Name" maxlength="12" autocomplete="username" />
+                    <button type="button" class="btn" id="btnCheckId">중복확인</button>
+                  </div>
+                  <div class="hint">4-12자/영문 소문자(숫자 조합 가능)</div>
+                </div>
+
+                <div class="field">
+                  <label for="pw">비밀번호</label>
+                  <input id="pw" type="password" name="password" placeholder="Password" autocomplete="new-password" />
+                </div>
+
+                <div class="field">
+                  <input id="pw2" type="password" name="passwordConfirm" placeholder="Confirm Password" autocomplete="new-password" />
+                  <div class="hint">6-20자/영문 대/소문자,숫자,특수문자 중 2가지 이상 조합</div>
+                </div>
+
+                <div class="field">
+                  <label for="emailLocal">이메일</label>
+                  <div class="grid-3">
+                    <input id="emailLocal" type="text" name="email" placeholder="E-mail" autocomplete="email" />
+                    <div style="display:grid;place-items:center;">@</div>
+
+                    <!-- 도메인 select/input 전환 -->
+                    <div class="domain-wrap" id="domainWrap">
+                      <select id="emailDomainSel" aria-label="도메인 선택">
+                        <option value="">선택</option>
+                        <option>gmail.com</option>
+                        <option>naver.com</option>
+                        <option>daum.net</option>
+                        <option>hotmail.com</option>
+                        <option>yahoo.com</option>
+                        <option value="custom">직접 입력</option>
+                      </select>
+                      <input id="emailDomainCustom" type="text" placeholder="domain.com" aria-label="도메인 직접 입력" />
+                      <button class="domain-toggle" type="button" id="domainToggle" aria-label="도메인 목록 열기">▾</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="phone">전화번호</label>
+                  <div class="row">
+                    <input id="phone" type="tel" name="tel" inputmode="numeric" placeholder="Phone Number" autocomplete="tel" />
+                    <button type="button" class="btn" id="btnSendCode">인증번호 받기</button>
+                  </div>
+                </div>
+
+                <button class="submit" id="btnSubmit" disabled>가입하기</button>
+              </div>
+            </div>
+
+          </section>
+
+          <!-- Step3: 완료 -->
+          <section class="complete" id="complete" aria-hidden="true">
+            <div class="left">
+              <h2 class="left-title">JOIN US</h2>
+              <button class="envelope-stack" id="envelopeStack" type="button" aria-label="편지 꺼내보기">
+                <img class="env-back"  src="./01.images/envelope1.png" width="158" height="129" alt="">
+                <img class="letter"    src="./01.images/letter.png"    width="127" height="141" alt="회원 카드">
+                <img class="env-front" src="./01.images/envelope2.png" width="162" height="97"  alt="">
+              </button>
+              <div class="desc">
+                <span class="desc-t">Welcome to the YSL Beauty Club</span><br/>
+                당신은 이제 YSL Beauty Club의 특별한 멤버입니다.<br/>
+                한정된 혜택과 고유한 아름다움을 경험하세요.
+              </div>
+              <button class="cta" id="goLoginFromComplete">로그인 하러가기</button>
+            </div>
+            <div class="right">
+              <div class="logo-stack">
+                <a class="logo-link" href="/" aria-label="홈">
+                  <img class="logo-img" src="./01.images/signup_logo.svg" alt="Brand 로고">
+                </a>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- 약관 템플릿 -->
+    <template id="terms-t1" data-title="입생로랑 뷰티 공식 온라인몰 서비스 이용약관">
+
+엘오케이 유한회사(이하 “회사”)의 본 서비스 이용약관(이하 “본 약관”)은  Mybeautybox (마이뷰티박스) 서비스 이용약관, 브랜드 웹사이트 서비스 이용약관으로 구성되어 있습니다. 본 약관은 고객과 회사 간의 권리와 의무, 책임 등에 관한 내용을 정하고 있습니다. 
+
+제1장 Mybeautybox(마이뷰티박스) 서비스
+
+제1절 총칙
+
+제1조 목적
+
+Mybeautybox(마이뷰티박스, 이하 “통합 멤버쉽”) 서비스 이용약관(이하 “통합 멤버쉽 약관”)은 회사가 제공하는 통합 멤버쉽 서비스와 관련하여 발생하는 일체의 권리, 의무 등을 정하는데 그 목적이 있습니다.
+
+제2조 통합 멤버쉽 서비스의 내용 및 운영
+
+① 회사는 통합 멤버쉽 서비스를 통하여 회사의 각 브랜드에 관한 다양한 정보 제공, 브랜드 별 포인트 현황 확인 및 관리, 각종 이벤트 및 경품 행사 진행, 뉴스레터 구독 등 고객 케어를 위한 통합 서비스를 제공합니다.
+② 고객이 통합 멤버쉽 서비스를 제공받기 위해서는 개인정보 처리방침에서 안내하는 내용에 따라 적절한 개인정보를 입력하셔서 통합 멤버쉽 회원(이하 “회원”)으로 가입하여야 합니다.
+③ 회사가 제공하는 통합 멤버쉽의 구체적인 내용 및 범위는 추가 또는 변경, 제외될 수 있습니다.
+
+제3조 약관의 변경
+
+① 통합 멤버쉽 약관은 회사의 경영환경의 변화, 영업 정책의 변경 등에 따라 변경될 수 있으며, 통합 멤버쉽 약관을 변경할 경우 회사는 변경된 약관의 효력이 발생하는 날로부터 7일(회원에게 불리한 변경의 경우 30일) 이전에 약관 변경의 사실 및 변경 내용 등을 다음 각 호의 방법 중 1가지 이상의 방법으로 회원에게 안내합니다. 1. 통합 멤버쉽 애플리케이션 및 홈페이지 등에 게시하여 안내
+2. 전자우편(E-mail) 또는 우편을 통한 안내
+3. 모바일 메시지(SMS, LMS, MMS, 알림톡 등) 또는 유선 전화를 통한 안내
+
+② 회사는 통합 멤버쉽 약관의 변경에 관한 내용을 회원에게 안내할 경우 회원이 입력한 가장 최근의 정보를 통하여 안내합니다.
+③ 회원은 본 조에 따라 변경된 약관에 대하여 이의가 있는 경우, 회원 탈퇴 또는 이의 제기를 할 수 있습니다. 회원이 제1항의 안내가 있은 후 변경된 약관의 시행일까지 별도의 의사표시를 하지 않는 경우에는 변경된 약관에 동의한 것으로 간주합니다.
+④ 본 조 제1항에서 정하는 안내 수단은 통합 멤버쉽 약관에서 특별히 정하지 않는 한, 통합 멤버쉽 약관의 각 조항에서 정하는 통지 및 안내 등에 준용합니다.
+
+제2절 회원
+
+제4조 회원 가입
+
+① 고객은 회사가 정한 회원 가입 양식에서 정한 내용을 기재한 후, 통합 멤버쉽 약관 및 개인정보의 수집, 이용, 제공 등에 동의함으로써 회원 가입을 신청할 수 있습니다.
+② 회사는 고객이 회원 가입 양식에 허위 내용을 등록하거나, 필수 정보의 기재 누락, 오기재 등의 사유 또는 고객을 회원으로 등록하는 것이 회사의 사업에 현저한 지장을 발생시킬 우려가 있는 경우가 아닌 경우, 회원 가입을 신청한 고객을 회원으로 등록합니다.
+③ 회사는 아동의 개인정보를 특별히 보호하기 위하여 만 14세 미만의 아동에 대하여 회원 가입을 제한하고 있습니다.
+④ 회원은 회사가 등록한 회원 자격 및 그로부터 파생된 권리를 제3자에게 양도, 대여, 담보 제공 등을 할 수 없습니다.
+
+제5조 회원 탈퇴 및 자격 상실
+
+① 회원은 언제든지 서면(전자서면 포함, 이하 동일), 전화 등 회사가 정한 방법으로 회원 탈퇴를 요청할 수 있습니다. 회사는 회원의 탈퇴 요청을 받은 즉시 회원 탈퇴 절차를 진행합니다.
+② 회원에게 다음 각 호의 사유가 존재하는 경우 회사는 회원 자격을 제한 또는 상실시킬 수 있습니다. 1. 회원 가입을 신청할 때 허위 내용을 등록한 경우
+2. 포인트를 부정하게 적립 또는 사용한 경우
+3. 통합 멤버쉽 서비스를 이용하는 과정에서 법령 또는 통합 멤버쉽 약관에서 정한 금지행위를 한 경우
+4. 제3자가 통합 멤버쉽 서비스를 이용하는 것을 방해하거나 제3자의 정보를 도용한 경우
+5. 기타 통합 멤버쉽 약관을 위반하여 회원 자격을 유지할 수 없는 중대한 사유가 발생한 경우
+
+③ 회사는 제2항의 경우, 회원에게 30일 이상의 기간을 정하여 해당 사유에 대한 소명할 기회를 제공합니다.
+④ 회원이 본 조에 따라 회원 탈퇴 또는 자격을 상실하는 경우, 탈퇴일 또는 회원 자격 상실일로부터 30일 동안 재가입을 할 수 없습니다. 회사는 탈퇴 또는 자격 상실 회원의 부정거래를 방지하기 위하여 본인인증정보 등을 포함한 최소한의 개인정보를 30일 간 보관할 수 있습니다.
+
+제3절 통합 멤버쉽 서비스
+
+제6조 회원 혜택
+
+① 회사는 등록한 회원에 대하여 적절한 서비스를 제공합니다.
+② 회사는 회원에 한하여 각종 이벤트 및 경품 제공 등에 참여할 수 있는 자격을 부여할 수 있습니다.
+
+제7조 포인트의 적립
+
+① 회원은 회사의 각 브랜드의 상품을 구매한 경우, 구매금액의 일정 부분을 각 브랜드의 포인트로 적립할 수 있습니다. 단, 포인트 적립은 회사의 매장, 브랜드 웹사이트, 제휴관계에 있는 구매처 등 회사가 지정한 경로를 통하여 구매한 경우에 한정됩니다.
+② 회사는 제1항에 따른 포인트의 적립 외에, 회원의 통합 멤버쉽 서비스 이용 과정에서 이벤트 참여 등 특별한 경우에 한하여 포인트를 제공할 수 있습니다.
+③ 회사는 경영환경 변화, 영업정책 변경 등에 따라 제3조 제1항에 따른 고지 후 포인트 적립에 관한 내용을 변경할 수 있습니다.
+
+제8조 포인트의 사용
+
+① 회원은 제7조에 따라 적립한 포인트를 회사가 지정한 채널에서 회사가 지정한 방법에 따라 사용할 수 있습니다. 단, 할인 상품, 행사 상품 등의 경우에는 사용이 제한될 수 있습니다.
+② 회원은 상품 또는 서비스를 구매할 때 1포인트 당 1원으로 환산하여 현금 또는 신용카드와 함께 사용할 수 있습니다.
+③ 회원이 포인트를 사용하여 상품을 구매한 경우, 판촉을 위한 샘플, 사은품 등의 지급이 제한될 수 있습니다.
+④ 회사는 경영환경 변화, 영업정책 변경 등에 따라 제3조 제1항에 따른 고지 후 포인트 사용에 관한 내용을 변경할 수 있습니다.
+
+제9조 포인트의 회수 및 소멸
+
+① 회원이 개인정보 도용, 부정거래 등 부정한 방법으로 포인트를 적립한 경우, 회사는 해당 포인트를 회수할 수 있습니다.
+② 회원이 탈퇴 또는 자격을 상실한 경우, 탈퇴 또는 자격 상실이 확정된 일자에 포인트는 소멸됩니다.
+③ 회원은 통합 멤버쉽 서비스를 통하여 포인트의 유효기간을 확인할 수 있으며, 회원이 유효기간 내에 포인트를 사용하지 않을 경우 해당 포인트는 소멸됩니다.
+④ 본 조에 따라 소멸된 포인트는 복구가 불가능합니다.
+
+제10조 서비스의 중단
+
+① 회사는 정보통신설비 및 통합 멤버쉽 서비스의 유지, 보수, 점검, 장애 등의 사유가 발생한 경우, 통합 멤버쉽 서비스의 전부 또는 일부를 일시적으로 중단할 수 있습니다.
+② 회사는 제1항의 사유가 발생한 경우, 제3조 제1항의 방법에 따라 회원에게 통지합니다.
+③ 회사의 고의 또는 과실로 통합 멤버쉽 서비스가 중단되어 회원에게 손해가 발생한 경우, 회사는 인과관계가 있는 회원의 손해를 배상합니다.
+</template>
+    <template id="terms-t2" data-title="개인정보의 수집/이용에 대한 동의">
+
+엘오케이 유한회사(이하 “회사”)는 본인의 식별 및 확인, 회원가입에 따른 포인트 적립 등 서비스 제공, 회원 대상 공지사항 안내 및 서비스 이용에 따른 불만 처리, 서비스의 부정 이용 방지 등을 위하여 귀하의 아이디, 비밀번호, 이름, 휴대전화번호, 이메일 주소, 생년월일, 성별, 주소, 제품 구매내역 등을 수집∙이용합니다.
+
+수집된 개인정보는 법령에 따라 보존하여야 하는 경우가 아닌 한,회원탈퇴 시까지 보유 및 이용 됩니다.
+
+귀하는 개인정보의 수집 및 이용에 대해 동의하지 않으실 수 있으나, 이 경우 회원가입이 제한될 수 있습니다.
+</template>
+    <template id="terms-t3" data-title="국외이전에 따른 개인정보 제3자 제공에 대한 동의">
+
+회사는 글로벌 회사로써 수집된 귀하의 개인정보는 아래와 같이 국외에 이전되어 위탁관리 되고 있음을 알려드립니다.
+
+개인정보를 이전받는 자(연락처): 로레알 그룹 본사(프랑스)
+(Customer@loreal.com) 및 아시아태평양(홍콩, 싱가포르)
+(lorealsos@accenture.com)
+
+이전 시기 및 이전 방법: 고객의 서비스 이용 시, 정보통신망을 이용한 전자적 전송
+
+이전하는 개인정보 항목: 아이디, 비밀번호, 이름, 휴대전화번호, 이메일 주소, 생년월일, 성별, 주소, 주문 내역, 전화/DM/SMS/EDM 수신여부, 쇼핑 경험 설문 만족도 조사 응답 내역
+
+이전받는 자의 개인정보 이용 목적 및 보유, 이용기간: 고객정보 및 구매내역 등 데이터 분석을 통한 서비스 개선, 회원탈퇴 시까지
+
+귀하는 제3자 제공에 동의하지 않으실 수 있으나, 회사의 시스템이 국외에 위치하고 있으므로 동의하지 않으시는 경우 회원가입이 제한될 수 있습니다.
+</template>
+    <template id="terms-t4" data-title="마케팅 수신에 대한 동의">
+
+회사는 수집된 귀하의 개인정보를 휴대폰 메시지(SMS, 카카오톡 등), 이메일, 우편, 전화를 통해 회원 탈퇴 시까지 회사에 포함된 브랜드의 제품 및 서비스 홍보, 행사 초대 등에 이용할 예정입니다.
+
+귀하는 마케팅 수신에 대한 동의를 거부하실 수 있으며, 이 경우 회사의 제품 및 서비스, 회사에 포함된 브랜드 프로모션, 이벤트 초대 등의 안내를 받지 못하실 수 있습니다.
+</template>
+    <template id="terms-t5" data-title="국외이전에 따른 개인정보 제3자 제공에 대한 동의">
+
+회사는 고객님께 최적화된 맞춤형 광고 및 서비스를 제공하기 위하여 다음과 같이 귀하의 개인정보를 국외에 위치한 제3자에게 이전(제공)합니다.
+&bull;개인정보를 이전받는 자(연락처):
+Meta Platforms Inc. (미국) (korealocalagent@support.facebook.com)
+Google Inc. (미국) (googlekrsupport@google.com)
+&bull;이전하는 개인정보 항목: 휴대전화번호, 이메일 주소
+&bull;이전 시기 및 이전 방법: 고객의 서비스 이용 시, 개인정보를 해쉬처리 후 정보통신망을 이용한 전자적 전송
+&bull;이전받는 자의 개인정보 이용 목적: 고객 이용 편의 서비스 제공, 맞춤형 상업적 콘텐츠 또는 광고 제공
+&bull;이전받는 자의 개인정보 보유, 이용기간:
+Meta Platforms Inc. : 14일 Google Inc. : 제휴 마케팅 서비스(광고) 완료 후 즉시(통상 48시간 이내)
+&bull;귀하는 제3자 제공에 동의하지 않으실 수 있으나, 동의하지 않으시는 경우 회사의 맞춤형 광고 및 콘텐츠 제공 서비스 이용이 제한될 수 있습니다.
+</template>
+
+
+
+
+<footer id="footer"></footer>
+
+  </main>
+
+
+</body>
+</html>
