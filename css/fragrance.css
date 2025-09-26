@@ -66,41 +66,42 @@
 } */
 
 /* pager plugin */
-.fra-carousel .swiper-button-prev {
+
+.fra-btn .swiper-button-prev {
   border: 1px solid #ac8d71;
   border-radius: 3rem;
   width: fit-content;
   height: fit-content;
   position: absolute;
-  left: 0;
-  top: 470px;
+  left: 200px;
+  top: 270px;
 }
 
-.fra-carousel .swiper-button-next {
+.fra-btn .swiper-button-next {
   border: 1px solid #ac8d71;
   border-radius: 3rem;
   width: fit-content;
   height: fit-content;
   position: absolute;
-  left: 40px;
-  top: 470px;
+  left: 240px;
+  top: 270px;
 
 }
 
-.fra-carousel .swiper-button-prev:hover img {
+.fra-btn .swiper-button-prev:hover img {
   background-color: #ac8d71;
   content: url(../images/arrow-left-wh.png);
   border-radius: 3rem;
 }
 
-.fra-carousel .swiper-button-next:hover img {
+.fra-btn .swiper-button-next:hover img {
   background-color: #ac8d71;
   content: url(../images/arrow-right-wh.png);
   border-radius: 3rem;
 }
 
-.fra-carousel .swiper-button-prev::after,
-.fra-carousel .swiper-button-next::after {
+.fra-btn .swiper-button-prev::after,
+.fra-btn .swiper-button-next::after {
   display: none;
 }
 
