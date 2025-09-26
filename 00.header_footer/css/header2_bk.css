@@ -80,7 +80,7 @@ header .header-left img {
     display: flex;
     color: var(--text-main1);
     font-size: 1.6rem;
-     align-items: flex-start;
+    align-items: flex-start;
     gap: 6px;
     width: 36px;
     justify-content: space-between;
@@ -137,7 +137,7 @@ header .header-left img {
 
     /* header */
     header .inner {
-        padding: 2.1rem;
+        /* padding: 2.1rem; */
         justify-content: center;
     }
 
@@ -165,4 +165,10 @@ header .header-left img {
     .gnb-menu .mo-logo {
         display: block;
     }
+
+    .header-right {
+        padding-top: 18px;
+    }
+
+
 }

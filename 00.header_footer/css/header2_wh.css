@@ -133,7 +133,7 @@ header .header-left img {
 
     /* header */
     header .inner {
-        padding: 2.1rem;
+        /* padding: 2.1rem; */
         justify-content: center;
     }
 
@@ -160,5 +160,9 @@ header .header-left img {
 
     .gnb-menu .mo-logo {
         display: block;
+    }
+
+    .header-right {
+        padding-top: 18px;
     }
 }

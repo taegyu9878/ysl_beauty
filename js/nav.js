@@ -134,7 +134,25 @@ langItems.forEach(li => {
   });
 });
 
+//섹션 넘어가면 헤더 스타일 변경
+const header = document.querySelector("header");
+const firstSection = document.querySelector(".first");
 
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // 첫번째 섹션이 보일 때
+        header.classList.remove("active");
+      } else {
+        // 첫번째 섹션을 지나치면
+        header.classList.add("active");
+      }
+    });
+  },
+  { threshold: 0.15 } // 절반 이상 보일 때 감지
+);
 
+observer.observe(firstSection);
 
 
