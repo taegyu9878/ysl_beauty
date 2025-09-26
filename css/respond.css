@@ -36,7 +36,7 @@
         position: fixed;
         display: none;
         width: 70%;
-        height: 100%;
+        height: 100vh;
         padding: 0;
         border-radius: 0px;
         max-width: 500px;
@@ -44,6 +44,10 @@
         border: none;
         backdrop-filter: none;
         box-shadow: none;
+    }
+
+    header.active .main-tab {
+        color: #fff;
     }
 
     .main-tab.open {
@@ -266,6 +270,10 @@
         .middle-title {
             margin-top: 4rem;
         }
+
+        .sub-title {
+            text-align: justify;
+        }
     }
 
     /* footer */
@@ -295,11 +303,12 @@
     }
 
     section .main-title {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     section .sub-title {
-        font-size: 2rem;
+        font-size: 1.7rem;
+        word-break: keep-all;
     }
 
     /* .inner {
@@ -318,7 +327,7 @@
     /* main */
     /* video */
     .video-bg {
-        height: 752px;
+        height: 720px;
     }
 
     .video-wrap .radius {
@@ -358,7 +367,7 @@
             top: 50%;
             transform: translate(-50%, -50%);
             z-index: 100;
-            font-size: 3.6rem;
+            font-size: 2.4rem;
             font-weight: 600;
             text-align: center;
             color: var(--text-main2);
@@ -369,7 +378,7 @@
     /* fra */
 
     .fra-carousel {
-        padding: 15rem 0 0 0;
+        padding: 15rem 0 5rem 0;
         width: 340px;
     }
 
@@ -435,6 +444,8 @@
 
     .libre-wrap .banner-right {
         height: 24.3rem;
+        width: 250px;
+        /* background-color: aqua; */
         top: 410px;
     }
 
@@ -494,7 +505,9 @@
     }
 
     /* lookbook */
-
+    .lookbook-wrap .item-imgs .swiper-slide {
+        border-radius: 0px;
+    }
 
     /* footer */
     footer .inner {
@@ -509,7 +522,7 @@
         margin: 0 auto;
     }
 
-    x .footer-right {
+    .footer-right {
         width: 150px;
         justify-content: center;
         /* background: pink; */
