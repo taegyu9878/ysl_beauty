@@ -11,9 +11,17 @@
     <link rel="stylesheet" href="./05.css/ysl-face_item_colors.css">
     <link rel="stylesheet" href="./05.css/ysl-item-list.css">
     <link rel="stylesheet" href="./05.css/face_tap_page.css">
+    <!-- <link rel="stylesheet" href="../css/ysl_footer.css"> -->
+    <!-- <link rel="stylesheet" href="../00.header_footer/css/header2_bk.css"> -->
+    <!-- <link rel="stylesheet" href="../css/search.css"> -->
+    <!-- <link rel="icon" type="image/png" href="../images/ysl_favicon.png"> -->
+    <!-- <script defer src="../00.header_footer/js/sub-header.js"></script> -->
+    <script defer src="./05.js/filter-popup.js"></script>
+    <!-- <script defer src="../00.header_footer/js/sub-footer.js"></script> -->
 </head>
 
 <body>
+    <header id="header"></header>
     <section class="page-warp">
         <div class="inner">
             <div class="tap-wrap">
@@ -23,9 +31,9 @@
                     <div class="tap-link">
                         <p>Face</p>
                         <p>|</p>
-                        <p><a href="#">Lip</a></p>
+                        <p><a href="./ysl_sub_lip_makeup.html">Lip</a></p>
                         <p>|</p>
-                        <p><a href="#">Eye</a></p>
+                        <p><a href="./ysl_sub_eye_makeup.html">Eye</a></p>
                     </div>
                 </div>
             </div>
@@ -36,7 +44,8 @@
                         <P>16제품</P>
                     </div>
                     <div class="right">
-                        <p>필터<a href="#void"><img src="./05.images/Arrow-down.svg" alt="down-arrow"></a></p>
+                        <p>필터<a href="#void" class="filter"><img src="./05.images/Arrow-down.svg" alt="down-arrow"></a>
+                        </p>
                         <p>정렬<a href="#void"><img src="./05.images/Arrow-down.svg" alt="down-arrow"></a></p>
                     </div>
                 </div>
@@ -581,7 +590,57 @@
             </div>
         </div>
     </section>
+    <section class="filter-popup-wrap">
+        <div class="filter-popup">
+            <div class="title">
+                <h2>Filter</h2>
+                <div class="close"><a href="#"></a></div>
+            </div>
+            <div class="filter-menu">
+                <div class="filter-title">종류</div>
+                <div class="filter-select">
+                    <p>쿠션</p>
+                    <p>파운데이션</p>
+                    <p>컨실러</p>
+                    <p>컴팩트/파우더</p>
+                    <p>블러쉬/블론저</p>
+                </div>
 
+            </div>
+            <div class="filter-menu">
+                <div class="filter-title">텍스쳐</div>
+                <div class="filter-select">
+                    <p>매트</p>
+                    <p>새틴</p>
+                    <p>쉬머</p>
+                    <p>내추럴 매트</p>
+                </div>
+            </div>
+            <div class="filter-menu">
+                <div class="filter-title">컬렉션</div>
+                <div class="filter-select">
+                    <p>엉크르 드 뽀</p>
+                    <p>탑 시크릿</p>
+                    <p>메이크 미 블러쉬</p>
+                    <p>바운스 레더 에디션</p>
+                    <p>로즈 마블 컬렉션</p>
+
+                </div>
+            </div>
+            <div class="filter-menu">
+                <div class="filter-title">가격대</div>
+                <div class="filter-select">
+                    <p>전체</p>
+                    <p>5만원 이하</p>
+                    <p>5만원~10만원</p>
+                    <p>10만원 이상</p>
+
+                </div>
+            </div>
+            <div class="import"><a href="#">적용하기</a></div>
+        </div>
+    </section>
+    <footer id="footer"></footer>
 
 
 </body>
