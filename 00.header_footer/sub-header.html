@@ -118,20 +118,20 @@
             <p class="close-btn" id="close-btn"><a href="#"><img src="../images/close-icon.png" alt="close button"></a>
             </p>
             <div class="search">
-                <div class="search-box">
-                    <p><a href="#">검색어를 입력해주세요</a></p>
-                    <p><a href="#"><img src="../images/search-icon_grey.png" alt="search-icon"></a></p>
-                </div>
+                <form class="search-box" id="search-form">
+                    <input type="text" id="search-input" placeholder="검색어를 입력해주세요">
+                    <button id="search-btn"><img src="../images/search-icon_grey.png" alt="search-icon"></button>
+                </form>
                 <div class="search-word">
                     <div class="word-box">
                         <p>최근 검색어</p>
-                        <p><a href="#">전체삭제</a></p>
+                        <p><a href="#" id="clear-all">전체삭제</a></p>
                     </div>
-                    <div class="word-history">
-                        <p><a href="#">남자향수</a></p>
+                    <div class="word-history" id="word-history">
+                        <!-- <p><a href="#">남자향수</a></p>
                         <p><a href="#">리브르</a></p>
                         <p><a href="#">립스틱</a></p>
-                        <p><a href="#">핑크 쿠션</a></p>
+                        <p><a href="#">핑크 쿠션</a></p> -->
                     </div>
                 </div>
             </div>

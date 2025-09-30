@@ -1,4 +1,11 @@
-
+//video-wrap
+//버튼 누르면 다음 섹션으로 이동
+document.querySelector(".video-btn a").addEventListener("click", function(e){
+  const nextSection = document.querySelector(".video-wrap").nextElementSibling;
+  if(nextSection){
+    nextSection.scrollIntoView({ behavior: "smooth" });
+  }
+});
 
 //exclusive-wrap
 let serviceList = document.querySelectorAll(".service-list>li");

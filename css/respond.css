@@ -132,6 +132,17 @@
 
     }
 
+    .fra-btn .swiper-button-prev {
+        left: 200px;
+        top: 270px;
+    }
+
+    .fra-btn .swiper-button-next {
+        left: 240px;
+        top: 270px;
+
+    }
+
     .rose-banner .rose-text {
         padding: 3rem;
     }
@@ -462,11 +473,20 @@
     /* fre */
     .fra-inner {
         height: 65rem;
+        gap: 0;
     }
 
     .fra-inner .fra-icon {
         display: none;
     }
+    .fra-inner-left-text{
+        padding: 0 3rem 10rem 3rem;
+    }
+    .fra-btn{
+        display: none;
+    }
+
+
 
     /* rose banner */
     .rose-banner .inner {
