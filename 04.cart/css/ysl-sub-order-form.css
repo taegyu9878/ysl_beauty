@@ -135,11 +135,13 @@
     background: var(--text-main2);
     border: 1px solid var(--text-sub1);
     border-radius: 8px;
+    cursor: pointer;
 }
 .cart-order-request-select>.select-text-box{
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--text-main1);
+    cursor: pointer;
 }
 .cart-order-request-text-box{
    
@@ -260,10 +262,11 @@
     border: 1px solid var(--text-sub1);
     border-radius: 8px;
     color: var(--text-sub2);
-    padding: 10px;
+    padding: 12px;
     display: flex;
     justify-content: flex-start;
     flex: 1;
+    
 }
 .reward-select-btn{
     background: var(--text-main2);
@@ -307,7 +310,7 @@
 }
 .cart-coupon-btn>a>span{
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--text-main1);
 }
 

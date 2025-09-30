@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="../00.header_footer/css/header2_bk.css">
     <link rel="stylesheet" href="../css/ysl_footer.css">
     <link rel="stylesheet" href="../css/search.css">
+    <script defer src="./js/ysl-sub-order-op-popup.js"></script>
+    <script defer src="../js/search.js"></script>
     <script defer src="./js/ysl-sub-order-order-result-popup.js"></script>
     <script async src="../00.header_footer/js/sub-header.js"></script>
     <script defer src="../00.header_footer/js/sub-footer.js"></script>
@@ -165,11 +167,9 @@
                                     <p>보유 리워드 사용</p>
                                 </div>
                                 <div class="reward-select-list">
-                                    <div class="reward-text-box">
-                                        <a href="#">
-                                            최소 1000포인트 이상 보유 시 사용 가능
-                                        </a>
-                                    </div>
+                                    <!-- <div class="reward-text-box"> -->
+                                        <textarea class="reward-text-box" rows="1" cols="60" placeholder="최소 1000포인트 이상 보유 시 사용 가능"></textarea>
+                                    <!-- </div> -->
                                     <div class="reward-select-btn">
                                         <a href="#">
                                             사용취소
@@ -186,7 +186,7 @@
                                     <p>쿠폰 적용</p>
                                 </div>
                                 <div class="cart-coupon-btn">
-                                    <input type="text" value="">쿠폰 변경
+                                    <a href="#"><span>쿠폰 변경</span></a>
                                 </div>
                             </div>
 
