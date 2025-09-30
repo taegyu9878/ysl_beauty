@@ -1,0 +1,41 @@
+:root {
+    --background-color: #f2f2f2;
+    --text-main1: #1d1d1d;
+    --text-main2: #ffffff;
+    --text-sub1: #d9d9d9;
+    --text-sub2: #959595;
+    --text-sub3: #686868;
+    --text-sub4: #4f4f4f;
+}
+
+
+/* order-op-popup-wrap */
+.order-op-popup-wrap{
+    display: none;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.order-op-popup-wrap.active{
+    display: block;
+}
+
+.order-op-popup{
+    width: 480px;
+    height: 270px;
+    background: var(--text-main2);
+    border: 1px solid var(--text-sub2);
+    border-radius: 12px;
+    position: absolute;
+    top: 25%;
+    left: 37%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*  */
