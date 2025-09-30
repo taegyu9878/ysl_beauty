@@ -1,18 +1,21 @@
 :root {
-    --peek-width: 220px;
-    --gap: 30px;
+    --peek-width: 22rem;
+    --gap: 3rem;
 }
 
 .page-wrapper {
-    margin: 0;
+    /* margin:0; */
+    padding:7rem 0 5rem 0;
     overflow-x: hidden;
+    /* border:10px solid red; */
 }
 
 .slider-container {
     width: 100%;
-    margin: 50px 0;
+    /* margin: 7rem 0 5rem 0; */
     overflow: hidden;
     position: relative;
+    /* border:10px solid blue; */
 }
 .slides {
     display: flex;
@@ -21,21 +24,21 @@
     padding: 0 calc(var(--peek-width) + var(--gap));
 }
 .slide {
-    height: 400px; /* <<< 여기 높이를 250px에서 400px로 수정했습니다. */
+    height: 40rem; /* <<< 여기 높이를 250px에서 400px로 수정했습니다. */
     width: calc(100vw - (var(--peek-width) * 2) - (var(--gap) * 2));
     flex-shrink: 0;
-    border-radius: 10px;
+    border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba(0,0,0,0.5);
 }
 
 .slider-nav {
     position: absolute;
-    bottom: 20px;
+    bottom: 2rem;
     left: 0;
     width: 100%;
     box-sizing: border-box;
@@ -47,16 +50,16 @@
 }
 .slide-counter-current,
 .slide-counter-total {
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: bold;
     color: white;
 }
 .slider-bar-container {
-    width: 60px;
-    margin: 0 4px;
-    height: 5px;
+    width: 6rem;
+    margin: 0 0.4rem;
+    height: 0.5rem;
     background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
+    border-radius: 0.5rem;
 }
 .slider-bar {
     width: 0;

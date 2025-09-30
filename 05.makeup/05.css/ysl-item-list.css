@@ -1,5 +1,6 @@
 .item-wrap{
-    padding:0 150px 0;
+    padding:0 15rem 0;
+    margin-bottom: 12rem;
 }
 .filter-bar {
     display: flex;
@@ -9,39 +10,39 @@
 
 .filter-bar .left {
     display: flex;
-    gap: 10px;
+    gap: 1rem;
     align-items: center;
 }
 
 .filter-bar .left p:first-child {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
 }
 
 .filter-bar .left p:last-child {
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: 400;
     color: #959595;
 }
 
 .filter-bar .right {
     display: flex;
-    gap: 10px;
-    font-size:16px;
-    font-weight:400;
+    gap: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
 }
 
 
 .items-list-all{
     display: flex;
     flex-direction: column;
-    gap:80px;
-    margin-top:40px;
+    gap: 8rem;
+    margin-top: 4rem;
 }
 .item-list {
     display: flex;
-    gap: 40px;
-    justify-content: space-between;   
+    gap: 4rem;
+    justify-content: space-between;
 }
 .nin{
     justify-content: flex-start;
