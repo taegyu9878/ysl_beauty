@@ -13,8 +13,11 @@
 }
 
 .cart-wrap{
-    max-width: 1920px;
-    padding: 135px 300px 300px 300px;
+    /* max-width: 1920px;
+    padding: 135px 300px 300px 300px; */
+    /* 이렇게 주면 모바일에서 이너가 줄어들지 않음
+    패딩 사방으로 주지 않기 */
+    padding-top: 135px;
     margin: 0 auto;
     background-color: var(--background-color);
 }
@@ -38,6 +41,7 @@
 }
 .cart-inner-bottom{
     display: flex;
+    /* 플렉스 취소하고 패딩 값 조금 주기 */
     gap: 20px;
     /* justify-content: space-between; */
 }
@@ -45,6 +49,7 @@
 /* inner-left */
 .cart-inner-left{
     display: flex;
+    /* 반응형 할 때 플렉스 준 거 취소하기 */
     flex-direction: column;
     padding: 0 20px;
     /* width: 780px; */
