@@ -2,11 +2,11 @@
 .makeup-inner{
     display: flex;
     flex-direction: column;
-    gap:40px;
-    margin-top:60px;
+    gap: 4rem;
+    margin-top: 6rem;
 }
 h2{
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 500;
     text-align: center;
 }
@@ -21,9 +21,9 @@ h2{
     transition: 0.5s ;
 }
 .tap-text {
-    margin-top:20px;
-    font-size: 16px;
-    font-weight:400;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    font-weight: 400;
 }
 .makeup-list .img {
     z-index: 100;
@@ -32,8 +32,8 @@ h2{
 
 /* face-tap */
 .face-tap{
-    width:275px;
-    height:300px;
+    width:27rem;
+    height:30rem;
     text-align: center;
     align-items: center;
     /* border:1px solid black; */
@@ -42,8 +42,8 @@ h2{
     position:relative;
     display: flex;
     flex-direction: column;
-    width:275px;
-    height:260px;
+    width:27rem;
+    height:26rem;
 }   
 .makeup-list .face-tap-imgs img {
     position: absolute;
@@ -57,8 +57,8 @@ h2{
 
 /* lip-tap */
 .lip-tap{
-    width:275px;
-    height:300px;
+    width:27rem;
+    height:30rem;
     text-align: center;
     /* border:1px solid black; */
 }
@@ -66,13 +66,13 @@ h2{
     position:relative;
     display: flex;
     flex-direction: column;
-    width:275px;
-    height:260px;
+    width:27rem;
+    height:26rem;
     /* border:1px solid blue; */
 }
 .makeup-list .lip-tap .img{
-    width:167px;
-    height:245px;
+    width:16.7rem;
+    height:24.5rem;
     /* border:1px solid black; */
     position: absolute;
     left: 50%;
@@ -91,8 +91,8 @@ h2{
 
 /* eye-tap */
 .eye-tap{
-    width:275px;
-    height:300px;
+    width:27rem;
+    height:30rem;
     text-align: center;
     /* border:1px solid black; */
 }
@@ -100,13 +100,13 @@ h2{
     position:relative;
     display: flex;
     flex-direction: column;
-    width:275px;
-    height:260px;
+    width:27rem;
+    height:26rem;
 }
 .makeup-list .eye-tap-imgs .img{
     position:absolute;
-    width:308px;
-    height:250px;
+    width:30.8rem;
+    height:25rem;
     left:50%;
     bottom:0;
     transform:translateX(-50%);
