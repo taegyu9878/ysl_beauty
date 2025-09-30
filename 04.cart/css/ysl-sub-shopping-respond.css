@@ -1,6 +1,6 @@
 @media screen and(max-width:1400px){
     .cart-wrap{
-
+        
     }
     .cart-wrap>.inner{
         display: inline-block;
@@ -14,11 +14,16 @@
 }
 
 
+@media screen and(max-width:1150px){
+
+}
+
+
 @media screen and(max-width:767px){
 
 }
 
 
-@media screen and(max-width:393px){
+@media screen and (max-width:393px){
 
 }

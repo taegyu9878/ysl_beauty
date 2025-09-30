@@ -136,24 +136,25 @@
     border: 1px solid var(--text-sub1);
     border-radius: 8px;
 }
-.cart-order-request-select>a{
+.cart-order-request-select>.select-text-box{
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--text-main1);
 }
 .cart-order-request-text-box{
-    width: 100%;
+   
+}
+.cart-order-request-text-box>.request-text{
+     width: 100%;
     height: 150px;
     padding: 10px;
     background: var(--text-main2);
     border: 1px solid var(--text-sub1);
     border-radius: 8px;
     align-items: flex-start;
-}
-.cart-order-request-text-box>a{
     font-size: 1.6rem;
     font-weight: 400;
-    color: var(--text-sub2);
+    
 }
 
 /* order item list wrap */
