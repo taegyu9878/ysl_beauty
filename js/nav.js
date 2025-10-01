@@ -2,6 +2,7 @@
 const hamburger = document.querySelector(".mo-ham");
 const mainTab = document.querySelector(".main-tab");
 const overlay = document.querySelector(".header-left");
+const hamCloseBtn = document.querySelector(".ham-close-btn");
 
 hamburger.addEventListener("click", () => {
   const isOpen = mainTab.classList.toggle("open");
@@ -13,6 +14,12 @@ hamburger.addEventListener("click", () => {
   }
 });
 
+//close 버튼 누르면 닫히게 하기
+hamCloseBtn.addEventListener("click", (e) => {
+  mainTab.classList.remove("open");
+  overlay.style.display = "none";
+})
+
 // 오버레이 클릭하면 닫히게 하기
 overlay.addEventListener("click", (e) => {
   if (e.target === overlay) {
@@ -20,6 +27,8 @@ overlay.addEventListener("click", (e) => {
     overlay.style.display = "none";
   }
 });
+
+
 
 //main-tab 각 버튼으로 열기
 const menus = document.querySelectorAll(".main-menu li");
