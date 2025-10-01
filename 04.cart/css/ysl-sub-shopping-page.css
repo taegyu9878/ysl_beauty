@@ -275,7 +275,7 @@
 
 .cart-pay-btn{
     background: var(--text-main1);
-    padding: 18px 150px;
+    padding: 18px 0 18px 0;
     justify-content: center;
     align-items: center;
     border-radius: 12px;
@@ -283,7 +283,7 @@
     width: 100%;
 
 }
-.cart-pay-btn>a{
+.cart-pay-btn>.cart-pay-btn-text-box{
     color: var(--text-main2);
     text-align: center;
     font-size: 2rem;

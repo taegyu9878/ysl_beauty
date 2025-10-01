@@ -1,5 +1,5 @@
 /* popup */
-.order-coupon-popup-wrap{
+.shopping-coupon-popup-wrap{
     display: none;
     position: fixed;
     background: rgba(0, 0, 0, 0.3);
@@ -8,11 +8,11 @@
     top: 0;
     left: 0;
 }
-.order-coupon-popup-wrap.active{
+.shopping-coupon-popup-wrap.active{
     display: block;
 }
 
-.order-coupon-popup{
+.shopping-coupon-popup{
     /* display: none; */
     position: absolute;
     background: #fff;
@@ -25,7 +25,7 @@
     border-radius: 12px;
 }
 
-.order-coupon-popup-header{
+.shopping-coupon-popup-header{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -37,7 +37,7 @@
     /* border: 1px solid black; */
 }
 
-.order-coupon-popup-contents{
+.shopping-coupon-popup-contents{
     display: flex;
     flex-direction: column;
     gap: 23px;
@@ -45,29 +45,29 @@
     /* border: 1px solid black; */
 }
 
-.order-coupon-popup-item-list{
+.shopping-coupon-popup-item-list{
     display: flex;
     flex-direction: column;
     gap: 12px;
     width: 100%;
 }
-.order-coupon-item{
+.shopping-coupon-item{
     padding: 10px;
     border: 1px solid var(--text-sub1);
     border-radius: 8px;
 }
-.order-coupon-item-title{
+.shopping-coupon-item-title{
     display: flex;
     gap: 12px;
     padding-bottom: 12px;
     border-bottom: 1px solid var(--text-sub1);
 }
 
-.order-coupon-del-btn.active{
+.shopping-coupon-del-btn.active{
     display: block;
 }
 
-.order-coupon-item-title .order-coupon-text-box{
+.shopping-coupon-item-title .shopping-coupon-text-box{
     display: flex;
     justify-content: space-between;
     /* border: 1px solid black; */
@@ -81,7 +81,7 @@
     font-weight: 500;
     color: var(--text-main1);
 } */
-.order-coupon-item-title .order-coupon-text-box .order-coupon-popup-del-btn{
+.shopping-coupon-item-title .shopping-coupon-text-box .shopping-coupon-popup-del-btn{
     /* display: none; */
     border: 1px solid var(--text-sub1);
     background: var(--text-main2);
@@ -92,24 +92,24 @@
     font-weight: 400;
     color: var(--text-main1);
 }
-.order-coupon-item-bottom{
+.shopping-coupon-item-bottom{
     display: flex;
     flex-direction: column;
     gap: 25px;
     padding: 13px 0 0 0;
 }
-.order-coupon-item-bottom>p{
+.shopping-coupon-item-bottom>p{
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--text-main1);
 }
-.order-coupon-item-bottom>span{
+.shopping-coupon-item-bottom>span{
     font-size: 1.3rem;
     font-weight: 400;
     color: var(--text-sub3);
 }
 
-.order-coupon-popup-btn{
+.shopping-coupon-popup-btn{
     width: 100%;
     align-items: center;
     cursor: pointer;
@@ -118,7 +118,7 @@
     background: var(--text-sub3);
 }
 
-.order-coupon-popup-btn>.order-coupon-apply-btn{
+.shopping-coupon-popup-btn>.shopping-coupon-apply-btn{
     width: 100%;
     /* border: 1px solid black; */
     text-align: center;
@@ -127,7 +127,7 @@
     font-size: 1.6rem;
     font-weight: 500;
 }
-.order-coupon-popup-btn:hover{
+.shopping-coupon-popup-btn:hover{
     background: var(--text-main1);
     color: var(--text-main2);
 }
