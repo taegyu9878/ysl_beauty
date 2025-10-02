@@ -1,14 +1,3 @@
-:root {
-    --background-color: #f2f2f2;
-    --text-main1: #1d1d1d;
-    --text-main2: #ffffff;
-    --text-sub1: #d9d9d9;
-    --text-sub2: #959595;
-    --text-sub3: #686868;
-    --text-sub4: #4f4f4f;
-}
-
-
 /* order-op-popup-wrap */
 .order-op-popup-wrap{
     display: none;

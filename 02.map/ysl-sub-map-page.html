@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YSL MAP</title>
     <link rel="stylesheet" href="../font/pretendard.css">
+    <link rel="icon" type="image/png" href="../images/ysl_favicon.png">
     <link rel="stylesheet" href="./css/common-ysl.css">
     <link rel="stylesheet" href="./css/ysl-sub-map-page.css">
     <link rel="stylesheet" href="./css/ysl-sub-map-filter-popup.css">
     <link rel="stylesheet" href="./css/ysl-sub-map-respond.css">
-    <link rel="icon" type="image/png" href="../images/ysl_favicon.png">
     <link rel="stylesheet" href="../00.header_footer/css/header2_bk.css">
     <link rel="stylesheet" href="../css/ysl_footer.css">
     <link rel="stylesheet" href="../css/search.css">
     <script defer src="../js/search.js"></script>
+    <script defer src="./js/ysl-sub-map-imgcard-wrap.js"></script>
     <script defer src="./js/ysl-sub-map-select-wrap.js"></script>
     <script async src="../00.header_footer/js/sub-header.js"></script>
     <script defer src="../00.header_footer/js/sub-footer.js"></script>
@@ -168,119 +169,161 @@
                             <button class="tab-map-img"><a href="#">지도</a></button>
                         </div>
                         <div class="map-inner-right-bottom">
-                            <div class="map-list">
-                                <div class="map-card">
-                                    <div class="map-card-top">
-                                        <div class="map-list-title"><a href="#">입생로랑뷰티 신세계백화점 강남점</a></div>
-                                        <p class="map-list-dist">1.6Km</p>
+                            <select multiple class="map-list-box">
+                                <div class="map-list">
+                                    <div class="map-card">
+                                        <div class="map-card-top">
+                                            <div class="map-list-title"><a href="#">입생로랑뷰티 신세계백화점 강남점</a></div>
+                                            <p class="map-list-dist">1.6Km</p>
+                                        </div>
+                                        <div class="map-list-exp">
+                                            <p><span class="open">오픈</span>오후 8:00에 영업종료</p>
+                                            <p>입생로랑뷰티 신세계백화점 강남점</p>
+                                        </div>
+                                        <div class="map-tag-box">
+                                            <span>메이크업 서비스</span><span>스페셜 기프트</span><span>피부진단 및 피팅</span>
+                                        </div>
+                                        <div class="map-card-img-box">
+                                            <div class="map-card-img">
+                                                <a href="#"><img src="./images/map-card1.png" alt="매장이미지1"></a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="map-list-exp">
-                                        <p><span class="open">오픈</span>오후 8:00에 영업종료</p>
-                                        <p>입생로랑뷰티 신세계백화점 강남점</p>
-                                    </div>
-                                    <div class="map-tag-box">
-                                        <span>메이크업 서비스</span><span>스페셜 기프트</span><span>피부진단 및 피팅</span>
-                                    </div>
-                                </div>
 
-                                <div class="map-card">
-                                    <div class="map-card-top">
-                                        <div class="map-list-title"><a href="#">입생로랑뷰티 신세계백화점 압구정본점</a></div>
-                                        <p class="map-list-dist">2.8Km</p>
+                                    <div class="map-card">
+                                        <div class="map-card-top">
+                                            <div class="map-list-title"><a href="#">입생로랑뷰티 신세계백화점 압구정본점</a></div>
+                                            <p class="map-list-dist">2.8Km</p>
+                                        </div>
+                                        <div class="map-list-exp">
+                                            <p><span class="close">마감</span>오전 10:30에 영업시작</p>
+                                            <p>서울특별시 강남구 압구정로 165 신세계백화점 압구정본점 1층</p>
+                                        </div>
+                                        <div class="map-tag-box">
+                                            <span>메이크업 서비스</span><span>스페셜 기프트</span><span>피부진단 및 피팅</span>
+                                        </div>
+                                        <div class="map-card-img-box">
+                                            <div class="map-card-img">
+                                                <a href="#"><img src="./images/map-card2.png" alt="매장이미지2"></a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="map-list-exp">
-                                        <p><span class="close">마감</span>오전 10:30에 영업시작</p>
-                                        <p>서울특별시 강남구 압구정로 165 신세계백화점 압구정본점 1층</p>
-                                    </div>
-                                    <div class="map-tag-box">
-                                        <span>메이크업 서비스</span><span>스페셜 기프트</span><span>피부진단 및 피팅</span>
-                                    </div>
-                                </div>
 
-                                <div class="map-card">
-                                    <div class="map-card-top">
-                                        <div class="map-list-title"><a href="#">입생로랑뷰티 갤러리아백화점 명품관 WEST</a></div>
-                                        <p class="map-list-dist">3.3Km</p>
+                                    <div class="map-card">
+                                        <div class="map-card-top">
+                                            <div class="map-list-title"><a href="#">입생로랑뷰티 갤러리아백화점 명품관 WEST</a></div>
+                                            <p class="map-list-dist">3.3Km</p>
+                                        </div>
+                                        <div class="map-list-exp">
+                                            <p><span class="open">오픈</span>오후 8:00에 영업종료</p>
+                                            <p>서울특별시 강남구 압구정로 343 갤러리아백화점 명품관 WEST 2층</p>
+                                        </div>
+                                        <div class="map-tag-box">
+                                            <span>스페셜 기프트</span><span>팝업스토어</span>
+                                        </div>
+                                        <div class="map-card-img-box">
+                                            <div class="map-card-img">
+                                                <a href="#"><img src="./images/map-card3.png" alt="매장이미지3"></a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="map-list-exp">
-                                        <p><span class="open">오픈</span>오후 8:00에 영업종료</p>
-                                        <p>서울특별시 강남구 압구정로 343 갤러리아백화점 명품관 WEST 2층</p>
-                                    </div>
-                                    <div class="map-tag-box">
-                                        <span>스페셜 기프트</span><span>팝업스토어</span>
-                                    </div>
-                                </div>
 
-                                <div class="map-card">
-                                    <div class="map-card-top">
-                                        <div class="map-list-title"><a href="#">입생로랑뷰티 현대백화점 무역센터점</a></div>
-                                        <p class="map-list-dist">3.4Km</p>
+                                    <div class="map-card">
+                                        <div class="map-card-top">
+                                            <div class="map-list-title"><a href="#">입생로랑뷰티 현대백화점 무역센터점</a></div>
+                                            <p class="map-list-dist">3.4Km</p>
+                                        </div>
+                                        <div class="map-list-exp">
+                                            <p><span class="open">오픈</span>오후 8:00에 영업종료</p>
+                                            <p>서울특별시 강남구 테헤란로 517 현대백화점 무역센터점 1층</p>
+                                        </div>
+                                        <div class="map-tag-box">
+                                            <span>메이크업 서비스</span><span>스페셜 기프트</span>
+                                        </div>
+                                        <div class="map-card-img-box">
+                                            <div class="map-card-img">
+                                                <a href="#"><img src="./images/map-card4.png" alt="매장이미지4"></a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="map-list-exp">
-                                        <p><span class="open">오픈</span>오후 8:00에 영업종료</p>
-                                        <p>서울특별시 강남구 테헤란로 517 현대백화점 무역센터점 1층</p>
-                                    </div>
-                                    <div class="map-tag-box">
-                                        <span>메이크업 서비스</span><span>스페셜 기프트</span>
-                                    </div>
-                                </div>
 
-                                <div class="map-card">
-                                    <div class="map-card-top">
-                                        <div class="map-list-title"><a href="#">입생로랑뷰티 롯데백화점 잠실점</a></div>
-                                        <p class="map-list-dist">6.9Km</p>
+                                    <div class="map-card">
+                                        <div class="map-card-top">
+                                            <div class="map-list-title"><a href="#">입생로랑뷰티 롯데백화점 잠실점</a></div>
+                                            <p class="map-list-dist">6.9Km</p>
+                                        </div>
+                                        <div class="map-list-exp">
+                                            <p><span class="open">오픈</span>오후 8:00에 영업종료</p>
+                                            <p>서울특별시 송파구 올림픽로 240 롯데백화점 잠실점 1층</p>
+                                        </div>
+                                        <div class="map-tag-box">
+                                            <span>스페셜 기프트</span><span>피부진단 및 피팅</span>
+                                        </div>
+                                        <div class="map-card-img-box">
+                                            <div class="map-card-img">
+                                                <a href="#"><img src="./images/map-card5.png" alt="매장이미지5"></a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="map-list-exp">
-                                        <p><span class="open">오픈</span>오후 8:00에 영업종료</p>
-                                        <p>서울특별시 송파구 올림픽로 240 롯데백화점 잠실점 1층</p>
-                                    </div>
-                                    <div class="map-tag-box">
-                                        <span>스페셜 기프트</span><span>피부진단 및 피팅</span>
-                                    </div>
-                                </div>
 
-                                <div class="map-card">
-                                    <div class="map-card-top">
-                                        <div class="map-list-title"><a href="#">입생로랑뷰티 롯데면세점 월드타워점</a></div>
-                                        <p class="map-list-dist">7.1Km</p>
+                                    <div class="map-card">
+                                        <div class="map-card-top">
+                                            <div class="map-list-title"><a href="#">입생로랑뷰티 롯데면세점 월드타워점</a></div>
+                                            <p class="map-list-dist">7.1Km</p>
+                                        </div>
+                                        <div class="map-list-exp">
+                                            <p><span class="open">오픈</span>오후 8:00에 영업종료</p>
+                                            <p>서울특별시 송파구 올림픽로 300 롯데면세점 월드타워점 9층</p>
+                                        </div>
+                                        <div class="map-tag-box">
+                                            <span>스페셜 기프트</span>
+                                        </div>
+                                        <div class="map-card-img-box">
+                                            <div class="map-card-img">
+                                                <a href="#"><img src="./images/map-card6.png" alt="매장이미지6"></a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="map-list-exp">
-                                        <p><span class="open">오픈</span>오후 8:00에 영업종료</p>
-                                        <p>서울특별시 송파구 올림픽로 300 롯데면세점 월드타워점 9층</p>
-                                    </div>
-                                    <div class="map-tag-box">
-                                        <span>스페셜 기프트</span>
-                                    </div>
-                                </div>
 
-                                <div class="map-card">
-                                    <div class="map-card-top">
-                                        <div class="map-list-title"><a href="#">입생로랑뷰티 신세계백화점 본점</a></div>
-                                        <p class="map-list-dist">7.4Km</p>
+                                    <div class="map-card">
+                                        <div class="map-card-top">
+                                            <div class="map-list-title"><a href="#">입생로랑뷰티 신세계백화점 본점</a></div>
+                                            <p class="map-list-dist">7.4Km</p>
+                                        </div>
+                                        <div class="map-list-exp">
+                                            <p><span class="open">오픈</span>오후 8:00에 영업종료</p>
+                                            <p>서울특별시 중구 퇴계로 77 신세계백화점 본점 디에스테이트 1층</p>
+                                        </div>
+                                        <div class="map-tag-box">
+                                            <span>스페셜 기프트</span>
+                                        </div>
+                                        <div class="map-card-img-box">
+                                            <div class="map-card-img">
+                                                <a href="#"><img src="./images/map-card7.png" alt="매장이미지7"></a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="map-list-exp">
-                                        <p><span class="open">오픈</span>오후 8:00에 영업종료</p>
-                                        <p>서울특별시 중구 퇴계로 77 신세계백화점 본점 디에스테이트 1층</p>
-                                    </div>
-                                    <div class="map-tag-box">
-                                        <span>스페셜 기프트</span>
-                                    </div>
-                                </div>
 
-                                <div class="map-card">
-                                    <div class="map-card-top">
-                                        <div class="map-list-title"><a href="#">입생로랑뷰티 롯데백화점 본점</a></div>
-                                        <p class="map-list-dist">7.8Km</p>
-                                    </div>
-                                    <div class="map-list-exp">
-                                        <p><span class="close">마감</span>오전 10:30에 영업시작</p>
-                                        <p>서울특별시 중구 남대문로 81 롯데백화점 본점 지하1층</p>
-                                    </div>
-                                    <div class="map-tag-box">
-                                        <span>메이크업 서비스</span><span>스페셜 기프트</span>
+                                    <div class="map-card">
+                                        <div class="map-card-top">
+                                            <div class="map-list-title"><a href="#">입생로랑뷰티 롯데백화점 본점</a></div>
+                                            <p class="map-list-dist">7.8Km</p>
+                                        </div>
+                                        <div class="map-list-exp">
+                                            <p><span class="close">마감</span>오전 10:30에 영업시작</p>
+                                            <p>서울특별시 중구 남대문로 81 롯데백화점 본점 지하1층</p>
+                                        </div>
+                                        <div class="map-tag-box">
+                                            <span>메이크업 서비스</span><span>스페셜 기프트</span>
+                                        </div>
+                                        <div class="map-card-img-box">
+                                            <div class="map-card-img">
+                                                <a href="#"><img src="./images/map-card8.png" alt="매장이미지8"></a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </select>
                         </div>
                     </div>
                 </div>
