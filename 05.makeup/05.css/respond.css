@@ -1,23 +1,27 @@
 /* 1024px이하이면 기본글자크기 / 7px */
 @media screen and (max-width:1400px) {
-    .makeup-list {
+    .items-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
     }
+    /* .item {
+        width: 70%;
+        height: 70%;
+    }
+    .item .img-box .img {
+        width: auto;
+        height: 70%;
+        
+    } */
 }
 
 /* 767px이하  */
 @media screen and (max-width:767px) {
-    .makeup-list {
+    .items-list {
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
+       }
 }
 
 @media screen and (max-width:393px) {
-    .makeup-list {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 2rem;
-    }
+     
 }
