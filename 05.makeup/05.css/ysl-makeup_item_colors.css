@@ -349,7 +349,7 @@
 
 /* 13번째 아이템 */
 .items-list .item:nth-child(13) .img-box .color1 {
-    background: #92444A;
+    background: #A36369;
     right: 9.3rem;
     top: 36.5rem;
     transform: translateY(0);
@@ -357,7 +357,7 @@
 }
 
 .items-list .item:nth-child(13) .img-box .color2 {
-    background: #701224;
+    background: #A26865;
     right: 7rem;
     top: 38.5rem;
     transform: translateY(0);
@@ -365,7 +365,7 @@
 }
 
 .items-list .item:nth-child(13) .img-box .color3 {
-    background: #AA5E65;
+    background: #C7365B;
     right: 4.5rem;
     top: 40.5rem;
     transform: translateY(0);
@@ -381,90 +381,19 @@
 }
 
 /* 14번째 아이템 */
-.items-list .item:nth-child(14) .img-box .color1 {
-    background: #92444A;
-    right: 9.3rem;
-    top: 36.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.items-list .item:nth-child(14) .img-box .color2 {
-    background: #701224;
-    right: 7rem;
-    top: 38.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.items-list .item:nth-child(14) .img-box .color3 {
-    background: #AA5E65;
-    right: 4.5rem;
-    top: 40.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .items-list .item:nth-child(14) .img-box:hover {
     background-color: #eee;
 }
 
-.items-list .item:nth-child(14) .img-box:hover div {
-    top: 32.5rem;
-}
-
 /* 15번째 아이템 */
-.items-list .item:nth-child(15) .img-box .color1 {
-    background: #92444A;
-    right: 9.3rem;
-    top: 36.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.items-list .item:nth-child(15) .img-box .color2 {
-    background: #701224;
-    right: 7rem;
-    top: 38.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.items-list .item:nth-child(15) .img-box .color3 {
-    background: #AA5E65;
-    right: 4.5rem;
-    top: 40.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .items-list .item:nth-child(15) .img-box:hover {
     background-color: #eee;
 }
 
-.items-list .item:nth-child(15) .img-box:hover div {
-    top: 32.5rem;
-}
-
 /* 16번째 아이템 */
-.items-list .item:nth-child(16) .img-box .color1 {
-    background: #92444A;
-    right: 9.3rem;
-    top: 36.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.items-list .item:nth-child(16) .img-box .color2 {
-    background: #701224;
-    right: 7rem;
-    top: 38.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .items-list .item:nth-child(16) .img-box .color3 {
-    background: #AA5E65;
+    background: #954B44;
     right: 4.5rem;
     top: 40.5rem;
     transform: translateY(0);
@@ -480,41 +409,13 @@
 }
 
 /* 17번째 아이템 */
-.items-list .item:nth-child(17) .img-box .color1 {
-    background: #92444A;
-    right: 9.3rem;
-    top: 36.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.items-list .item:nth-child(17) .img-box .color2 {
-    background: #701224;
-    right: 7rem;
-    top: 38.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.items-list .item:nth-child(17) .img-box .color3 {
-    background: #AA5E65;
-    right: 4.5rem;
-    top: 40.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .items-list .item:nth-child(17) .img-box:hover {
     background-color: #eee;
 }
 
-.items-list .item:nth-child(17) .img-box:hover div {
-    top: 32.5rem;
-}
-
 /* 18번째 아이템 */
 .items-list .item:nth-child(18) .img-box .color1 {
-    background: #92444A;
+    background: #FAD8C8;
     right: 9.3rem;
     top: 36.5rem;
     transform: translateY(0);
@@ -522,7 +423,7 @@
 }
 
 .items-list .item:nth-child(18) .img-box .color2 {
-    background: #701224;
+    background: #FED7B0;
     right: 7rem;
     top: 38.5rem;
     transform: translateY(0);
@@ -530,7 +431,7 @@
 }
 
 .items-list .item:nth-child(18) .img-box .color3 {
-    background: #AA5E65;
+    background: #F9D1B8;
     right: 4.5rem;
     top: 40.5rem;
     transform: translateY(0);
@@ -547,7 +448,7 @@
 
 /* 19번째 아이템 */
 .items-list .item:nth-child(19) .img-box .color1 {
-    background: #92444A;
+    background: #FAD8C8;
     right: 9.3rem;
     top: 36.5rem;
     transform: translateY(0);
@@ -555,7 +456,7 @@
 }
 
 .items-list .item:nth-child(19) .img-box .color2 {
-    background: #701224;
+    background: #FED7B0;
     right: 7rem;
     top: 38.5rem;
     transform: translateY(0);
@@ -563,7 +464,7 @@
 }
 
 .items-list .item:nth-child(19) .img-box .color3 {
-    background: #AA5E65;
+    background: #F9D1B8;
     right: 4.5rem;
     top: 40.5rem;
     transform: translateY(0);
@@ -580,7 +481,7 @@
 
 /* 20번째 아이템 */
 .items-list .item:nth-child(20) .img-box .color1 {
-    background: #92444A;
+    background: #DCBD9A;
     right: 9.3rem;
     top: 36.5rem;
     transform: translateY(0);
@@ -588,7 +489,7 @@
 }
 
 .items-list .item:nth-child(20) .img-box .color2 {
-    background: #701224;
+    background: #D3B290;
     right: 7rem;
     top: 38.5rem;
     transform: translateY(0);
@@ -596,7 +497,7 @@
 }
 
 .items-list .item:nth-child(20) .img-box .color3 {
-    background: #AA5E65;
+    background: #C2A17C;
     right: 4.5rem;
     top: 40.5rem;
     transform: translateY(0);
@@ -613,7 +514,8 @@
 
 /* 21번째 아이템 */
 .items-list .item:nth-child(21) .img-box .color1 {
-    background: #92444A;
+    background: #F6F6F6;
+    border: 1px solid black;
     right: 9.3rem;
     top: 36.5rem;
     transform: translateY(0);
@@ -621,7 +523,7 @@
 }
 
 .items-list .item:nth-child(21) .img-box .color2 {
-    background: #701224;
+    background: #BF9978;
     right: 7rem;
     top: 38.5rem;
     transform: translateY(0);
@@ -629,7 +531,7 @@
 }
 
 .items-list .item:nth-child(21) .img-box .color3 {
-    background: #AA5E65;
+    background: #BA8F71;
     right: 4.5rem;
     top: 40.5rem;
     transform: translateY(0);
@@ -646,7 +548,7 @@
 
 /* 22번째 아이템 */
 .items-list .item:nth-child(22) .img-box .color1 {
-    background: #92444A;
+    background: #B1604B;
     right: 9.3rem;
     top: 36.5rem;
     transform: translateY(0);
@@ -654,7 +556,7 @@
 }
 
 .items-list .item:nth-child(22) .img-box .color2 {
-    background: #701224;
+    background: #98343E;
     right: 7rem;
     top: 38.5rem;
     transform: translateY(0);
@@ -662,7 +564,7 @@
 }
 
 .items-list .item:nth-child(22) .img-box .color3 {
-    background: #AA5E65;
+    background: #C54D2F;
     right: 4.5rem;
     top: 40.5rem;
     transform: translateY(0);
@@ -679,7 +581,7 @@
 
 /* 23번째 아이템 */
 .items-list .item:nth-child(23) .img-box .color1 {
-    background: #92444A;
+    background: #D18585;
     right: 9.3rem;
     top: 36.5rem;
     transform: translateY(0);
@@ -687,7 +589,7 @@
 }
 
 .items-list .item:nth-child(23) .img-box .color2 {
-    background: #701224;
+    background: #AB5755;
     right: 7rem;
     top: 38.5rem;
     transform: translateY(0);
@@ -695,7 +597,7 @@
 }
 
 .items-list .item:nth-child(23) .img-box .color3 {
-    background: #AA5E65;
+    background: #D4777F;
     right: 4.5rem;
     top: 40.5rem;
     transform: translateY(0);
@@ -711,16 +613,9 @@
 }
 
 /* 24번째 아이템 */
-.items-list .item:nth-child(24) .img-box .color1 {
-    background: #92444A;
-    right: 9.3rem;
-    top: 36.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .items-list .item:nth-child(24) .img-box .color2 {
-    background: #701224;
+    background: #AB645E;
     right: 7rem;
     top: 38.5rem;
     transform: translateY(0);
@@ -728,7 +623,7 @@
 }
 
 .items-list .item:nth-child(24) .img-box .color3 {
-    background: #AA5E65;
+    background: #AB6A72;
     right: 4.5rem;
     top: 40.5rem;
     transform: translateY(0);
@@ -745,7 +640,7 @@
 
 /* 25번째 아이템 */
 .items-list .item:nth-child(25) .img-box .color1 {
-    background: #92444A;
+    background: #9D5A53;
     right: 9.3rem;
     top: 36.5rem;
     transform: translateY(0);
@@ -753,7 +648,7 @@
 }
 
 .items-list .item:nth-child(25) .img-box .color2 {
-    background: #701224;
+    background: #C22322;
     right: 7rem;
     top: 38.5rem;
     transform: translateY(0);
@@ -761,7 +656,7 @@
 }
 
 .items-list .item:nth-child(25) .img-box .color3 {
-    background: #AA5E65;
+    background: #AE69A7;
     right: 4.5rem;
     top: 40.5rem;
     transform: translateY(0);
@@ -777,24 +672,9 @@
 }
 
 /* 26번째 아이템 */
-.items-list .item:nth-child(26) .img-box .color1 {
-    background: #92444A;
-    right: 9.3rem;
-    top: 36.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.items-list .item:nth-child(26) .img-box .color2 {
-    background: #701224;
-    right: 7rem;
-    top: 38.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .items-list .item:nth-child(26) .img-box .color3 {
-    background: #AA5E65;
+    background: #9D142E;
     right: 4.5rem;
     top: 40.5rem;
     transform: translateY(0);
@@ -811,7 +691,7 @@
 
 /* 27번째 아이템 */
 .items-list .item:nth-child(27) .img-box .color1 {
-    background: #92444A;
+    background: #A38978;
     right: 9.3rem;
     top: 36.5rem;
     transform: translateY(0);
@@ -819,7 +699,7 @@
 }
 
 .items-list .item:nth-child(27) .img-box .color2 {
-    background: #701224;
+    background: #B69187;
     right: 7rem;
     top: 38.5rem;
     transform: translateY(0);
@@ -827,7 +707,7 @@
 }
 
 .items-list .item:nth-child(27) .img-box .color3 {
-    background: #AA5E65;
+    background: #CAA790;
     right: 4.5rem;
     top: 40.5rem;
     transform: translateY(0);
@@ -844,7 +724,7 @@
 
 /* 28번째 아이템 */
 .items-list .item:nth-child(28) .img-box .color1 {
-    background: #92444A;
+    background: #050407;
     right: 9.3rem;
     top: 36.5rem;
     transform: translateY(0);
@@ -852,7 +732,7 @@
 }
 
 .items-list .item:nth-child(28) .img-box .color2 {
-    background: #701224;
+    background: #54332C;
     right: 7rem;
     top: 38.5rem;
     transform: translateY(0);
@@ -860,7 +740,7 @@
 }
 
 .items-list .item:nth-child(28) .img-box .color3 {
-    background: #AA5E65;
+    background: #90644C;
     right: 4.5rem;
     top: 40.5rem;
     transform: translateY(0);
@@ -876,24 +756,9 @@
 }
 
 /* 29번째 아이템 */
-.items-list .item:nth-child(29) .img-box .color1 {
-    background: #92444A;
-    right: 9.3rem;
-    top: 36.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.items-list .item:nth-child(29) .img-box .color2 {
-    background: #701224;
-    right: 7rem;
-    top: 38.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .items-list .item:nth-child(29) .img-box .color3 {
-    background: #AA5E65;
+    background: #004D45;
     right: 4.5rem;
     top: 40.5rem;
     transform: translateY(0);
@@ -909,74 +774,18 @@
 }
 
 /* 30번째 아이템 */
-.items-list .item:nth-child(30) .img-box .color1 {
-    background: #92444A;
-    right: 9.3rem;
-    top: 36.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.items-list .item:nth-child(30) .img-box .color2 {
-    background: #701224;
-    right: 7rem;
-    top: 38.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.items-list .item:nth-child(30) .img-box .color3 {
-    background: #AA5E65;
-    right: 4.5rem;
-    top: 40.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .items-list .item:nth-child(30) .img-box:hover {
     background-color: #eee;
 }
 
-.items-list .item:nth-child(30) .img-box:hover div {
-    top: 32.5rem;
-}
-
 /* 31번째 아이템 */
-.items-list .item:nth-child(31) .img-box .color1 {
-    background: #92444A;
-    right: 9.3rem;
-    top: 36.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.items-list .item:nth-child(31) .img-box .color2 {
-    background: #701224;
-    right: 7rem;
-    top: 38.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.items-list .item:nth-child(31) .img-box .color3 {
-    background: #AA5E65;
-    right: 4.5rem;
-    top: 40.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .items-list .item:nth-child(31) .img-box:hover {
     background-color: #eee;
 }
 
-.items-list .item:nth-child(31) .img-box:hover div {
-    top: 32.5rem;
-}
-
 /* 32번째 아이템 */
 .items-list .item:nth-child(32) .img-box .color1 {
-    background: #92444A;
+    background: #DDBD9A;
     right: 9.3rem;
     top: 36.5rem;
     transform: translateY(0);
@@ -984,7 +793,7 @@
 }
 
 .items-list .item:nth-child(32) .img-box .color2 {
-    background: #701224;
+    background: #D1B390;
     right: 7rem;
     top: 38.5rem;
     transform: translateY(0);
@@ -992,7 +801,7 @@
 }
 
 .items-list .item:nth-child(32) .img-box .color3 {
-    background: #AA5E65;
+    background: #C2A17C;
     right: 4.5rem;
     top: 40.5rem;
     transform: translateY(0);
@@ -1007,9 +816,10 @@
     top: 32.5rem;
 }
 
+
 /* 33번째 아이템 */
 .items-list .item:nth-child(33) .img-box .color1 {
-    background: #92444A;
+    background: #FAD8C8;
     right: 9.3rem;
     top: 36.5rem;
     transform: translateY(0);
@@ -1017,7 +827,7 @@
 }
 
 .items-list .item:nth-child(33) .img-box .color2 {
-    background: #701224;
+    background: #FED7B0;
     right: 7rem;
     top: 38.5rem;
     transform: translateY(0);
@@ -1025,7 +835,7 @@
 }
 
 .items-list .item:nth-child(33) .img-box .color3 {
-    background: #AA5E65;
+    background: #F9D1B8;
     right: 4.5rem;
     top: 40.5rem;
     transform: translateY(0);
@@ -1041,67 +851,11 @@
 }
 
 /* 34번째 아이템 */
-.items-list .item:nth-child(34) .img-box .color1 {
-    background: #92444A;
-    right: 9.3rem;
-    top: 36.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.items-list .item:nth-child(34) .img-box .color2 {
-    background: #701224;
-    right: 7rem;
-    top: 38.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.items-list .item:nth-child(34) .img-box .color3 {
-    background: #AA5E65;
-    right: 4.5rem;
-    top: 40.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .items-list .item:nth-child(34) .img-box:hover {
     background-color: #eee;
 }
 
-.items-list .item:nth-child(34) .img-box:hover div {
-    top: 32.5rem;
-}
-
 /* 35번째 아이템 */
-.items-list .item:nth-child(35) .img-box .color1 {
-    background: #92444A;
-    right: 9.3rem;
-    top: 36.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.items-list .item:nth-child(35) .img-box .color2 {
-    background: #701224;
-    right: 7rem;
-    top: 38.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.items-list .item:nth-child(35) .img-box .color3 {
-    background: #AA5E65;
-    right: 4.5rem;
-    top: 40.5rem;
-    transform: translateY(0);
-    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .items-list .item:nth-child(35) .img-box:hover {
     background-color: #eee;
-}
-
-.items-list .item:nth-child(35) .img-box:hover div {
-    top: 32.5rem;
 }

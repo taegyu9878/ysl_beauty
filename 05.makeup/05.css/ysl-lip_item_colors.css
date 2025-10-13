@@ -1,3 +1,8 @@
+/* === Item 1 === */
+.items-list .item:first-child .img-box:hover {
+    background-color: #eee;
+}
+
 .items-list .item:nth-child(2) .img-box .color1 {
     background: #ED8784;
     right: 9.3rem;
@@ -30,6 +35,11 @@
     top: 32.5rem;
 }
 
+/* === Item 3 === */
+.items-list .item:nth-child(3) .img-box:hover {
+    background-color: #eee;
+}
+
 .items-list .item:nth-child(4) .img-box .color1 {
     background: #A55B3E;
     right: 9.3rem;
@@ -58,11 +68,16 @@
     background-color: #eee;
 }
 
-.items-list .item:nth-child(4) .img-box:hover div {
+.items-list .item:nth-child(8) .img-box:hover div {
     top: 32.5rem;
 }
 
-.items-list .item:nth-child(5) .img-box .color1 {
+/* === Item 9 === */
+.items-list .item:nth-child(9) .img-box:hover {
+    background-color: #eee;
+}
+
+.items-list .item:nth-child(10) .img-box .color1 {
     background: #B43842;
     right: 9.3rem;
     top: 36.5rem;

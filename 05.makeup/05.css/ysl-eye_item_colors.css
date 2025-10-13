@@ -30,6 +30,11 @@
     top: 32.5rem;
 }
 
+/* === Item 2 === */
+.items-list .item:nth-child(2) .img-box:hover {
+    background-color: #eee;
+}
+
 .items-list .item:nth-child(3) .img-box .color1 {
     background: #A38978;
     right: 9.3rem;
@@ -60,6 +65,11 @@
 
 .items-list .item:nth-child(3) .img-box:hover div {
     top: 32.5rem;
+}
+
+/* === Item 4 === */
+.items-list .item:nth-child(4) .img-box:hover {
+    background-color: #eee;
 }
 
 .items-list .item:nth-child(5) .img-box .color3 {
