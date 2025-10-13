@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./css/common-ysl.css">
     <link rel="stylesheet" href="./css/ysl-sub-map-page.css">
     <link rel="stylesheet" href="./css/ysl-sub-map-filter-popup.css">
-    <link rel="stylesheet" href="./css/ysl-sub-map-respond.css">
     <link rel="stylesheet" href="../00.header_footer/css/header2_bk.css">
     <link rel="stylesheet" href="../css/ysl_footer.css">
     <link rel="stylesheet" href="../css/search.css">
@@ -20,8 +19,8 @@
     <script defer src="../00.header_footer/js/sub-footer.js"></script>
 </head>
 
-<body>
-    <header id="header">
+<body id="ysl-map-sub-page">
+    <header id="header" >
 
     </header>
 
@@ -41,7 +40,7 @@
 
                         <div class="map-img-box">
 
-                            <div class="map1" id="map" style="width: 95em;height:80em;"></div>
+                            <div class="map1" id="map"></div>
 
                             <script type="text/javascript"
                                 src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bd55ad2586302fe6236ae413be79dc19"></script>
@@ -168,8 +167,8 @@
                             <button class="tab-map-list active"><a href="#">목록</a></button>
                             <button class="tab-map-img"><a href="#">지도</a></button>
                         </div>
-                        <div class="map-inner-right-bottom">
-                            <select multiple class="map-list-box">
+                        <div class="map-inner-right-bottom active">
+                            <div class="map-list-box">
                                 <div class="map-list">
                                     <div class="map-card">
                                         <div class="map-card-top">
@@ -323,7 +322,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </select>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -370,7 +369,7 @@
                         </div>
 
                         <div class="map-filter-btn">
-                            <button class="map-apply-btn"><a href="#">쿠폰적용</a></button>
+                            <button class="map-apply-btn"><a href="#">필터적용</a></button>
                         </div>
                     </div>
                 </div>

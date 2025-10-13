@@ -52,3 +52,33 @@
     text-align: start;
     cursor: pointer;
 }
+
+
+
+/* respond */
+
+@media screen and (max-width:1400px) {
+    .order-op-popup{
+        width: 30%;
+        height: 30%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .order-op-popup{
+        left: 30%;
+        width: 40%;
+    }
+
+    .order-op-popup-content{
+        height: 60%;
+    }
+}
+
+@media screen and (max-width:393px) {
+    .order-op-popup{
+        width: 65%;
+        height: 25%;
+        left: 20%;
+    }
+}

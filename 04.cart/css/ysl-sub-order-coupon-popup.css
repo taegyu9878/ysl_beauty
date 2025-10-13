@@ -76,11 +76,7 @@
     font-weight: 500;
     color: var(--text-main1);
 }
-/* .coupon-item-title .coupon-text-box .coupon-title-text-box{
-    font-size: 1.6rem;
-    font-weight: 500;
-    color: var(--text-main1);
-} */
+
 .order-coupon-item-title .order-coupon-text-box .order-coupon-popup-del-btn{
     /* display: none; */
     border: 1px solid var(--text-sub1);
@@ -130,4 +126,59 @@
 .order-coupon-popup-btn:hover{
     background: var(--text-main1);
     color: var(--text-main2);
+}
+
+
+
+/* respond */
+@media screen and (max-width:1400px) {
+
+}
+
+@media screen and (max-width:1150px) {
+    
+}
+
+@media screen and (max-width:767px) {
+    .order-coupon-popup{
+        padding: 10px;
+        width: 55%;
+        height: 70%;
+    }
+    .order-coupon-popup-contents{
+        gap: 10px;
+    }
+    .order-coupon-popup-header{
+        padding: 0;
+    }
+    .order-coupon-item-title{
+        padding-bottom: 10px;
+    }
+    .order-coupon-item-bottom{
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width:393px) {
+    .order-coupon-popup{
+        padding: 10px;
+        top: 20%;
+        width: 80%;
+        height:60%;
+    }
+    .order-coupon-popup-contents{
+        gap: 5px;
+    }
+    .order-coupon-item-title{
+        padding-bottom: 8px;
+    }
+    .order-coupon-item-bottom{
+        gap: 10px;
+    }
+    .order-coupon-popup-item-list{
+        gap: 7px;
+    }
+    .order-coupon-item{
+        padding: 7px;
+    }
 }

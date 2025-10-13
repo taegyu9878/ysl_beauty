@@ -166,3 +166,29 @@
     color: var(--text-main2);
     cursor: pointer;
 }
+
+
+
+
+/* respond */
+@media screen and (max-width:1400px) {
+
+}
+
+@media screen and (max-width:1150px) {
+    
+}
+
+@media screen and (max-width:767px) {
+    .cart-op-popup.item3{
+        left: 30%;
+    }
+}
+
+@media screen and (max-width:393px) {
+    .cart-op-popup.item3{
+        width: 70%;
+        left: 15%;
+        padding: 15px;
+    }
+}
