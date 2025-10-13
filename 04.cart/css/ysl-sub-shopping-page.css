@@ -4,7 +4,7 @@
 
 .cart-shopping-wrap{
     max-width: 1920px;
-    padding: 13.5rem 20rem;
+    padding: 13.5rem 30rem;
     margin: 0 auto;
     background-color: var(--background-color);
 }
@@ -22,12 +22,12 @@
     flex-direction: column;
     margin: 0 auto;
     /* background-color: rgba(255, 0, 0, 0.2); */
-    gap: 10px;
+    gap: 12px;
 }
 .cart-inner-bottom{
     display: flex;
     /* 플렉스 취소하고 패딩 값 조금 주기 */
-    gap: 20px;
+    gap: 30px;
     margin-bottom: 100px;
 }
 
@@ -282,8 +282,12 @@
 
 /* respond */
 @media screen and (max-width:1400px){
+    .cart-shopping-wrap{
+        padding: 15rem 20rem;
+    }
     .cart-inner-left{
         display: block;
+        width: 70%;
     }
 }
 
@@ -291,7 +295,7 @@
 @media screen and (max-width:1150px){
     .cart-shopping-wrap{
         display: block;
-        padding: 13.5rem 10rem;
+        padding: 15rem 10rem;
     }
 
     .cart-inner-bottom{
@@ -307,7 +311,7 @@
 @media screen and (max-width:767px){
     .cart-shopping-wrap{
         display: block;
-        padding: 13.5rem 5rem;
+        padding: 15em 10rem;
     }
 
     .cart-inner-bottom{
@@ -325,7 +329,7 @@
 
 @media screen and (max-width:393px){
     .cart-shopping-wrap{
-        padding: 13.5rem 3rem;
+        padding: 10rem 3rem;
         
     }
 
