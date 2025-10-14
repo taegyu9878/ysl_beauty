@@ -245,6 +245,7 @@ img {
   align-items: center;
   justify-content: center;
   gap: 6px;
+  flex-wrap: nowrap;
 }
 
 .mp-step .num {
