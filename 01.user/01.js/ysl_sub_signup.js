@@ -198,12 +198,40 @@ goSignup.addEventListener('click', (e) => {
 });
 
 btnBack.addEventListener('click', () => {
-    const onStep2 = step2.style.display === 'block';
-    if (onStep2) { setProgressStep(1); step2.style.display = 'none'; step1.style.display = 'block'; closeDetail(); return; }
-    if (halfTimer) clearTimeout(halfTimer);
-    curtain.classList.remove('anim-to-signup');
-    curtain.classList.add('anim-to-login');
+  const onStep2 = step2.style.display === 'block';
+  if (onStep2) {
+    setProgressStep(1);
+    step2.style.display = 'none';
+    step1.style.display = 'block';
+    closeDetail();
+    return;
+  }
+
+  if (halfTimer) clearTimeout(halfTimer);
+  curtain.classList.remove('anim-to-signup');
+  curtain.classList.add('anim-to-login');
+
+  // 💡 반응형 조건 분기
+  if (window.innerWidth <= 970) {
+    // 반응형: 커튼 없이 바로 로그인 모드 복귀
+    root.classList.remove('mode-signup', 'prep-login', 'prep-signup');
+    root.classList.add('mode-login');
+
+    // 커튼 및 상태 초기화
+    signFlow.style.removeProperty('display');
+    complete.style.removeProperty('display');
+    resetRightCurtain();
+
+    // 💡 중앙정렬 클래스 붙였다가 잠시 뒤 제거 (1프레임용)
+    root.classList.add('force-center');
+    setTimeout(() => root.classList.remove('force-center'), 100);
+
+    // 로그인 폼 포커스 복귀
+    (document.getElementById('loginId') || document.querySelector('.login-stage input'))?.focus();
+  } else {
+    // 데스크탑: 기존 커튼 애니메이션 유지
     halfTimer = setTimeout(() => { root.classList.add('prep-login'); }, HALF);
+  }
 });
 
 curtain.addEventListener('animationend', (e) => {
@@ -280,8 +308,16 @@ document.getElementById('goLoginFromComplete').addEventListener('click', () => {
     autoPeekPending = false;
     const envBtnRef = document.getElementById('envelopeStack');
     if (envBtnRef) { envBtnRef.classList.remove('peek'); }
-
+    
+// ✨ 모바일 위치 문제 완전 해결: 새로고침 처리
+  if (window.innerWidth <= 970) {
+    // 약간의 지연을 줘서 애니메이션이 자연스럽게 끝나게 함
+    setTimeout(() => {
+      location.reload(); // 새로고침
+    }, 150);
+  } else {
     (document.getElementById('loginId') || document.querySelector('.login-stage input'))?.focus();
+  }
 });
 
 // 봉투 토글
