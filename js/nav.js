@@ -143,7 +143,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.15 } // 절반 이상 보일 때 감지
+  { threshold: 0.15 } // 일정 비율이상 보일 때 감지
 );
 
 observer.observe(firstSection);

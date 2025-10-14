@@ -1,11 +1,11 @@
 .libre-wrap .inner {
     position: relative;
-    max-width: 1440px;
+    max-width: 1620px;
     height: 70rem;
     display: flex;
     position: relative;
     margin: 10rem auto 0;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 
@@ -13,9 +13,9 @@
     position: absolute;
     /* background-position:-797px -210px; */
     top: 21rem;
-    left: 55.7rem;
+    left: 64.7rem;
     animation-name: infinity_flower1;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -23,7 +23,6 @@
 @keyframes infinity_flower1 {
     0% {
         top: 21rem;
-        left: 55.7rem;
     }
 
     50% {
@@ -38,9 +37,9 @@
 .banner-left .flow2 img {
     position: absolute;
     top: 49.5rem;
-    left: 87rem;
+    left: 96rem;
     animation-name: infinity_flower2;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -48,7 +47,6 @@
 @keyframes infinity_flower2 {
     0% {
         top: 49.5rem;
-        left: 87rem;
     }
 
     50% {
@@ -65,7 +63,7 @@
     top: 19rem;
     left: 138.5rem;
     animation-name: infinity_flower3;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -73,7 +71,6 @@
 @keyframes infinity_flower3 {
     0% {
         top: 16rem;
-        left: 138.5rem;
     }
 
     50% {
@@ -92,6 +89,7 @@
 .banner-left .background-letter .text1 img {
     position: absolute;
     top: 2.4rem;
+    left: 9rem;
     width: 53.4rem;
 
 }
@@ -99,14 +97,14 @@
 .banner-left .background-letter .text2 img {
     position: absolute;
     top: 24.8rem;
-    left: 16.5rem;
+    left: 25.5rem;
     width: 70.7rem;
 }
 
 .banner-left .background-letter .text3 img {
     position: absolute;
     top: 45.7rem;
-    left: -9rem;
+    left: 0rem;
     width: 80.9rem;
 }
 
@@ -126,7 +124,7 @@
     position: absolute;
     width:40rem;
     height:63.5rem;
-    left: 12rem;
+    left: 21rem;
     animation-name: infinity_item;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -136,12 +134,7 @@
 @keyframes infinity_item {
     0% {
         top: -1rem;
-        left: 12rem;
     }
-
-    /* 50%{
-        top: */
-
 
     100% {
         top: 3rem;
@@ -155,7 +148,7 @@
     height: 24.3rem;
     top: 50%;
     transform: translateY(-50%);
-    right: 0;
+    right: 100px;
 }
 
 .banner-right .main-title{

@@ -4,7 +4,7 @@ header {
     width: 100%;
     z-index: 1000;
 }
-header .ham-wrap{
+.ham-wrap{
     display: none;
 }
 
@@ -59,7 +59,7 @@ header img {
     width: 1.7rem;
 }
 
-header.active img {
+header.active .header-right img {
     filter: invert(1);
 }
 
@@ -70,6 +70,7 @@ header.active img {
     padding: 1.8rem 3rem;
     color: var(--text-main2);
     font-size: 1.6rem;
+    font-weight: 500;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 30px;
     backdrop-filter: blur(12px);
@@ -85,7 +86,6 @@ header.active img {
 
 header.active .main-tab {
     color: var(--text-main1);
-    font-weight: 500;
     border: none;
     backdrop-filter: none;
     box-shadow: none

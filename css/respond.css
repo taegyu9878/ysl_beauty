@@ -31,8 +31,7 @@
         z-index: 1000;
         display: none;
     }
-
-    header .ham-wrap {
+    .ham-wrap {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -40,12 +39,12 @@
         border-bottom: 1px solid rgba(255, 255, 255, 0.7);
     }
 
-    header .ham-gnb {
+    .ham-gnb {
         display: flex;
         gap: 2rem;
     }
 
-    header .ham-wrap img {
+    .ham-wrap img {
         width: 24px;
     }
 
@@ -445,6 +444,7 @@
         .text1 img {
             width: auto;
             height: 100px;
+            left: 0rem;
             top: 0;
         }
 
@@ -465,12 +465,13 @@
     .banner-left .item img {
         width: 35rem;
         height: auto;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     @keyframes infinity_item {
         0% {
             top: 0rem;
-            left: 12rem;
         }
 
         100% {
