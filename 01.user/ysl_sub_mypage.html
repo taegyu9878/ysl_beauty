@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="EN">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,127 +13,154 @@
   <link rel="icon" type="image/png" href="../images/ysl_favicon.png">
   <script async src="../00.header_footer/js/sub-footer.js"></script>
   <script defer src="../00.header_footer/js/sub-header.js"></script>
+  <script defer src="../js/search.js"></script>
 </head>
 
 <body>
   <header id="header"></header>
 
   <main>
+    <section class="mypage-wrap" aria-labelledby="mypage-title">
+      <div class="inner">
+        <div class="mp-grid">
+          <!-- Left: Aside -->
+          <aside class="mp-aside">
+            <h1 class="main-title" id="mypage-title">MY PAGE</h1>
 
-  <section class="mypage-wrap">
-    <div class="inner">
-      <div class="mp-grid">
-        <!-- 왼쪽 -->
-        <aside class="mp-aside">
-          <h2 class="main-title">MY PAGE</h2>
-          <nav aria-label="마이페이지 메뉴">
-            <ul class="mp-menu">
-              <li><a href="#">YSL BEAUTY CLUB</a></li>
-              <li><a href="#">자주 묻는 질문</a></li>
+            <!-- 모바일 전용 메뉴 (980px 이하에서만 보임) -->
+<div class="mp-mobile-menu" aria-label="마이페이지 메뉴(모바일)">
+  <!-- 헤더 행: 왼쪽은 비워두고 가운데/오른쪽만 제목 -->
 
-              <li class="mp-sec">주문내역 조회</li>
-              <li><a href="#">주문/배송 조회</a></li>
-              <li><a href="#">취소/교환/반품 조회</a></li>
-              <li><a href="#">재주문하기</a></li>
-              <li><a href="#">구매후기</a></li>
+   <div class="mp-cols3">
+    <ul class="col etc">
+      <li class="col-head" aria-hidden="true"></li> <!-- 빈 헤더 -->
+      <li><a href="#">YSL BEAUTY CLUB</a></li>
+      <li><a href="#">자주 묻는 질문</a></li>
+    </ul>
 
-              <li class="mp-sec">회원정보</li>
-              <li><a href="#">회원정보 수정</a></li>
-              <li><a href="#">SNS 계정관리</a></li>
-            </ul>
-          </nav>
-        </aside>
+    <ul class="col order">
+      <li class="col-head">주문내역 조회</li>
+      <li><a href="#">주문/배송 조회</a></li>
+      <li><a href="#">취소/교환/반품 조회</a></li>
+      <li><a href="#">재주문하기</a></li>
+      <li><a href="#">구매후기</a></li>
+    </ul>
 
-        <!-- 메인 -->
-        <main class="mp-main">
-          <section class="my-Infor">
-            <div class="sub-title-right">
-              <p>홍길동님, 안녕하세요!</p>
-            </div>
+    <ul class="col member">
+      <li class="col-head">회원정보</li>
+      <li><a href="#">회원정보 수정</a></li>
+      <li><a href="#">SNS 계정관리</a></li>
+    </ul>
+  </div>
+</div>
 
-            <!-- 상단 프로필 -->
-            <div class="mp-profile">
-              <div class="logo-wrap"><img class="mp-logo" src="./01.images/logo.svg" alt="브랜드 로고"></div>
-              <div class="mp-rank">
-                <p>현재 등급 : <span class="grade">REGULAR</span></p>
-                <p>보유 포인트 : 2,000</p>
-                <p>다음 등급까지 1,000 포인트 남았습니다.</p>
+            <nav aria-label="마이페이지 메뉴">
+              <ul class="mp-menu">
+                <li><a href="#">YSL BEAUTY CLUB</a></li>
+                <li><a href="#">자주 묻는 질문</a></li>
+
+                <li class="mp-sec" role="presentation" aria-hidden="true">주문내역 조회</li>
+                <li><a href="#">주문/배송 조회</a></li>
+                <li><a href="#">취소/교환/반품 조회</a></li>
+                <li><a href="#">재주문하기</a></li>
+                <li><a href="#">구매후기</a></li>
+
+                <li class="mp-sec" role="presentation" aria-hidden="true">회원정보</li>
+                <li><a href="#">회원정보 수정</a></li>
+                <li><a href="#">SNS 계정관리</a></li>
+              </ul>
+            </nav>
+          </aside>
+
+          <!-- Main content -->
+          <section class="mp-main" aria-label="회원 정보 요약">
+            <section class="my-Infor">
+              <div class="sub-title-right">
+                <p><strong>홍길동</strong>님, 안녕하세요!</p>
               </div>
-              <div class="mp-metric">
-                <div class="name">위시리스트</div>
-                <div class="val">4</div>
-              </div>
-              <div class="mp-metric">
-                <div class="name">쿠폰</div>
-                <div class="val">2</div>
-              </div>
-            </div>
-          </section>
 
-          <!-- 주문/배송 & 반품/교환/취소 -->
-          <div class="mp-row">
-            <h3 class="mp-heading">주문 / 배송 조회</h3>
-            <h3 class="mp-heading">반품/교환/취소</h3>
-
-            <!-- 좌측: 주문/배송 조회 -->
-            <section class="mp-card-l">
-              <div class="mp-flow">
-                <div class="mp-step">
-                  <div class="num">1</div>
-                  <div class="name">주문접수</div>
+              <!-- Profile summary -->
+              <div class="mp-profile" role="group" aria-label="프로필 및 요약">
+                <div class="logo-wrap">
+                  <img class="mp-logo" src="./01.images/logo.svg" alt="YSL Beauty 로고">
                 </div>
-                <div class="mp-chevron"><img src="./01.images/Arrow.svg" alt=""></div>
-                <div class="mp-step">
-                  <div class="g-num">0</div>
-                  <div class="g-name">결제완료</div>
+                <div class="mp-rank">
+                  <p>현재 등급 : <span class="grade" aria-label="회원 등급">REGULAR</span></p>
+                  <p>보유 포인트 : <strong aria-label="보유 포인트">2,000</strong></p>
+                  <p>다음 등급까지 <strong aria-label="다음 등급까지 필요한 포인트">1,000</strong> 포인트 남았습니다.</p>
                 </div>
-                <div class="mp-chevron"><img src="./01.images/Arrow.svg" alt=""></div>
-                <div class="mp-step">
-                  <div class="g-num">0</div>
-                  <div class="g-name">배송준비중</div>
+                <div class="mp-metric" role="group" aria-label="위시리스트">
+                  <div class="name">위시리스트</div>
+                  <div class="val" aria-label="위시리스트 개수">4</div>
                 </div>
-                <div class="mp-chevron"><img src="./01.images/Arrow.svg" alt=""></div>
-                <div class="mp-step">
-                  <div class="g-num">0</div>
-                  <div class="g-name">배송중</div>
-                </div>
-                <div class="mp-chevron"><img src="./01.images/Arrow.svg" alt=""></div>
-                <div class="mp-step">
-                  <div class="num">3</div>
-                  <div class="name">배송완료</div>
+                <div class="mp-metric" role="group" aria-label="쿠폰">
+                  <div class="name">쿠폰</div>
+                  <div class="val" aria-label="쿠폰 개수">2</div>
                 </div>
               </div>
             </section>
 
-            <!-- 우측: 반품/교환/취소 -->
-            <section class="mp-card-r">
-              <div class="mp-flow" style="grid-template-columns: 1fr auto 1fr;">
-                <div class="mp-step">
-                  <div class="num">0</div>
-                  <div class="name">취소/반품</div>
-                </div>
-                <div class="mp-chevron"></div>
-                <div class="mp-step">
-                  <div class="num">0</div>
-                  <div class="name">교환</div>
-                </div>
-              </div>
-            </section>
-          </div>
+            <!-- 주문/배송 & 반품/교환/취소 -->
+            <div class="mp-row">
+              <h2 class="mp-heading">주문 / 배송 조회</h2>
+              <h2 class="mp-heading">반품/교환/취소</h2>
 
-          <!-- 이미지 영역 -->
-          <section class="mp-media">
-            <img src="./01.images/mypage-beauty-club.png" alt="ysl-beauty-club">
+              <!-- Left: 주문/배송 조회 -->
+              <section class="mp-card-l" aria-label="주문 및 배송 현황">
+                <div class="mp-flow" role="list">
+                  <div class="mp-step" role="listitem">
+                    <div class="num">1</div>
+                    <div class="name">주문접수</div>
+                  </div>
+                  <div class="mp-chevron" aria-hidden="true"><img src="./01.images/Arrow.svg" alt=""></div>
+                  <div class="mp-step" role="listitem" aria-disabled="true">
+                    <div class="g-num">0</div>
+                    <div class="g-name">결제완료</div>
+                  </div>
+                  <div class="mp-chevron" aria-hidden="true"><img src="./01.images/Arrow.svg" alt=""></div>
+                  <div class="mp-step" role="listitem" aria-disabled="true">
+                    <div class="g-num">0</div>
+                    <div class="g-name">배송준비중</div>
+                  </div>
+                  <div class="mp-chevron" aria-hidden="true"><img src="./01.images/Arrow.svg" alt=""></div>
+                  <div class="mp-step" role="listitem" aria-disabled="true">
+                    <div class="g-num">0</div>
+                    <div class="g-name">배송중</div>
+                  </div>
+                  <div class="mp-chevron" aria-hidden="true"><img src="./01.images/Arrow.svg" alt=""></div>
+                  <div class="mp-step" role="listitem">
+                    <div class="num">3</div>
+                    <div class="name">배송완료</div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Right: 반품/교환/취소 -->
+              <section class="mp-card-r" aria-label="반품/교환/취소 현황">
+                <div class="mp-flow two-cols">
+                  <div class="mp-step" role="group" aria-label="취소/반품">
+                    <div class="num">0</div>
+                    <div class="name">취소/반품</div>
+                  </div>
+                  <div class="mp-chevron" aria-hidden="true"></div>
+                  <div class="mp-step" role="group" aria-label="교환">
+                    <div class="num">0</div>
+                    <div class="name">교환</div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <!-- Visual -->
+            <section class="mp-media" aria-label="YSL Beauty Club 소개 이미지">
+              <img src="./01.images/mypage-beauty-club.png" alt="YSL Beauty Club 안내">
+            </section>
           </section>
-        </main>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-<footer id="footer"></footer>
-
+    <footer id="footer"></footer>
   </main>
-
 </body>
-
 </html>

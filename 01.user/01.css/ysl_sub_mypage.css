@@ -2,7 +2,7 @@
   --content-max: 1620px;
   --aside-w: 240px;
   --gap-x: 40px;
-  --main-w: 1340px;
+  --main-w: 1fr; /* use flexible column for main */
   --header-h: 150px;
 
   --radius: 12px;
@@ -11,44 +11,60 @@
   --card-bg: #fff;
 }
 
+/* Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   background: var(--background-color);
+  font-family: Pretendard, system-ui, -apple-system, Segoe UI, Roboto, Arial,
+    sans-serif;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .mypage-wrap {
   background: var(--background-color);
   padding-top: var(--header-h);
 }
-
 .inner {
   width: min(100%, var(--content-max));
+  margin-inline: auto;
 }
 
-.mypage-wrap .inner {
-  margin-left: auto;
-  margin-right: auto;
-}
-
+/* Grid */
 .mp-grid {
   display: grid;
-  grid-template-columns: var(--aside-w) var(--main-w);
+  grid-template-columns: var(--aside-w) minmax(0, 1fr);
   column-gap: var(--gap-x);
   align-items: start;
+  padding-inline: 12px;
 }
 
-/* 사이드 */
+/* Aside */
 .mp-aside {
+  width: var(--aside-w);
   position: sticky;
   top: var(--header-h);
+  padding-right: 24px;
 }
 
 .main-title {
+  width: 100%;
   padding: 8px 0;
   border-bottom: 2px solid var(--text-sub3);
-  margin-bottom: 33px;
+  margin-bottom: 24px;
   color: var(--text-main1);
-  font-weight: 500;
-  font-size: 2.4rem;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 1.3;
 }
 
 .mp-menu {
@@ -58,28 +74,32 @@ body {
   row-gap: 10px;
   font-size: 1.6rem;
   font-weight: 400;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 .mp-sec {
   color: var(--text-sub4);
   font-size: 1.6rem;
   font-weight: 600;
-  margin-top: 33px;
+  margin-top: 24px;
 }
 
 .mp-menu a {
   color: var(--text-sub3);
+  text-decoration: none;
 }
-
 .mp-menu a:hover {
   text-decoration: underline;
 }
 
-/* 메인 */
+/* Main */
 .mp-main {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  min-width: 0;
 }
 
 .my-Infor {
@@ -92,31 +112,31 @@ body {
   margin: 0 0 8px;
   color: var(--text-main1);
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 140%;
   letter-spacing: -0.5px;
   padding: 0 12px;
 }
 
-/* 상단 프로필 */
+/* Profile */
 .mp-profile {
   display: grid;
   grid-template-columns: auto 1fr 1fr 1fr;
   align-items: center;
-  padding: 58px 0;
+  gap: 12px;
+  padding: 58px 24px;
   border: 1px solid var(--Text-Sub1, #d9d9d9);
   background: var(--Text-Main2, #fff);
-  border-radius: 12px;
+  border-radius: var(--radius);
 }
 
 .logo-wrap {
   display: flex;
-  width: 260px;
+  width: 220px;
   height: 120px;
   justify-content: center;
   align-items: center;
 }
-
 .mp-logo {
   width: 45px;
   height: 94px;
@@ -124,19 +144,21 @@ body {
 
 .mp-rank {
   display: flex;
-  width: 360px;
+  width: 100%;
+  min-width: 0;
   height: 120px;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .mp-rank p {
   color: var(--text-main1);
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 400;
   line-height: 140%;
   letter-spacing: -0.5px;
+  margin: 0;
 }
 
 .mp-rank .grade {
@@ -146,72 +168,75 @@ body {
 .mp-metric {
   border-left: 1px solid var(--text-sub1);
   display: flex;
-  width: 360px;
+  width: 100%;
   height: 120px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   color: var(--text-main1);
 }
 
 .mp-metric .name {
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
-
 .mp-metric .val {
-  font-weight: 400;
-  font-size: 3.6rem;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 1;
 }
 
-/* 주문/배송 & 반품/교환/취소 */
+/* Orders / Returns */
 .mp-row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 7fr 3fr;
   column-gap: 20px;
   row-gap: 10px;
+  align-items: start;
+  grid-template-areas:
+    "hL hR"
+    "l  r";
 }
 
 .mp-heading {
   color: var(--text-main1);
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
+  margin: 0;
 }
 
-.mp-card-l {
-  width: 940px;
-  height: 180px;
-  border-radius: 12px;
-  border: 1px solid var(--Text-Sub1, #d9d9d9);
-  background: var(--Text-Main2, #fff);
-  display: flex;
-  padding: 49px 108px;
-  flex-direction: column;
-}
-
+.mp-card-l,
 .mp-card-r {
-  width: 380px;
-  height: 180px;
-  padding: 24px;
-  border-radius: 12px;
+  border-radius: var(--radius);
   border: 1px solid var(--Text-Sub1, #d9d9d9);
   background: var(--Text-Main2, #fff);
   display: flex;
-  padding: 49px 80px;
   flex-direction: column;
+  justify-content: center; /* 세로 중앙 */
+  align-items: center; /* 가로 중앙 */
+  text-align: center; /* 텍스트도 중앙 */
+  min-height: 160px;
+  padding: 49px 35px;
 }
 
+.mp-card-r .mp-flow {
+  gap: 23px;
+}
 .mp-flow {
   display: grid;
-  grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr auto 1fr;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
   align-items: center;
-  column-gap: 10px;
-  gap: 30px;
+  gap: 10px;
+}
+
+.mp-flow.two-cols {
+  grid-template-columns: 1fr auto 1fr;
 }
 
 .mp-step {
-  width: 68px;
+  width: 100%;
+  max-width: 106px;
   height: 82px;
   border-radius: 10px;
   background: #fff;
@@ -219,295 +244,219 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  column-gap: 10px;
+  gap: 6px;
 }
 
 .mp-step .num {
   color: var(--text-main1);
-  font-weight: 400;
-  font-size: 3.6rem;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 1;
 }
-
 .mp-step .g-num {
   color: var(--text-sub2);
-  font-weight: 400;
-  font-size: 3.6rem;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 1;
 }
-
 .mp-step .name {
   color: var(--text-main1);
-  margin-top: 1.6rem;
   font-weight: 400;
   font-size: 1.5rem;
 }
-
 .mp-step .g-name {
   color: var(--text-sub2);
-  margin-top: 1.6rem;
   font-weight: 400;
   font-size: 1.5rem;
 }
 
 .mp-chevron {
   color: var(--text-sub1);
+  display: flex;
+  justify-content: center;
 }
 
-/* 이미지 */
 .mp-media img {
-  border-radius: 12px;
-  max-width: 100%;
-  margin-bottom: 100px;
+  border-radius: var(--radius);
+  width: 100%;
+  margin-bottom: 80px;
 }
 
-/* @media (max-width: 1128px) { :root { --header-h: 72px; } }  태블릿 */
-/* @media (max-width: 768px)  { :root { --header-h: 60px; } }  모바일 */
+.mp-row > .mp-heading:nth-of-type(1) { grid-area: hL; } /* 주문/배송 조회 */
+.mp-row > .mp-heading:nth-of-type(2) { grid-area: hR; } /* 반품/교환/취소 */
+.mp-row > .mp-card-l { grid-area: l; }
+.mp-row > .mp-card-r { grid-area: r; }
 
-/* 1280px 이하
- @media screen and (max-width:1280px) {
-     .mp-grid {
-         grid-template-columns: 200px 1fr;
-         column-gap: 24px;
-     }
+.mp-mobile-menu { display: none; }
 
-     .mp-card-l {
-         width: 100%;
-         padding: 40px 60px;
-     }
-
-     .mp-card-r {
-         width: 100%;
-         padding: 40px 40px;
-     }
-
-     .logo-wrap {
-         flex: 0 0 140px;
-     }
-
-     .mp-rank {
-         flex: 1 1 220px;
-     }
-
-     .mp-metric {
-         flex: 0 0 160px;
-         height: 90px;
-     }
-
- } */
-
-/* 1024px 이하 */
-@media screen and (max-width: 1024px) {
-  html {
-    font-size: 14px;
+@media (max-width: 980px) {
+  :root{
+    --mp-title-size: 22px;   /* "MY PAGE" */
+    --mp-tab-size:   16px;   /* col-head (주문내역/회원정보) */
+    --mp-link-size:  14px;   /* 링크 글자 */
+    --mp-col-gap:    48px;   /* 3열 가로 간격 */
+    --mp-title-gap:   -25px;   /* MY PAGE 아래 간격 */
+    --mp-head-h:     26px;   /* ★ col-head 고정 높이(모든 컬럼 동일) */
+    --mp-line-gap:    6px;   /* col-head와 라인 사이 간격 */
+    --mp-after-line: 10px;   /* 라인 아래 첫 링크까지 간격 */
+    --mp-item-gap:   6px;   /* 링크 간 간격 */
   }
+
+  /* 데스크톱용 aside 메뉴 숨기고 모바일 메뉴 표시 */
+  .mp-aside nav   { display: none; }
+  .mp-mobile-menu { display: block; padding: 0 12px 12px; }
+
+  /* MY PAGE — 보더 제거, 아래 간격만 */
+  .main-title{
+    border-bottom: none;
+    font-size: var(--mp-title-size);
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 var(--mp-title-gap);
+    padding: 0 12px 0;
+  }
+
+  /* ===== 3열 컨테이너 ===== */
+  .mp-mobile-menu .mp-cols3{
+    position: relative;                          /* 라인 절대배치용 */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: var(--mp-col-gap);
+  }
+
+  /* 줄(언더라인): col-head들 '아래'에 한 번만 그림 */
+  .mp-mobile-menu .mp-cols3::before{
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: calc(var(--mp-head-h) + var(--mp-line-gap));
+    border-top: 2px solid var(--text-sub3);
+  }
+
+  /* 각 컬럼: 세로 스택 + 간격 통일 */
+  .mp-mobile-menu .mp-cols3 .col{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: var(--mp-item-gap);                    /* 링크 간격은 여기서만 관리 */
+  }
+
+  /* 머리글(주문내역/회원정보): 라인 '위'에 고정 */
+  .mp-mobile-menu .mp-cols3 .col-head{
+    min-height: var(--mp-head-h);               /* ★ 핵심: 모두 같은 높이 */
+    display: flex;
+    align-items: flex-end;                       /* 텍스트를 아래로 붙임 */
+    justify-content: flex-start;    
+    text-align: left;  
+    padding-left: 2px;                
+    font-size: var(--mp-tab-size);
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0; 
+    padding: 0;
+  }
+  /* 왼쪽 컬럼 헤더는 높이만 유지하고 숨김 */
+  .mp-mobile-menu .mp-cols3 .etc .col-head{ visibility: hidden; }
+
+  /* 라인과 첫 링크 사이 여백 */
+  .mp-mobile-menu .mp-cols3 .col .col-head + li{
+    margin-top: var(--mp-after-line);
+  }
+
+  /* 링크 모양 */
+  .mp-mobile-menu .mp-cols3 .col a{
+    text-align: left;
+    display: inline-block;
+    font-size: var(--mp-link-size);
+    line-height: 1.5;
+    color: var(--text-sub3);
+    text-decoration: none;
+    padding: 0 2px;                              /* 위아래 패딩 0 → 정렬 안정화 */
+  }
+  .mp-mobile-menu .mp-cols3 .col a:hover{ text-decoration: underline; }
+
+  /* ------------------------------------------------------------------- */
+
   .mp-grid {
     grid-template-columns: 1fr;
-    row-gap: 40px;
+    row-gap: 24px;
   }
-
   .mp-aside {
-    position: relative;
-    top: 0;
-    padding-left: 12px;
-  }
-
-  .mp-main {
+    position: static;
+    top: auto;
     width: 100%;
+    padding-right: 0;
   }
-  .sub-title-right {
-    
-  }
-
-  .mp-profile {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    padding-inline: 24px;
-    box-sizing: border-box;
-    width: 100%;
-  }
-
-  .logo-wrap {
-    flex: 0 0 120px;
-    width: 120px;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .mp-rank {
-    flex: 1 1 260px;
-    min-width: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 6px;
-  }
-
-  .mp-metric {
-    flex: 0 0 140px;
-    min-width: 100px;
-    height: 90px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-left: 1px solid var(--text-sub1);
-  }
-
-  .mp-rank p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
-
-/* 920px 이하 */
-@media screen and (max-width: 920px) {
-  .mp-profile {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 20px;
-  }
-
-  .logo-wrap {
-    flex: 0 0 100px;
-  }
-
-  .mp-rank {
-    flex: 1 1 160px;
-    font-size: 1.6rem;
-  }
-
-  .mp-metric {
-    flex: 0 0 120px;
-    height: 70px;
-  }
-
-  .mp-metric .val {
-    font-size: 2.4rem;
-  }
-
-  .mp-profile {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .mp-flow {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    row-gap: 20px;
-  }
-
-  .mp-card-l,
-  .mp-card-r {
-    height: auto;
-    padding: 20px;
-  }
-}
-
-/* 768px 이하 */
-@media screen and (max-width: 768px) {
-  .inner {
-    margin: 20px auto;
-    padding: 0 16px;
-  }
-
-  .main-title {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-
-  .sub-title-right {
-    font-size: 1.6rem;
-    text-align: center;
-  }
-
-  .mp-heading {
-    font-size: 1.8rem;
-    text-align: center;
-  }
-
-  .mp-menu {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 12px;
-    font-size: 1.4rem;
-  }
-
-  .mp-sec {
-    width: 100%;
-    margin-top: 20px;
-    font-size: 1.4rem;
-  }
-
   .mp-row {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "hL"
+      "l"
+      "hR"
+      "r";
   }
-
-  .mp-profile {
-    gap: 10px;
-    padding: 20px;
-  }
-
   .logo-wrap {
-    flex: 0 0 80px;
+    width: 120px;
+    height: 80px;
   }
+  .mp-profile {
+    justify-content: center;
+  }
+  .mp-card-l,
+  .mp-card-r {
+    min-height: auto;
+  }
+  .mp-card-l,
+  .mp-card-r {
+    padding: 30px 20px;
+  }
+ 
 
-  .mp-rank {
-    flex: 1 1 140px;
-    font-size: 1.4rem;
-  }
-
-  .mp-metric {
-    flex: 0 0 100px;
-    height: 60px;
-  }
-
-  .mp-metric .val {
-    font-size: 2rem;
-  }
 }
 
-/* 640px 이하 */
-@media screen and (max-width: 640px) {
+@media (max-width: 475px) {
+  .sub-title-right {
+    text-align: center;
+  }
   .mp-profile {
-    gap: 8px;
-    padding: 16px;
-  }
-
-  .logo-wrap {
-    flex: 0 0 60px;
-  }
-
-  .mp-rank {
-    flex: 1 1 120px;
-    font-size: 1.2rem;
-  }
-
-  .mp-metric {
-    flex: 0 0 80px;
-    height: 50px;
-  }
-
-  .mp-metric .val {
-    font-size: 1.8rem;
-  }
-
-  .mp-flow {
-    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    display: flex;
+    /* padding: 16px; */
   }
-
-  .mp-step {
-    height: 60px;
+  .logo-wrap {
+    width: 60px;
+    height: 80px;
   }
+  .mp-metric {
+    height: 90px;
 
-  .mp-step .num,
-  .mp-step .g-num {
+  }
+  .mp-metric .val {
     font-size: 2.4rem;
   }
-
+  .mp-flow {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .mp-step {
+    height: 70px;
+  }
   .mp-media img {
     margin-bottom: 40px;
+  }
+  .mp-card-l,
+  .mp-card-r {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 393px) {
+  :root{
+    --mp-tab-size: 14px;   /* col-head(주문내역/회원정보) */
+    --mp-link-size: 12px;  /* 아래 메뉴 링크들 */
+    --mp-col-gap: 32px;    /* 컬럼 간격도 살짝 축소 (선택) */
+    --mp-head-h:   24px;   /* 헤더 높이도 약간 줄이기 (선택) */
+    --mp-item-gap: 8px;    /* 항목 간 간격 조금 줄이기 (선택) */
   }
 }
