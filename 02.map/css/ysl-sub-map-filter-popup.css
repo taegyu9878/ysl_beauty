@@ -167,6 +167,16 @@
 @media (max-width:393px){
     .map-filter-popup{
         width: 80%;
+        height: 60%;
         right: 10px;
+    }
+
+    .map-filter-content-list{
+        margin-top: 10px;
+        gap: 1.5rem;
+    }
+
+    .map-filter-content-list>.content>.list>li{
+        padding: 7px 10px;
     }
 }

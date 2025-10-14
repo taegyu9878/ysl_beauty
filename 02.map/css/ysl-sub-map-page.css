@@ -39,7 +39,7 @@
 .map-search-inner-bottom{
     display: flex;
     gap: 30px;
-    flex: 1;
+    /* flex: 1; */
 }
 .mobile-map-tab{
     display: none;
@@ -110,7 +110,7 @@
     justify-content: space-between;
     width: 310px;
     gap: 5px;
-    /* position: static; */
+    transition: 0.5s;
 }
 button{
     display: flex;
@@ -156,12 +156,17 @@ button.active{
     font-size: 1.6rem;
     font-weight: 400;
     border: 1px solid var(--text-sub2);
+    /* transition: all 0.5s ease; */
+    /* opacity: 0; */
+    /* max-height: 0; */
     
 }
 .select-depth.active,
 .select-depth1.active{
     display: block;
     z-index: 100;
+    /* opacity: 1; */
+    /* max-height: 100%; */
 }
 
 
@@ -254,10 +259,8 @@ button.active{
     font-weight: 400;
 }
 .map-card-img-box{
-    /* display: none; */
     max-height: 0;
     opacity: 0;
-    /* transform: scaleY(0.95); */
     overflow: hidden;
     align-items: center;
     border-radius: 12px;
@@ -324,10 +327,13 @@ button.active{
 
 @media (max-width:767px){
     .map-search-wrap{
-        padding: 10rem 3rem;
+        /* padding: 10rem 1rem; */
     }
     .map-search-wrap>.inner{
         height: 100%;
+    }
+    .map-search-inner-top{
+        width: 95%;
     }
     .map-search-inner-bottom{
         display: flex;
@@ -352,10 +358,16 @@ button.active{
         justify-content: center;
     }
 
-    .map-inner-right-bottom.active{
-        /* display: none; */
-        display: block;
+    .map-inner-right-top {
+        width: 90%;
     }
+
+    .map-inner-right-bottom.active{
+        display: block;
+        justify-content: center;
+        width: 90%;
+    }   
+
     .map-inner-right-bottom{
         display: none;
     }
