@@ -57,7 +57,7 @@ function applyEvents() {
   });
 
   if (window.matchMedia("(max-width: 1400px)").matches) {
-    // 📱 태블릿: 클릭 토글
+    // 태블릿: 클릭 토글
     menus.forEach(menu => {
       menu.onclick = (e) => {
         e.preventDefault();
