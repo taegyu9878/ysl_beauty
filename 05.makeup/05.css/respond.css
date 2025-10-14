@@ -4,15 +4,11 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-    /* .item {
-        width: 70%;
-        height: 70%;
-    }
+    
     .item .img-box .img {
-        width: auto;
-        height: 70%;
+        transform: scale(0.8);
         
-    } */
+    }
 }
 
 /* 767px이하  */
@@ -23,5 +19,23 @@
 }
 
 @media screen and (max-width:393px) {
-     
+     html{
+        font-size: 7px;
+     }
+     .item-wrap{
+        margin:0;
+     }
+     .items-list {
+        row-gap: 0;
+        column-gap: 0;
+        margin: 0;
+       }
+     .item  {
+        transform: scale(0.5);
+        
+    }
+     /* .item .img-box .img {
+        transform: scale(0.5);
+        
+    } */
 }
