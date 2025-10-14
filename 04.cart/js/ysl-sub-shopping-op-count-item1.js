@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // 가격 업데이트 함수
     function item1updateTotal() {
         let item1TotalSum = item1BasePrice * item1BaseCount;
-        item1Total.textContent = item1TotalSum.toLocaleString(); // "58,000" 이런 형식
+        item1Total.textContent = item1TotalSum.toLocaleString(); // "58,000" 이런 형식 - 한국 원 기준
     }
 
     // 더하기
