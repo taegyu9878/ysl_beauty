@@ -1,0 +1,199 @@
+/* cart-op-popup-wrap */
+.cart-op-popup-wrap.item1{
+    display: none;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.cart-op-popup-wrap.item1.active{
+    display: block;
+}
+
+.cart-op-popup.item1{
+    width: 370px;
+    /* height: 30%; */
+    background: var(--text-main2);
+    border: 1px solid var(--text-sub2);
+    border-radius: 12px;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    padding: 15px 20px 15px 20px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+}
+
+.cart-op-popup-content-list.item1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.cart-op-header.item1{
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--text-sub1);
+    display: flex;
+    justify-content: end;
+}
+
+
+
+/* cart-op-content item1 */
+.cart-op-content.item1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart-op-content-top.item1{
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    justify-content: space-between;
+    border: 1px solid var(--text-sub1);
+    border-radius: 8px;
+    /* padding: 7px; */
+}
+.cart-op-content-item-title.item1{
+    align-items: center;
+    width: 100%;
+    display: flex;
+    padding: 10px 7px;
+    justify-content: space-between;
+}
+.cart-op-content-item-title.item1.active{
+    border-bottom: 1px solid var(--text-sub1);
+}
+
+.cart-op-content-item-title.item1 span{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--text-main1);
+}
+.cart-op-content-item-depth.item1{
+    display: none;
+    width: 100%;
+    line-height: 2.3;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.cart-op-content-item-depth.item1.active{
+    display: block;
+}
+.cart-op-content-item-depth.item1 li{
+    padding: 0 7px;
+}
+
+
+/* cart-op-content-bottom */
+.cart-op-content-bottom.item1{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 10px;
+    border-radius: 8px;
+    border: 1px solid var(--text-sub1);
+    background: #EDEDED;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.cart-op-content-item-count.item1{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+    background: var(--text-main2);
+    
+}
+.cart-op-content-item-count.item1 button{
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    background: var(--text-main2);
+    border: none;
+    font-size: 2rem;
+    font-weight: 300;
+    border-radius: 4px;
+}
+.cart-op-count-minus.item1{
+    padding: 3px 13px 5px 13px;
+}
+.cart-op-count-plus.item1{
+    padding: 4px 13px;
+}
+.cart-op-content-item-count.item1 span{
+    border-left: 1px solid #c4c4c4;
+    border-right: 1px solid #c4c4c4;
+    padding: 6px 20px;
+}
+
+.cart-op-bottom.item1{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    font-weight: 400;
+    align-items: center;
+    flex: 1;
+    gap: 10px;
+}
+.cart-op-bottom-btn-left.item1{
+    cursor: pointer;
+    border: 1px solid var(--text-sub1);
+    border-radius: 8px;
+    background: var(--text-main2);
+    color: var(--text-main1);
+    padding: 10px 0 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.cart-op-bottom-btn-right.item1{
+    border: 1px solid var(--text-sub1);
+    padding: 10px 0 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    background: var(--text-main1);
+    color: var(--text-main2);
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* respond */
+@media screen and (max-width:1400px) {
+
+}
+
+@media screen and (max-width:1150px) {
+    
+}
+
+@media screen and (max-width:767px) {
+    .cart-op-popup.item1{
+        left: 30%;
+    }
+}
+
+@media screen and (max-width:393px) {
+    .cart-op-popup.item1{
+        width: 70%;
+        left: 15%;
+        padding: 15px;
+    }
+}

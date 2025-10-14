@@ -36,10 +36,3 @@ mapFilterCloseBtn.addEventListener("click",()=>{
 mapFilterApply.addEventListener("click", function(){
     mapDim.classList.remove("active");
 })
-
-
-
-
-// map card img active
-let mapCard = document.querySelectorAll(".map-card");
-let mapCardImg = document.querySelectorAll(".map-card:all-child:after");

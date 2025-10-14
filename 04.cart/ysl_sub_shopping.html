@@ -5,15 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YSL CART</title>
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="./css/ysl-sub-shopping.css">
-    <link rel="stylesheet" href="./css/ysl-sub-cart-order-coupon-popup.css">
+    <link rel="stylesheet" href="../font/pretendard.css">
     <link rel="icon" type="image/png" href="../images/ysl_favicon.png">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="./css/ysl-sub-shopping-page.css">
+    <link rel="stylesheet" href="./css/ysl-sub-shopping-coupon-popup.css">
+    <link rel="stylesheet" href="./css/ysl-sub-shopping-op-popup-item1.css">
+    <link rel="stylesheet" href="./css/ysl-sub-shopping-op-popup-item2.css">
+    <link rel="stylesheet" href="./css/ysl-sub-shopping-op-popup-item3.css">
     <link rel="stylesheet" href="../00.header_footer/css/header2_bk.css">
     <link rel="stylesheet" href="../css/ysl_footer.css">
     <link rel="stylesheet" href="../css/search.css">
     <link rel="stylesheet" href="./css/ysl-sub-shopping-respond.css">
-    <script defer src="./js/ysl-sub-order-coupon-popup.js"></script>
+    <script defer src="./js/ysl-sub-shopping-op-count-item1.js"></script>
+    <script defer src="./js/ysl-sub-shopping-op-count-item2.js"></script>
+    <script defer src="./js/ysl-sub-shopping-op-count-item3.js"></script>
+    <script defer src="./js/ysl-sub-shopping-op-popup.js"></script>
+    <script defer src="./js/ysl-sub-shopping-coupon-popup.js"></script>
+    <script defer src="../js/search.js"></script>
     <script async src="../00.header_footer/js/sub-header.js"></script>
     <script defer src="../00.header_footer/js/sub-footer.js"></script>
 </head>
@@ -23,7 +32,7 @@
     </header>
 
     <main>
-        <section class="cart-wrap">
+        <section class="cart-shopping-wrap">
             <div class="inner">
                 <h2 class="main-title">장바구니</h2>
                 <div class="cart-inner-bottom">
@@ -45,7 +54,7 @@
                                 </div>
                                 <div class="cart-item-content-wrap">
                                     <div class="cart-item-content">
-                                        <div class="cart-item-img-box">
+                                        <div class="cart-item-img-box first">
                                             <a href="#"><img src="./images/ysl-cart-item1.png" alt="장바구니 상품 이미지"></a>
                                         </div>
                                         <div class="cart-item-exp-wrap">
@@ -70,10 +79,10 @@
                                         </div>
                                     </div>
                                     <div class="cart-item-btn-wrap cart-coupon-wrap">
-                                        <div class="btn-left">
+                                        <div class="btn-left item1">
                                             <a href="#">옵션 변경</a>
                                         </div>
-                                        <div class="btn-right cart-coupon-btn">
+                                        <div class="btn-right shopping-cart-coupon-btn">
                                             <a href="#">쿠폰 적용</a>
                                         </div>
                                     </div>
@@ -89,7 +98,7 @@
                                 </div>
                                 <div class="cart-item-content-wrap">
                                     <div class="cart-item-content">
-                                        <div class="cart-item-img-box">
+                                        <div class="cart-item-img-box second">
                                             <a href="#"><img src="./images/ysl-cart-item2.png" alt="장바구니 상품 이미지"></a>
                                         </div>
                                         <div class="cart-item-exp-wrap">
@@ -113,10 +122,10 @@
                                         </div>
                                     </div>
                                     <div class="cart-item-btn-wrap cart-coupon-wrap">
-                                        <div class="btn-left">
+                                        <div class="btn-left item2">
                                             <a href="#">옵션 변경</a>
                                         </div>
-                                        <div class="btn-right cart-coupon-btn">
+                                        <div class="btn-right shopping-cart-coupon-btn">
                                             <a href="#">쿠폰 적용</a>
                                         </div>
                                     </div>
@@ -131,7 +140,7 @@
                                 </div>
                                 <div class="cart-item-content-wrap">
                                     <div class="cart-item-content">
-                                        <div class="cart-item-img-box">
+                                        <div class="cart-item-img-box third">
                                             <a href="#"><img src="./images/ysl-cart-item3.png" alt="장바구니 상품 이미지"></a>
                                         </div>
                                         <div class="cart-item-exp-wrap">
@@ -155,10 +164,10 @@
                                         </div>
                                     </div>
                                     <div class="cart-item-btn-wrap cart-coupon-wrap">
-                                        <div class="btn-left">
+                                        <div class="btn-left item3">
                                             <a href="#">옵션 변경</a>
                                         </div>
-                                        <div class="btn-right cart-coupon-btn">
+                                        <div class="btn-right shopping-cart-coupon-btn">
                                             <a href="#">쿠폰 적용</a>
                                         </div>
                                     </div>
@@ -224,9 +233,11 @@
                             </div>
                         </div>
                         <div class="cart-pay-btn">
-                            <a href="../04.cart/ysl_sub_order_form.html">
-                                <p>구매하기</p>
-                            </a>
+                            <div class="cart-pay-btn-text-box">
+                                <a href="../04.cart/ysl_sub_order_form.html">
+                                    <p>구매하기</p>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
@@ -240,104 +251,116 @@
     </footer>
 
 
-    <div class="dim-is-active">
-        <div class="coupon-popup-is-active">
-            <div class="coupon-popup-contents">
+    <div class="shopping-coupon-popup-wrap">
+        <div class="shopping-coupon-popup">
+            <div class="shopping-coupon-popup-contents">
                 <h2 class="hide">쿠폰팝업</h2>
-                <div class="coupon-popup-header">
-                    <p class="coupon-popup-header-title">쿠폰 사용</p>
-                    <a href="#"><img class="popup-close-btn" src="./images/ysl-icon-cart-close.svg" alt="닫기버튼"></a>
+                <div class="shopping-coupon-popup-header">
+                    <p class="shopping-coupon-popup-header-title">쿠폰 사용</p>
+                    <a href="#" class="shopping-popup-close-btn"><img src="./images/ysl-icon-cart-close.svg"
+                            alt="닫기버튼"></a>
                 </div>
 
-                <div class="coupon-list">
-                    <div class="coupon-item">
-                        <div class="coupon-item-top">
-                            <div class="coupon-item-title">
+                <div class="shopping-coupon-popup-item-list">
+                    <div class="shopping-coupon-item">
+                        <div class="shopping-coupon-item-top">
+                            <div class="shopping-coupon-item-title">
                                 <input type="radio" name="item-select">
-                                <div class="coupon-text-box">
+                                <div class="shopping-coupon-text-box">
                                     <a href="#">
-                                        <p class="coupon-title-text">3,000원 할인</p>
+                                        <p class="shopping-coupon-title-text">3,000원 할인</p>
                                     </a>
-                                    <a href="#"><span>취소</span></a>
+                                    <div class="shopping-coupon-popup-del-btn">
+                                        <a href="#"><span>취소</span></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="coupon-item-bottom">
-                            <p class="coupon-item-des">
+                        <div class="shopping-coupon-item-bottom">
+                            <p class="shopping-coupon-item-des">
                                 입생로랑 뷰티 클럽 정기 회원 전용 쿠폰 [REGULAR]
                             </p>
-                            <span class="coupon-item-expired-date">
+                            <span class="shopping-coupon-item-expired-date">
                                 2025년 8월 31일까지
                             </span>
                         </div>
                     </div>
-                    <div class="coupon-item">
-                        <div class="coupon-item-top">
-                            <div class="coupon-item-title">
+                    <div class="shopping-coupon-item">
+                        <div class="shopping-coupon-item-top">
+                            <div class="shopping-coupon-item-title">
                                 <input type="radio" name="item-select">
-                                <div class="coupon-text-box">
+                                <div class="shopping-coupon-text-box">
                                     <a href="#">
-                                        <p class="coupon-title-text">5,000원 할인</p>
+                                        <p class="shopping-coupon-title-text">5,000원 할인</p>
                                     </a>
-                                    <a href="#"><span>취소</span></a>
+                                    <div class="shopping-coupon-popup-del-btn">
+                                        <a href="#"><span>취소</span></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="coupon-item-bottom">
-                            <p class="coupon-item-des">
+                        <div class="shopping-coupon-item-bottom">
+                            <p class="shopping-coupon-item-des">
                                 입생로랑 뷰티 클럽 정기 회원 전용 쿠폰 [LOVE]
                             </p>
-                            <span class="coupon-item-expired-date">
+                            <span class="shopping-coupon-item-expired-date">
                                 2025년 8월 31일까지
                             </span>
                         </div>
                     </div>
-                    <div class="coupon-item">
-                        <div class="coupon-item-top">
-                            <div class="coupon-item-title">
+                    <div class="shopping-coupon-item">
+                        <div class="shopping-coupon-item-top">
+                            <div class="shopping-coupon-item-title">
                                 <input type="radio" name="item-select">
-                                <div class="coupon-text-box">
+                                <div class="shopping-coupon-text-box">
                                     <a href="#">
-                                        <p class="coupon-title-text">10,000원 할인</p>
+                                        <p class="shopping-coupon-title-text">10,000원 할인</p>
                                     </a>
-                                    <a href="#"><span>취소</span></a>
+                                    <div class="shopping-coupon-popup-del-btn">
+                                        <a href="#"><span>취소</span></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="coupon-item-bottom">
-                            <p class="coupon-item-des">
+                        <div class="shopping-coupon-item-bottom">
+                            <p class="shopping-coupon-item-des">
                                 입생로랑 뷰티 클럽 정기 회원 전용 쿠폰 [GOLD]
                             </p>
-                            <span class="coupon-item-expired-date">
+                            <span class="shopping-coupon-item-expired-date">
                                 2025년 8월 31일까지
                             </span>
                         </div>
                     </div>
-                    <div class="coupon-item">
-                        <div class="coupon-item-top">
-                            <div class="coupon-item-title">
+                    <div class="shopping-coupon-item">
+                        <div class="shopping-coupon-item-top">
+                            <div class="shopping-coupon-item-title">
                                 <input type="radio" name="item-select">
-                                <div class="coupon-text-box">
+                                <div class="shopping-coupon-text-box">
                                     <a href="#">
-                                        <p class="coupon-title-text">17,000원 할인</p>
+                                        <p class="shopping-coupon-title-text">17,000원 할인</p>
                                     </a>
-                                    <a href="#"><span>취소</span></a>
+                                    <div class="shopping-coupon-popup-del-btn">
+                                        <a href="#"><span>취소</span></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="coupon-item-bottom">
-                            <p class="coupon-item-des">
+                        <div class="shopping-coupon-item-bottom">
+                            <p class="shopping-coupon-item-des">
                                 입생로랑 뷰티 클럽 정기 회원 전용 쿠폰 [BLACK]
                             </p>
-                            <span class="coupon-item-expired-date">
+                            <span class="shopping-coupon-item-expired-date">
                                 2025년 8월 31일까지
                             </span>
                         </div>
                     </div>
                 </div>
-
-                <div class="coupon-popup-btn">
-                    <p class="coupon-apply-btn"><a href="#">쿠폰 적용</a></p>
+                <div class="shopping-coupon-popup-btn">
+                    <div class="shopping-coupon-apply-btn">
+                        <a href="#">
+                            <p>적용하기</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -345,46 +368,168 @@
 
 
 
-    <div class="cart-op-popup-wrap item1 hide">
-        <div class="cart-op-popup">
+    <div class="cart-op-popup-wrap item1">
+        <div class="cart-op-popup item1">
             <h2 class="hide">옵션 변경</h2>
-            <div class="cart-option">
-                <div class="cart-op-header">
-                    <p class="cart-op-close-btn"><a href="#"></a></p>
+            <div class="cart-op-popup-content-list item1">
+                <div class="cart-op-header item1">
+                    <div class="cart-op-close-btn item1"><a href="#"><img src="./images/ysl-icon-cart-close.svg" alt=""></a>
+                    </div>
                 </div>
-                <div class="cart-op-contents">
-                    <div class="cart-op-contents-top">
-                        <div class="cart-op-contents-text-box">
+                <div class="cart-op-content item1">
+                    <div class="cart-op-content-top item1">
+                        <div class="cart-op-content-item-title item1">
                             <span>202/피치글로우</span>
+                            <div class="cart-op-content-icon-box item1">
+                                <a href="#"><img src="./images/ysl-cart-down-arrow.svg" alt=""></a>
+                            </div>
                         </div>
-                        <div class="cart-op-contents-icon-box">
-                            <p class="cart-op-contents-icon"><a href="#"></a></p>
-                        </div>
+                        <ul class="cart-op-content-item-depth item1">
+                            <li><a href="#">201/로즈우드 블러쉬</a></li>
+                            <hr>
+                            <li><a href="#">202/피치글로우</a></li>
+                            <hr>
+                            <li><a href="#">209/핑크 디자이너</a></li>
+                            <hr>
+                            <li><a href="#">150/누드 란제리</a></li>
+                            <hr>
+                            <li><a href="#">213/핑크 트립</a></li>
+                        </ul>
                     </div>
-                    <div class="cart-op-contents-bottom">
-                        <div class="cart-op-contents-item-count">
-                            <button class="cart-op-count-minus">
-                                <p class="cart-op-count-minus-icon">
-                                    <a href="#"></a>
-                                </p>
-                            </button>
-                            <input type="number" class="cart-op-contents-item-count-num">
-                            <button class="cart-op-count-plus">
-                                <p class="cart-op-count-plus-icon">
-                                    <a href="#"></a>
-                                </p>
-                            </button>
+                    <div class="cart-op-content-bottom item1">
+                        <div class="cart-op-content-item-count item1">
+                            <button class="cart-op-count-minus item1">-</button>
+                            <span>0</span>
+                            <button class="cart-op-count-plus item1">+</button>
                         </div>
-                        <div class="cart-op-contents-item-pice">
-
+                        <div class="cart-op-content-item-price item1">
+                            <p>총 <span>58,000</span>원</p>
                         </div>
                     </div>
                 </div>
-                <div class="cart-op-bottom">
-
+                <div class="cart-op-bottom item1">
+                    <div class="cart-op-bottom-btn-left item1">
+                        <a href="#">
+                            <p>취소</p>
+                        </a>
+                    </div>
+                    <div class="cart-op-bottom-btn-right item1">
+                        <a href="#">
+                            <p>변경하기</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="cart-op-popup-wrap item2">
+        <div class="cart-op-popup item2">
+            <h2 class="hide">옵션 변경</h2>
+            <div class="cart-op-popup-content-list item2">
+                <div class="cart-op-header item2">
+                    <div class="cart-op-close-btn item2"><a href="#"><img src="./images/ysl-icon-cart-close.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="cart-op-content item2">
+                    <div class="cart-op-content-top item2">
+                        <div class="cart-op-content-item-title item2">
+                            <span>20</span>
+                            <div class="cart-op-content-icon-box item2">
+                                <a href="#"><img src="./images/ysl-cart-down-arrow.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <ul class="cart-op-content-item-depth item2">
+                            <li><a href="#">10</a></li>
+                            <hr>
+                            <li><a href="#">15</a></li>
+                            <hr>
+                            <li><a href="#">20</a></li>
+                            <hr>
+                            <li><a href="#">25</a></li>
+                            <hr>
+                            <li><a href="#">30</a></li>
+                        </ul>
+                    </div>
+                    <div class="cart-op-content-bottom item2">
+                        <div class="cart-op-content-item-count item2">
+                            <button class="cart-op-count-minus item2">-</button>
+                            <span>0</span>
+                            <button class="cart-op-count-plus item2">+</button>
+                        </div>
+                        <div class="cart-op-content-item-price item2">
+                            <p>총 <span>112,000</span>원</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-op-bottom item2">
+                    <div class="cart-op-bottom-btn-left item2">
+                        <a href="#">
+                            <p>취소</p>
+                        </a>
+                    </div>
+                    <div class="cart-op-bottom-btn-right item2">
+                        <a href="#">
+                            <p>변경하기</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-op-popup-wrap item3">
+        <div class="cart-op-popup item3">
+            <h2 class="hide">옵션 변경</h2>
+            <div class="cart-op-popup-content-list item3">
+                <div class="cart-op-header item3">
+                    <div class="cart-op-close-btn item3"><a href="#"><img src="./images/ysl-icon-cart-close.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="cart-op-content item3">
+                    <div class="cart-op-content-top item3">
+                        <div class="cart-op-content-item-title item3">
+                            <span>50ml</span>
+                            <div class="cart-op-content-icon-box item3">
+                                <a href="#"><img src="./images/ysl-cart-down-arrow.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <ul class="cart-op-content-item-depth item3">
+                            <li><a href="#">30ml</a></li>
+                            <hr>
+                            <li><a href="#">50ml</a></li>
+                            <hr>
+                            <li><a href="#">90ml</a></li>                        
+                        </ul>
+                    </div>
+                    <div class="cart-op-content-bottom item3">
+                        <div class="cart-op-content-item-count item3">
+                            <button class="cart-op-count-minus item3">-</button>
+                            <span>0</span>
+                            <button class="cart-op-count-plus item3">+</button>
+                        </div>
+                        <div class="cart-op-content-item-price item3">
+                            <p>총 <span>58,000</span>원</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-op-bottom item3">
+                    <div class="cart-op-bottom-btn-left item3">
+                        <a href="#">
+                            <p>취소</p>
+                        </a>
+                    </div>
+                    <div class="cart-op-bottom-btn-right item3">
+                        <a href="#">
+                            <p>변경하기</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
