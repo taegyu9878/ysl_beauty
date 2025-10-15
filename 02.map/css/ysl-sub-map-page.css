@@ -334,9 +334,6 @@ button.active{
 
 
 @media (max-width:767px){
-    .map-search-wrap{
-        /* padding: 10rem 1rem; */
-    }
     .map-search-wrap>.inner{
         height: 100%;
     }
@@ -357,6 +354,7 @@ button.active{
         bottom: 0;
         display: flex;
         justify-content: flex-start;
+        width: 130%;
     }
 
     .map-inner-right{
