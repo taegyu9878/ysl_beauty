@@ -21,8 +21,8 @@
     border-radius: 12px;
     border: 1px solid var(--text-sub2);
     padding: 20px;
-    right: 145px;
-    top: 80px;
+    right: 5%;
+    top: 10%;
 }
 
 .map-filter-popup-header {
@@ -119,8 +119,8 @@
 /* respond */
 @media screen and (max-width:1400px) {
     .map-filter-popup{
-        top: 140px;
-        right: 120px;
+        top: 13%;
+        right: 3%;
     }
 }
 
@@ -128,7 +128,7 @@
 @media screen and (max-width:1150px) {
     .map-filter-popup {
         width: 40%;
-        height: 75%;
+        height: 65%;
         right: 50px;
         top: 130px;
     }
