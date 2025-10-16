@@ -105,7 +105,6 @@ img {
 .my-Infor {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .sub-title-right {
@@ -121,25 +120,24 @@ img {
 /* Profile */
 .mp-profile {
   display: grid;
-  grid-template-columns: auto 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
   align-items: center;
   gap: 12px;
   padding: 58px 24px;
   border: 1px solid var(--Text-Sub1, #d9d9d9);
   background: var(--Text-Main2, #fff);
   border-radius: var(--radius);
+  margin-bottom: 10px;
 }
 
 .logo-wrap {
   display: flex;
-  width: 220px;
-  height: 120px;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
 .mp-logo {
-  width: 45px;
-  height: 94px;
+  max-width: 100%;
 }
 
 .mp-rank {
@@ -204,6 +202,7 @@ img {
   font-size: 2rem;
   font-weight: 600;
   margin: 0;
+  margin-top: 10px;
 }
 
 .mp-card-l,
@@ -216,18 +215,17 @@ img {
   justify-content: center; /* 세로 중앙 */
   align-items: center; /* 가로 중앙 */
   text-align: center; /* 텍스트도 중앙 */
-  min-height: 160px;
+  min-height: 160px; /* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
   padding: 49px 35px;
 }
 
 .mp-card-r .mp-flow {
-  gap: 23px;
+  gap: 30px;
 }
 .mp-flow {
   display: grid;
   grid-template-columns: repeat(9, minmax(0, 1fr));
   align-items: center;
-  gap: 10px;
 }
 
 .mp-flow.two-cols {
@@ -269,6 +267,7 @@ img {
   color: var(--text-sub2);
   font-weight: 400;
   font-size: 1.5rem;
+  word-break: keep-all;
 }
 
 .mp-chevron {
@@ -280,35 +279,66 @@ img {
 .mp-media img {
   border-radius: var(--radius);
   width: 100%;
+  margin-top: 20px;
   margin-bottom: 80px;
 }
 
-.mp-row > .mp-heading:nth-of-type(1) { grid-area: hL; } /* 주문/배송 조회 */
-.mp-row > .mp-heading:nth-of-type(2) { grid-area: hR; } /* 반품/교환/취소 */
-.mp-row > .mp-card-l { grid-area: l; }
-.mp-row > .mp-card-r { grid-area: r; }
+.mp-row > .mp-heading:nth-of-type(1) {
+  grid-area: hL;
+} /* 주문/배송 조회 */
+.mp-row > .mp-heading:nth-of-type(2) {
+  grid-area: hR;
+} /* 반품/교환/취소 */
+.mp-row > .mp-card-l {
+  grid-area: l;
+}
+.mp-row > .mp-card-r {
+  grid-area: r;
+}
 
-.mp-mobile-menu { display: none; }
+.mp-mobile-menu {
+  display: none;
+}
 
+/* 1400px */
+@media (max-width: 1400px) {
+  html {
+    font-size: 10px !important;
+  }
+}
+
+/* 1280px  */
+@media (max-width: 1280px) {
+  html {
+    font-size: 8px !important;
+  }
+}
+
+/* 980px */
 @media (max-width: 980px) {
-  :root{
-    --mp-title-size: 22px;   /* "MY PAGE" */
-    --mp-tab-size:   16px;   /* col-head (주문내역/회원정보) */
-    --mp-link-size:  14px;   /* 링크 글자 */
-    --mp-col-gap:    48px;   /* 3열 가로 간격 */
-    --mp-title-gap:   -25px;   /* MY PAGE 아래 간격 */
-    --mp-head-h:     26px;   /* ★ col-head 고정 높이(모든 컬럼 동일) */
-    --mp-line-gap:    6px;   /* col-head와 라인 사이 간격 */
-    --mp-after-line: 10px;   /* 라인 아래 첫 링크까지 간격 */
-    --mp-item-gap:   6px;   /* 링크 간 간격 */
+  :root {
+    --mp-title-size: 20px; /* "MY PAGE" */
+    --mp-tab-size: 16px; /* col-head (주문내역/회원정보) */
+    --mp-link-size: 14px; /* 링크 글자 */
+    --mp-col-gap: 48px; /* 3열 가로 간격 */
+    --mp-title-gap: -25px; /* MY PAGE 아래 간격 */
+    --mp-head-h: 26px; /* ★ col-head 고정 높이(모든 컬럼 동일) */
+    --mp-line-gap: 6px; /* col-head와 라인 사이 간격 */
+    --mp-after-line: 10px; /* 라인 아래 첫 링크까지 간격 */
+    --mp-item-gap: 6px; /* 링크 간 간격 */
   }
 
   /* 데스크톱용 aside 메뉴 숨기고 모바일 메뉴 표시 */
-  .mp-aside nav   { display: none; }
-  .mp-mobile-menu { display: block; padding: 0 12px 12px; }
+  .mp-aside nav {
+    display: none;
+  }
+  .mp-mobile-menu {
+    display: block;
+    padding: 0 12px 12px;
+  }
 
   /* MY PAGE — 보더 제거, 아래 간격만 */
-  .main-title{
+  .main-title {
     border-bottom: none;
     font-size: var(--mp-title-size);
     font-weight: 700;
@@ -318,66 +348,71 @@ img {
   }
 
   /* ===== 3열 컨테이너 ===== */
-  .mp-mobile-menu .mp-cols3{
-    position: relative;                          /* 라인 절대배치용 */
+  .mp-mobile-menu .mp-cols3 {
+    position: relative; /* 라인 절대배치용 */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: var(--mp-col-gap);
   }
 
   /* 줄(언더라인): col-head들 '아래'에 한 번만 그림 */
-  .mp-mobile-menu .mp-cols3::before{
+  .mp-mobile-menu .mp-cols3::before {
     content: "";
     position: absolute;
-    left: 0; right: 0;
+    left: 0;
+    right: 0;
     top: calc(var(--mp-head-h) + var(--mp-line-gap));
     border-top: 2px solid var(--text-sub3);
   }
 
   /* 각 컬럼: 세로 스택 + 간격 통일 */
-  .mp-mobile-menu .mp-cols3 .col{
+  .mp-mobile-menu .mp-cols3 .col {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
-    gap: var(--mp-item-gap);                    /* 링크 간격은 여기서만 관리 */
+    align-items: flex-start;
+    gap: var(--mp-item-gap); /* 링크 간격은 여기서만 관리 */
   }
 
   /* 머리글(주문내역/회원정보): 라인 '위'에 고정 */
-  .mp-mobile-menu .mp-cols3 .col-head{
-    min-height: var(--mp-head-h);               /* ★ 핵심: 모두 같은 높이 */
+  .mp-mobile-menu .mp-cols3 .col-head {
+    min-height: var(--mp-head-h); /* ★ 핵심: 모두 같은 높이 */
     display: flex;
-    align-items: flex-end;                       /* 텍스트를 아래로 붙임 */
-    justify-content: flex-start;    
-    text-align: left;  
-    padding-left: 2px;                
+    align-items: flex-end; /* 텍스트를 아래로 붙임 */
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 2px;
     font-size: var(--mp-tab-size);
     font-weight: 600;
     line-height: 1.2;
-    margin: 0; 
+    margin: 0;
     padding: 0;
   }
   /* 왼쪽 컬럼 헤더는 높이만 유지하고 숨김 */
-  .mp-mobile-menu .mp-cols3 .etc .col-head{ visibility: hidden; }
+  .mp-mobile-menu .mp-cols3 .etc .col-head {
+    visibility: hidden;
+  }
 
   /* 라인과 첫 링크 사이 여백 */
-  .mp-mobile-menu .mp-cols3 .col .col-head + li{
+  .mp-mobile-menu .mp-cols3 .col .col-head + li {
     margin-top: var(--mp-after-line);
   }
 
   /* 링크 모양 */
-  .mp-mobile-menu .mp-cols3 .col a{
+  .mp-mobile-menu .mp-cols3 .col a {
     text-align: left;
     display: inline-block;
     font-size: var(--mp-link-size);
     line-height: 1.5;
     color: var(--text-sub3);
     text-decoration: none;
-    padding: 0 2px;                              /* 위아래 패딩 0 → 정렬 안정화 */
+    padding: 0 2px; /* 위아래 패딩 0 → 정렬 안정화 */
   }
-  .mp-mobile-menu .mp-cols3 .col a:hover{ text-decoration: underline; }
+  .mp-mobile-menu .mp-cols3 .col a:hover {
+    text-decoration: underline;
+  }
 
   /* ------------------------------------------------------------------- */
 
@@ -391,6 +426,10 @@ img {
     width: 100%;
     padding-right: 0;
   }
+  .mp-metric {
+    gap: 30px;
+    padding-left: 10px;
+  }
   .mp-row {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -399,12 +438,13 @@ img {
       "hR"
       "r";
   }
-  .logo-wrap {
-    width: 120px;
-    height: 80px;
+  .mp-logo {
+    max-width: 50%;
+    min-width: 27%;
   }
   .mp-profile {
-    justify-content: center;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    padding: 40px 24px;
   }
   .mp-card-l,
   .mp-card-r {
@@ -414,50 +454,80 @@ img {
   .mp-card-r {
     padding: 30px 20px;
   }
- 
-
+  .mp-card-r .mp-flow {
+  gap: 70px;
+}
 }
 
-@media (max-width: 475px) {
+/* 500px */
+@media (max-width: 500px) {
+ html {
+    font-size: 6px !important;
+  }
+  .main-title {
+    font-size: 20px !important;
+  }
   .sub-title-right {
     text-align: center;
   }
   .mp-profile {
+    grid-template-columns: 0.5fr 2fr 0.5fr 0.5fr;
     gap: 10px;
     display: flex;
-    /* padding: 16px; */
+    flex-direction: column;
   }
   .logo-wrap {
-    width: 60px;
-    height: 80px;
+    max-width: 12%;
+  }
+  .mp-logo {
+    max-width: 75%;
+    min-width: 30px;
+  }
+  .mp-rank {
+    display: flex;
+    text-align: center;
+    height: 100px;
   }
   .mp-metric {
-    height: 90px;
-
+    display: flex;
+    flex-direction: row;
+    border-left: none;
+    border-bottom: 1px solid var(--text-sub1);
+    height: 30px;
+  }
+  .mp-metric .name {
+    font-size: 1.7rem;
   }
   .mp-metric .val {
     font-size: 2.4rem;
   }
   .mp-flow {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(9, minmax(0, 1fr));
   }
   .mp-step {
-    height: 70px;
+    height: 60px;
   }
+
   .mp-media img {
     margin-bottom: 40px;
   }
+
   .mp-card-l,
   .mp-card-r {
     padding: 10px 20px;
   }
+
 }
+
 @media (max-width: 393px) {
-  :root{
-    --mp-tab-size: 14px;   /* col-head(주문내역/회원정보) */
-    --mp-link-size: 12px;  /* 아래 메뉴 링크들 */
-    --mp-col-gap: 32px;    /* 컬럼 간격도 살짝 축소 (선택) */
-    --mp-head-h:   24px;   /* 헤더 높이도 약간 줄이기 (선택) */
-    --mp-item-gap: 8px;    /* 항목 간 간격 조금 줄이기 (선택) */
+  :root {
+    --mp-tab-size: 14px; /* col-head(주문내역/회원정보) */
+    --mp-link-size: 12px; /* 아래 메뉴 링크들 */
+    --mp-col-gap: 32px; /* 컬럼 간격도 살짝 축소 (선택) */
+    --mp-head-h: 24px; /* 헤더 높이도 약간 줄이기 (선택) */
+    --mp-item-gap: 8px; /* 항목 간 간격 조금 줄이기 (선택) */
   }
+  .mp-card-r .mp-flow {
+  gap: 30px;
+}
 }
