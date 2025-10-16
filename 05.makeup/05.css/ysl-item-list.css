@@ -1,5 +1,7 @@
-.item-wrap{
-    margin:6rem 15rem 12rem 15rem;
+.item-wrap .inner{
+    /* margin:6rem 15rem 12rem 15rem; */
+    max-width:1400px;
+    margin:0 auto;
 }
 .filter-bar {
     display: flex;
@@ -33,14 +35,19 @@
 
 
 .items-list{
+    max-width: 1400px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
     row-gap: 8rem;
     column-gap: 40px;
     /* grid-area: auto; */
     /* gap: 8rem; */
     margin-top: 4rem;
     justify-content: center;
+}
+.items-list img{
+    max-width:100%;
 }
 /* .item-list { */
     /* display: flex; */

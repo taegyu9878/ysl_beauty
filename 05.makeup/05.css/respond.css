@@ -1,41 +1,87 @@
 /* 1024px이하이면 기본글자크기 / 7px */
 @media screen and (max-width:1400px) {
-    .items-list {
+    /* .items-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-    }
-    
+    } */
+
     .item .img-box .img {
         transform: scale(0.8);
-        
+
     }
 }
 
 /* 767px이하  */
 @media screen and (max-width:767px) {
-    .items-list {
+    /* .items-list {
         grid-template-columns: repeat(2, 1fr);
-       }
+    } */
 }
 
 @media screen and (max-width:393px) {
-     html{
+    html {
         font-size: 7px;
-     }
-     .item-wrap{
-        margin:0;
-     }
-     .items-list {
-        row-gap: 0;
-        column-gap: 0;
-        margin: 0;
-       }
-     .item  {
-        transform: scale(0.5);
+    }
+
+    .makeup-tap{
+        display: none;
+    }
+    
+
+    .img-box div{
+        display: none;
+        /* aspect-ratio: 1/2; */
         
     }
-     /* .item .img-box .img {
+
+    .item .text-box {
+        /* transform: scale(0.5); */
+        padding: 0 1rem;
+        /* width:100vh */
+    }
+    .tap-wrap{
+        /* margin: 3rem 0 0; */
+    }
+
+    .makeup-tap {
+        transform: scale(0.4);
+    }
+
+    .items-list {
+        margin-bottom: 10rem;
+    }
+    /* .item .img-box .img {
         transform: scale(0.5);
         
     } */
+    :root {
+        --peek-width: 0rem;
+        --gap: 0rem;
+    }
+
+    .slides {
+        width: 100vh;
+
+    }
+
+    .slide {
+        transform: scale(0.9);
+        padding: 0;
+        justify-content: center;
+    }
+    
+    .slide {
+        width: 100vw;
+        height: 20rem;
+        background-size: cover; 
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+    
+    .page-wrapper {
+        padding: 10rem 0 0;
+    }
+
+
+
 }
