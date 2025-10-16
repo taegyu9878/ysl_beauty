@@ -2,7 +2,7 @@ fetch("../00.header_footer/sub-header.html")
     .then(res => res.text())
     .then(data => {
         document.querySelector("header").innerHTML = data;
-
+        
         // 요소 선택
         const hamBtn = document.querySelector(".mo-ham a"); // 햄버거 버튼
         const headerLeft = document.querySelector(".header-left");  // 사이드 전체 랩
