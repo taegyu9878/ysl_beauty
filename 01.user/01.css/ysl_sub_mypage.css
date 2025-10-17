@@ -215,7 +215,7 @@ img {
   justify-content: center; /* 세로 중앙 */
   align-items: center; /* 가로 중앙 */
   text-align: center; /* 텍스트도 중앙 */
-  min-height: 160px; /* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
+  min-height: 160px; /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */
   padding: 49px 35px;
 }
 
@@ -455,13 +455,13 @@ img {
     padding: 30px 20px;
   }
   .mp-card-r .mp-flow {
-  gap: 70px;
-}
+    gap: 70px;
+  }
 }
 
 /* 500px */
 @media (max-width: 500px) {
- html {
+  html {
     font-size: 6px !important;
   }
   .main-title {
@@ -516,7 +516,6 @@ img {
   .mp-card-r {
     padding: 10px 20px;
   }
-
 }
 
 @media (max-width: 393px) {
@@ -528,6 +527,10 @@ img {
     --mp-item-gap: 8px; /* 항목 간 간격 조금 줄이기 (선택) */
   }
   .mp-card-r .mp-flow {
-  gap: 30px;
-}
+    gap: 30px;
+  }
+ .mypage-wrap {
+    padding-top: 80px;}
+
+
 }
