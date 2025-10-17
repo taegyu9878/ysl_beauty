@@ -53,6 +53,7 @@ header.active h1 {
     border: none;
     backdrop-filter: none;
     box-shadow: none;
+    filter: invert(1);
 }
 
 header img {
