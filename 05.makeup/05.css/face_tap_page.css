@@ -32,9 +32,11 @@
     /* border:1px solid blue; */
 }
 
-.item-wrap{
-    margin-top:6rem;
-    display: flex;
-    flex-direction: column;
-    gap:4rem;
-}
+/* .item-wrap{ */
+    /* margin-top:6rem; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* gap:4rem; */
+/* } */
