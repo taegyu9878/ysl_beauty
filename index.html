@@ -21,7 +21,7 @@
     <link rel="icon" type="image/png" href="./images/ysl_favicon.png">
     <script defer src="./js/main.js"></script>
     <script defer src="./js/nav.js"></script>
-     <script defer src="./js/search.js"></script>
+    <script defer src="./js/search.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>
         window.onload = function () {
@@ -111,7 +111,15 @@
         <div class="inner">
             <div class="header-left">
                 <h1><a href="./index.html"><img src="./images/ysl_logo_wh.png" alt="logo"></a></h1>
-                <div class="main-tab">
+                <div class="main-tab ">
+                    <div class="ham-wrap">
+                        <ul class="ham-gnb">
+                            <li><a href="./02.map/ysl-sub-map-page.html"><img src="./images/map-icon.png" alt="map"></a></li>
+                            <li><a href="./01.user/ysl_sub_mypage.html"><img src="./images/User-icon.png" alt="user"></a></li>
+                            <li><a href="#void" class="search-icon"><img src="./images/search-icon.png" alt="search"></a></li>
+                        </ul>
+                        <p class="ham-close-btn"><a href="#void"><img src="./images/close-icon.png" alt="close"></a></p>
+                    </div>
                     <ul class="main-menu">
                         <li data-tab="tab1"><a href="#void">PROMOTION</a></li>
                         <li data-tab="tab2"><a href="#void">FRAGRANCE</a></li>
@@ -218,7 +226,7 @@
                                 alt="map"></a></li>
                     <li class="mo-hidden"><a href="./01.user/ysl_sub_signup.html"><img src="./images/User-icon.png"
                                 alt="user"></a></li>
-                    <li class="mo-hidden"><a href="#void" id="search-icon"><img src="./images/search-icon.png"
+                    <li class="mo-hidden"><a href="#void" class="search-icon"><img src="./images/search-icon.png"
                                 alt="search"></a></li>
                     <li><a href="./04.cart/ysl_sub_shopping.html"><img src="./images/bag-icon.png" alt="bag"></a></li>
                 </ul>
@@ -227,9 +235,9 @@
     </header>
     <div class="search-wrap" id="search-wrap">
         <div class="search-inner">
-            <h2>Find Your Beauty</h2>
             <p class="close-btn" id="close-btn"><a href="#"><img src="./images/close-icon.png" alt="close button"></a>
             </p>
+             <h2>Find Your Beauty</h2>
             <div class="search">
                 <form class="search-box" id="search-form">
                     <input type="text" id="search-input" placeholder="검색어를 입력해주세요">
@@ -317,7 +325,7 @@
                     <div class="banner-text">
                         <h2 class="main-title left">입생로랑 리브르</h2>
                         <div class="middle-title left">
-                            <p>열정적이면서도 도도한 매력의 카리스마 넘치는 플로럴 향</p>
+                            <p>열정적이면서도 도도한 매력의 <br>카리스마 넘치는 플로럴 향</p>
                         </div>
                         <div class="sub-title left">
                             <p>관능적인 오렌지 블라썸 향과 차분한 라벤더 향의 조화</p>

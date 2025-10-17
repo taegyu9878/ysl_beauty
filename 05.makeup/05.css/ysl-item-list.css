@@ -1,6 +1,5 @@
 .item-wrap{
-    padding:0 15rem 0;
-    margin-bottom: 12rem;
+    margin:6rem 15rem 12rem 15rem;
 }
 .filter-bar {
     display: flex;
@@ -33,20 +32,18 @@
 }
 
 
-.items-list-all{
-    display: flex;
-    flex-direction: column;
-    gap: 8rem;
+.items-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 8rem;
+    column-gap: 40px;
+    /* grid-area: auto; */
+    /* gap: 8rem; */
     margin-top: 4rem;
+    justify-content: center;
 }
-.item-list {
-    display: flex;
-    gap: 4rem;
-    justify-content: space-between;
-}
-.nin{
-    justify-content: flex-start;
-}
-.fou{
-    justify-content: flex-start;
-}
+/* .item-list { */
+    /* display: flex; */
+    /* gap: 4rem; */
+    /* justify-content: space-between; */
+/* } */

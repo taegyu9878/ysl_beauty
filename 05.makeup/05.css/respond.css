@@ -1,14 +1,41 @@
 /* 1024px이하이면 기본글자크기 / 7px */
 @media screen and (max-width:1400px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    .items-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .item .img-box .img {
+        transform: scale(0.8);
+        
+    }
 }
 
 /* 767px이하  */
 @media screen and (max-width:767px) {
-    grid-template-columns: 1fr 1fr;
+    .items-list {
+        grid-template-columns: repeat(2, 1fr);
+       }
 }
-@media screen and (max-width:393px) {
 
-    
+@media screen and (max-width:393px) {
+     html{
+        font-size: 7px;
+     }
+     .item-wrap{
+        margin:0;
+     }
+     .items-list {
+        row-gap: 0;
+        column-gap: 0;
+        margin: 0;
+       }
+     .item  {
+        transform: scale(0.5);
+        
+    }
+     /* .item .img-box .img {
+        transform: scale(0.5);
+        
+    } */
 }

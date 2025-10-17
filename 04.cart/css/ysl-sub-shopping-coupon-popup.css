@@ -1,0 +1,184 @@
+/* popup */
+.shopping-coupon-popup-wrap{
+    display: none;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.shopping-coupon-popup-wrap.active{
+    display: block;
+}
+
+.shopping-coupon-popup{
+    /* display: none; */
+    position: absolute;
+    background: #fff;
+    width: 488px;
+    height: fit-content;
+    padding: 20px;
+    left: 50%;
+    top: 120px;
+    transform: translateX(-50%);
+    border-radius: 12px;
+}
+
+.shopping-coupon-popup-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--text-main1);
+    padding: 0 10px;
+    /* border: 1px solid black; */
+}
+
+.shopping-coupon-popup-contents{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    align-items: flex-start;
+    /* border: 1px solid black; */
+}
+
+.shopping-coupon-popup-item-list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+.shopping-coupon-item{
+    padding: 10px;
+    border: 1px solid var(--text-sub1);
+    border-radius: 8px;
+}
+.shopping-coupon-item-title{
+    display: flex;
+    gap: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--text-sub1);
+}
+
+.shopping-coupon-del-btn.active{
+    display: block;
+}
+
+.shopping-coupon-item-title .shopping-coupon-text-box{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--text-main1);
+}
+
+.shopping-coupon-item-title .shopping-coupon-text-box .shopping-coupon-popup-del-btn{
+    /* display: none; */
+    border: 1px solid var(--text-sub1);
+    background: var(--text-main2);
+    padding: 1px 6px;
+    border-radius: 3px;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--text-main1);
+}
+.shopping-coupon-item-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 13px 0 0 0;
+}
+.shopping-coupon-item-bottom>p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--text-main1);
+}
+.shopping-coupon-item-bottom>span{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--text-sub3);
+}
+
+.shopping-coupon-popup-btn{
+    width: 100%;
+    align-items: center;
+    cursor: pointer;
+    padding: 16px 0 16px 0;
+    border-radius: 8px;
+    background: var(--text-sub3);
+}
+
+.shopping-coupon-popup-btn>.shopping-coupon-apply-btn{
+    width: 100%;
+    /* border: 1px solid black; */
+    text-align: center;
+    align-items: center;
+    color: var(--text-main2);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.shopping-coupon-popup-btn:hover{
+    background: var(--text-main1);
+    color: var(--text-main2);
+}
+
+
+
+/* respond */
+@media screen and (max-width:1400px) {
+
+}
+
+@media screen and (max-width:1150px) {
+    
+}
+
+@media screen and (max-width:767px) {
+    .shopping-coupon-popup{
+        padding: 10px;
+        width: 55%;
+        height: 70%;
+    }
+    .shopping-coupon-popup-contents{
+        gap: 10px;
+    }
+    .shopping-coupon-popup-header{
+        padding: 0;
+    }
+    .shopping-coupon-item-title{
+        padding-bottom: 10px;
+    }
+    .shopping-coupon-item-bottom{
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width:393px) {
+    .shopping-coupon-popup{
+        padding: 10px;
+        top: 20%;
+        width: 80%;
+        height:60%;
+    }
+    .shopping-coupon-popup-contents{
+        gap: 5px;
+    }
+    .shopping-coupon-item-title{
+        padding-bottom: 8px;
+    }
+    .shopping-coupon-item-bottom{
+        gap: 10px;
+    }
+    .shopping-coupon-popup-item-list{
+        gap: 7px;
+    }
+    .shopping-coupon-item{
+        padding: 7px;
+    }
+}

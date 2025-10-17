@@ -1,7 +1,15 @@
 <div class="inner">
     <div class="header-left">
-        <h1><a href="../index.html"><img src="../images/ysl_logo_long.svg" alt="logo"></a></h1>
+        <h1 class="logo"><a href="../index.html"><img src="../images/ysl_logo_long.svg" alt="logo"></a></h1>
         <div class="main-tab">
+            <div class="ham-wrap">
+                        <ul class="ham-gnb">
+                            <li><a href="../02.map/ysl-sub-map-page.html"><img src="../images/map-icon.png" alt="map"></a></li>
+                            <li><a href="../01.user/ysl_sub_mypage.html"><img src="../images/User-icon.png" alt="user"></a></li>
+                            <li><a href="#void" class="search-icon"><img src="../images/search-icon.png" alt="search"></a></li>
+                        </ul>
+                        <p class="ham-close-btn"><a href="#void"><img src="../images/close-icon.png" alt="close"></a></p>
+                    </div>
             <ul class="main-menu">
                 <li><a href="#void">PROMOTION</a></li>
                 <li><a href="#void">FRAGRANCE</a></li>
@@ -105,33 +113,30 @@
             </li>
             <li class="mo-hidden"><a href="../02.map/ysl-sub-map-page.html"><img src="../images/map-icon.png" alt="map"></a></li>
             <li class="mo-hidden"><a href="../01.user/ysl_sub_signup.html"><img src="../images/User-icon.png" alt="user"></a></li>
-            <li class="mo-hidden"><a href="#void" id="search-icon"><img src="../images/search-icon.png"
+            <li class="mo-hidden"><a href="#void" class="search-icon"><img src="../images/search-icon.png"
                         alt="search"></a></li>
             <li><a href="../04.cart/ysl_sub_shopping.html"><img src="../images/bag-icon.png" alt="bag"></a></li>
         </ul>
     </div>
 </div>
 </header>
- <div class="search-wrap" id="search-wrap">
+    <div class="search-wrap" id="search-wrap">
         <div class="search-inner">
-            <h2>Find Your Beauty</h2>
             <p class="close-btn" id="close-btn"><a href="#"><img src="../images/close-icon.png" alt="close button"></a>
             </p>
+             <h2>Find Your Beauty</h2>
             <div class="search">
-                <div class="search-box">
-                    <p><a href="#">검색어를 입력해주세요</a></p>
-                    <p><a href="#"><img src="../images/search-icon_grey.png" alt="search-icon"></a></p>
-                </div>
+                <form class="search-box" id="search-form">
+                    <input type="text" id="search-input" placeholder="검색어를 입력해주세요">
+                    <button id="search-btn"><img src="../images/search-icon_grey.png" alt="search-icon"></button>
+                </form>
                 <div class="search-word">
                     <div class="word-box">
                         <p>최근 검색어</p>
-                        <p><a href="#">전체삭제</a></p>
+                        <p><a href="#" id="clear-all">전체삭제</a></p>
                     </div>
-                    <div class="word-history">
-                        <p><a href="#">남자향수</a></p>
-                        <p><a href="#">리브르</a></p>
-                        <p><a href="#">립스틱</a></p>
-                        <p><a href="#">핑크 쿠션</a></p>
+                    <div class="word-history" id="word-history">
+
                     </div>
                 </div>
             </div>
