@@ -26,21 +26,29 @@
     .makeup-tap{
         display: none;
     }
-    
+    .item{
+        margin:0 2rem 0;
+    }
+    .filter-bar {
+        margin:2rem;
+    }
 
     .img-box div{
         display: none;
         /* aspect-ratio: 1/2; */
         
     }
+    .img-box .count {
+        display:none;
+    }
 
     .item .text-box {
         /* transform: scale(0.5); */
         padding: 0 1rem;
-        /* width:100vh */
+        /* width:90vh; */
     }
-    .tap-wrap{
-        /* margin: 3rem 0 0; */
+    .item-titile{
+        width:50vh;
     }
 
     .makeup-tap {
@@ -49,6 +57,8 @@
 
     .items-list {
         margin-bottom: 10rem;
+        grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+        column-gap: 2rem;
     }
     /* .item .img-box .img {
         transform: scale(0.5);
@@ -74,7 +84,7 @@
         width: 100vw;
         height: 20rem;
         background-size: cover; 
-        background-position: left;
+        background-position: left center;
         background-repeat: no-repeat;
     }
     
