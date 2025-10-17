@@ -530,9 +530,9 @@ body {
 .sg-detail-close {
   background: none;
   border: 0;
-  cursor: pointer;
-  font-size: 28px;
-  color: var(--text-main1);
+}
+.card-close-btn{
+  width: 16px;
 }
 .sg-grid.has-detail .sg-detail {
   display: block;
@@ -1002,6 +1002,11 @@ body {
     transform: translateX(calc(50vw - 750px)) !important;
   }
 
+.card-close-btn{
+  width: 13px;
+}
+
+
   /* signup 애니메이션 효과 */
   @keyframes fadeInUp {
     from {
@@ -1040,3 +1045,4 @@ body {
 }
 
 }
+/* END */
