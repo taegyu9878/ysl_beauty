@@ -516,6 +516,9 @@ img {
   .mp-card-r {
     padding: 10px 20px;
   }
+  .mypage-wrap {
+    padding-top: 80px;
+  }
 }
 
 @media (max-width: 393px) {
@@ -529,8 +532,5 @@ img {
   .mp-card-r .mp-flow {
     gap: 30px;
   }
- .mypage-wrap {
-    padding-top: 80px;}
-
 
 }
